@@ -56,7 +56,7 @@
         </div>
     </div>
 
-    <!-- Navigation -->
+<!-- Navigation -->
     <nav class="bg-white/95 backdrop-blur-md sticky top-0 z-50 border-b border-gray-100">
         <div class="container mx-auto px-6 py-3 flex justify-between items-center">
             <div class="flex flex-col text-left">
@@ -65,12 +65,31 @@
                 </a>
                 <span class="text-[9px] uppercase tracking-[0.2em] text-gray-400 font-semibold mt-1">Bridging Worlds, Discovering Hearts</span>
             </div>
+
+            <!-- Desktop Menu (Hidden on Mobile) -->
             <div class="hidden md:flex space-x-10 text-[11px] font-bold uppercase tracking-widest text-gray-600">
                 <a href="#destinations" class="hover:text-brand-red transition-colors">Destinations</a>
                 <a href="#about" class="hover:text-brand-red transition-colors">Values</a>
                 <a href="#gallery" class="hover:text-brand-red transition-colors">Visual Story</a>
             </div>
-            <a href="#inquiry" class="bg-brand-red text-white px-6 py-2 rounded-sm text-[11px] font-bold uppercase tracking-widest hover:bg-black transition-all shadow-sm">Inquiry</a>
+
+            <!-- Desktop Inquiry Button (Hidden on Mobile) -->
+            <a href="#inquiry" class="hidden md:block bg-brand-red text-white px-6 py-2 rounded-sm text-[11px] font-bold uppercase tracking-widest hover:bg-black transition-all shadow-sm">Inquiry</a>
+
+            <!-- Mobile Hamburger Button (Visible only on Mobile) -->
+            <button id="menuBtn" class="md:hidden text-gray-800 text-2xl p-2">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu (Hidden by default) -->
+        <div id="mobileMenu" class="hidden md:hidden bg-white border-t border-gray-100 px-6 py-6">
+            <div class="flex flex-col gap-6 text-[12px] font-bold uppercase tracking-widest text-gray-600">
+                <a href="#destinations" class="hover:text-brand-red transition-colors py-2 border-b border-gray-50">Destinations</a>
+                <a href="#about" class="hover:text-brand-red transition-colors py-2 border-b border-gray-50">Values</a>
+                <a href="#gallery" class="hover:text-brand-red transition-colors py-2 border-b border-gray-50">Visual Story</a>
+                <a href="#inquiry" class="bg-brand-red text-white px-6 py-3 rounded-sm text-center text-[11px] tracking-widest hover:bg-black transition-all mt-2">Inquiry</a>
+            </div>
         </div>
     </nav>
 
