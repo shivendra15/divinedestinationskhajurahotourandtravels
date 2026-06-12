@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Travel Corp | Professional Travel & Solutions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .hero-gradient { background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1436491865332-7a61a109c0f2?auto=format&fit=crop&w=1920&q=80'); background-size: cover; background-position: center; }
+        .jtb-red { color: #e60012; }
+        .bg-jtb-red { background-color: #e60012; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-900 font-sans">
+
+    <!-- Top Utility Bar -->
+    <div class="bg-gray-100 py-2 border-b text-xs">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <div class="flex space-x-4">
+                <a href="#" class="hover:underline">Global Network</a>
+                <a href="#" class="hover:underline">Sustainability</a>
+            </div>
+            <div class="flex items-center space-x-4">
+                <span><i class="fas fa-globe mr-1"></i> English</span>
+                <button class="bg-white border px-2 py-1 rounded">Search <i class="fas fa-search ml-1"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Navigation -->
+    <nav class="bg-white sticky top-0 z-50 shadow-sm">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold tracking-tighter text-red-600">TRAVEL<span class="text-gray-800">CORP</span></div>
+            <div class="hidden md:flex space-x-8 font-medium">
+                <a href="#" class="hover:text-red-600">Individual Customers</a>
+                <a href="#" class="hover:text-red-600">Corporate Customers</a>
+                <a href="#" class="hover:text-red-600">About Us</a>
+                <a href="#" class="hover:text-red-600">Inclusion & ESG</a>
+            </div>
+            <a href="#contact" class="bg-jtb-red text-white px-5 py-2 rounded-full text-sm font-bold">Inquiry</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient h-[500px] flex items-center text-white">
+        <div class="container mx-auto px-6">
+            <h1 class="text-5xl font-bold mb-4">Perfect moments, <br>Always.</h1>
+            <p class="text-xl max-w-lg mb-8">We create value through human connection and sustainable travel solutions worldwide.</p>
+            <div class="flex space-x-4">
+                <button class="bg-jtb-red px-8 py-3 rounded text-white font-bold">Leisure Travel</button>
+                <button class="bg-white px-8 py-3 rounded text-gray-900 font-bold">Business Solutions</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Business Segments -->
+    <section class="py-20 container mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center mb-12">Our Business Domains</h2>
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="bg-white p-8 border-t-4 border-red-600 shadow-lg">
+                <i class="fas fa-plane-departure text-3xl mb-4 jtb-red"></i>
+                <h3 class="text-xl font-bold mb-2">Individual Travel</h3>
+                <p class="text-gray-600 mb-4">Creating unforgettable personal journeys and vacation packages tailored to you.</p>
+                <a href="#" class="font-bold jtb-red">Learn more →</a>
+            </div>
+            <div class="bg-white p-8 border-t-4 border-gray-800 shadow-lg">
+                <i class="fas fa-briefcase text-3xl mb-4"></i>
+                <h3 class="text-xl font-bold mb-2">Corporate MICE</h3>
+                <p class="text-gray-600 mb-4">Meetings, Incentives, Conferences, and Events management for global enterprises.</p>
+                <a href="#" class="font-bold jtb-red">Learn more →</a>
+            </div>
+            <div class="bg-white p-8 border-t-4 border-gray-400 shadow-lg">
+                <i class="fas fa-handshake text-3xl mb-4"></i>
+                <h3 class="text-xl font-bold mb-2">Local Solutions</h3>
+                <p class="text-gray-600 mb-4">Supporting regional revitalization and local government tourism strategies.</p>
+                <a href="#" class="font-bold jtb-red">Learn more →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- News Section -->
+    <section class="bg-gray-100 py-16">
+        <div class="container mx-auto px-6">
+            <div class="flex justify-between items-end mb-8">
+                <h2 class="text-3xl font-bold">News Release</h2>
+                <a href="#" class="text-red-600 font-bold border-b-2 border-red-600">View All</a>
+            </div>
+            <div class="space-y-4">
+                <div class="bg-white p-4 flex flex-col md:flex-row md:items-center border-l-4 border-red-600">
+                    <span class="text-gray-500 w-32">Oct 24, 2023</span>
+                    <span class="bg-red-100 text-red-600 text-xs px-2 py-1 rounded mr-4 w-fit my-2 md:my-0">Sustainability</span>
+                    <a href="#" class="hover:underline font-medium">Launch of the 2024 Global Eco-Tourism Initiative.</a>
+                </div>
+                <div class="bg-white p-4 flex flex-col md:flex-row md:items-center border-l-4 border-gray-300">
+                    <span class="text-gray-500 w-32">Oct 20, 2023</span>
+                    <span class="bg-gray-100 text-gray-600 text-xs px-2 py-1 rounded mr-4 w-fit my-2 md:my-0">Corporate</span>
+                    <a href="#" class="hover:underline font-medium">New partnership signed with major Airline Alliance.</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <div class="text-2xl font-bold text-white mb-4">TRAVELCORP</div>
+                    <p class="text-sm">Connecting people, places, and possibilities through professional travel management.</p>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4">Quick Links</h4>
+                    <ul class="text-sm space-y-2">
+                        <li><a href="#" class="hover:text-white">Privacy Policy</a></li>
+                        <li><a href="#" class="hover:text-white">Cookie Policy</a></li>
+                        <li><a href="#" class="hover:text-white">Terms of Use</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4">Social</h4>
+                    <div class="flex space-x-4">
+                        <a href="#"><i class="fab fa-linkedin text-xl"></i></a>
+                        <a href="#"><i class="fab fa-twitter text-xl"></i></a>
+                        <a href="#"><i class="fab fa-instagram text-xl"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4">Contact</h4>
+                    <p class="text-sm">info@travelcorp-example.com</p>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-xs text-center">
+                &copy; 2023 TravelCorp Inc. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
