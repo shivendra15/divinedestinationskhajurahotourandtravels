@@ -18,19 +18,19 @@
         .text-brand-red { color: #b91c1c; }
         .bg-brand-red { background-color: #b91c1c; }
         .glass-effect { background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(10px); }
-        .jp-badge { border: 1px solid #b91c1c; color: #b91c1c; padding: 2px 10px; font-size: 11px; font-weight: 700; border-radius: 2px; }
+        .jp-stamp { border-left: 2px solid #b91c1c; padding-left: 12px; font-style: italic; color: #666; }
     </style>
 </head>
 <body class="bg-white text-gray-900">
 
-    <!-- Top Utility Bar (Immediate Trust) -->
+    <!-- Top Utility Bar (Trust Signal) -->
     <div class="bg-gray-100 py-2 border-b border-gray-200">
         <div class="container mx-auto px-6 flex justify-between items-center text-[10px] uppercase tracking-widest font-bold text-gray-500">
             <div class="flex gap-4">
                 <span><i class="fas fa-globe-asia mr-1 text-brand-red"></i> Global Network</span>
-                <span class="text-gray-800">日本語専用デスク (Japan Desk Available)</span>
+                <span class="text-gray-800 underline decoration-brand-red">日本語専用デスク (Japan Desk)</span>
             </div>
-            <div class="hidden md:block">Bridging Worlds, Discovering Hearts</div>
+            <div class="hidden md:block italic">Bridging Worlds, Discovering Hearts</div>
         </div>
     </div>
 
@@ -52,7 +52,7 @@
                 <a href="#gallery" class="hover:text-brand-red transition-colors">Visual Story</a>
             </div>
 
-            <a href="#inquiry" class="bg-brand-red text-white px-6 py-2 rounded-sm text-[11px] font-bold uppercase tracking-widest hover:bg-black transition-all shadow-sm">
+            <a href="#inquiry" class="bg-brand-red text-white px-6 py-2 rounded-sm text-[11px] font-bold uppercase tracking-widest hover:bg-black transition-all">
                 Inquiry
             </a>
         </div>
@@ -68,7 +68,7 @@
                     <span class="text-gray-200 font-light italic text-4xl md:text-6xl">Discover Yourself.</span>
                 </h1>
                 <p class="text-lg md:text-xl mb-10 text-gray-100 leading-relaxed font-light max-w-2xl">
-                    Experience the heart of the world through our bridge to ancient wonders and shared stories. Built on a foundation of absolute trust and local expertise.
+                    Experience the heart of India through our bridge to ancient wonders and shared stories. Built on a foundation of absolute trust and local expertise.
                 </p>
                 <div class="flex gap-4">
                     <a href="#destinations" class="bg-brand-red text-white px-10 py-4 rounded-sm font-bold uppercase text-xs tracking-widest hover:bg-white hover:text-black transition-all shadow-lg">Start Discovery</a>
@@ -78,28 +78,28 @@
         </div>
     </section>
 
-    <!-- NEW: OMOTENASHI WELCOME (IMMEDIATELY AFTER HERO) -->
-    <section class="py-16 bg-white border-b border-gray-100">
-        <div class="container mx-auto px-6">
-            <div class="flex flex-col md:flex-row items-center gap-10">
-                <div class="md:w-1/3 text-center md:text-left border-b md:border-b-0 md:border-r border-gray-100 pb-8 md:pb-0 md:pr-10">
-                    <span class="jp-badge mb-4 inline-block tracking-widest uppercase">日本人旅行者の皆様へ</span>
-                    <h2 class="text-2xl font-light italic text-gray-800 leading-snug">Precision, Safety, <br>and Peace.</h2>
-                </div>
-                <div class="md:w-2/3">
-                    <p class="text-gray-600 leading-relaxed font-light italic text-base">
-                        "Experience the true meaning of <strong>Omotenashi</strong> in India. We understand the specific requirements of our guests from Japan. From Japanese-speaking expert guides to itineraries that respect your time and comfort, we ensure a seamless bridge to the soul of our heritage."
+    <!-- THE SIGNATURE WELCOME (Clean & Zen) -->
+    <section class="py-24 bg-white border-b border-gray-100">
+        <div class="container mx-auto px-6 text-center max-w-4xl">
+            <h4 class="text-brand-red font-bold tracking-widest text-[10px] uppercase mb-4">ようこそ (Welcome)</h4>
+            <h2 class="text-4xl font-light italic text-gray-800 leading-tight mb-8">A Journey of Precision, <br>Safety, and Spiritual Peace.</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-8 text-left items-center">
+                <div class="md:col-span-7">
+                    <p class="text-gray-600 leading-relaxed font-light text-sm">
+                        Welcome to <strong>Divine Destinations</strong>. We don't just book tours; we build bridges. We understand the specific requirements of our guests from Japan and across the globe. From local expert guides to itineraries that respect your time, we ensure a seamless discovery of the world's heritage through the spirit of <strong>Omotenashi</strong>.
                     </p>
-                    <div class="flex items-center gap-4 mt-6">
-                        <div class="h-px w-8 bg-brand-red"></div>
-                        <span class="text-[10px] uppercase font-bold tracking-widest text-gray-400">Team Divine Destinations</span>
-                    </div>
+                </div>
+                <div class="md:col-span-5 jp-stamp">
+                    <p class="text-[12px] leading-relaxed">
+                        「おもてなし」の心で、カジュラホの神聖な美しさを最も信頼できる形でお届けします。
+                    </p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Local Impact Stats (Now slightly lower for better flow) -->
+    <!-- Stats Bar (Data that proves the promise) -->
     <section class="py-12 bg-gray-50 border-b border-gray-100">
         <div class="container mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-8 text-center text-gray-800 font-light uppercase tracking-widest text-[10px]">
             <div><p class="text-2xl font-bold mb-1 text-brand-red">10+</p> Years Expertise</div>
@@ -110,50 +110,54 @@
     </section>
 
     <!-- Meet Your Host -->
-    <section id="about" class="py-24 bg-white border-b border-gray-50">
+    <section id="about" class="py-24 bg-white">
         <div class="container mx-auto px-6 flex flex-col md:flex-row items-center gap-16">
             <div class="md:w-1/2">
                 <img src="images/destinations/khajuraho/kandariya_mahadev_temple_khajuraho.jpg" alt="Local Expert" class="rounded-sm shadow-2xl grayscale hover:grayscale-0 transition-all duration-700">
             </div>
             <div class="md:w-1/2 text-left">
                 <h4 class="text-brand-red font-bold tracking-widest text-[10px] uppercase mb-4">Local Expertise</h4>
-                <h2 class="text-4xl font-light mb-6 leading-tight italic">The Heart Behind <br>Your Journey</h2>
+                <h2 class="text-4xl font-light mb-6 leading-tight italic">The Heart Behind Your Journey</h2>
                 <p class="text-gray-600 mb-6 italic leading-relaxed text-lg font-serif">"Khajuraho is a spiritual dialogue written in stone. We ensure you hear it clearly."</p>
-                <p class="text-gray-500 text-sm mb-8 font-light leading-relaxed">As residents and heritage enthusiasts, we bring you closer to the secrets of the Chandela dynasty that generic tours miss. We don't just guide; we connect you to the heart of India.</p>
+                <p class="text-gray-500 text-sm mb-8 font-light leading-relaxed">As residents and heritage enthusiasts, we bring you closer to the secrets of the Chandela dynasty that generic tours miss.</p>
+                <div class="flex items-center gap-4"><div class="h-px w-12 bg-brand-red"></div><span class="text-[11px] uppercase font-bold tracking-widest">Team Divine Destinations</span></div>
             </div>
         </div>
     </section>
 
     <!-- Destinations -->
-    <section id="destinations" class="py-24 bg-gray-50">
-        <div class="container mx-auto px-6 text-center">
-            <div class="mb-16">
+    <section id="destinations" class="py-24 bg-gray-50 border-t border-gray-100">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
                 <h4 class="text-brand-red font-bold tracking-widest text-[10px] uppercase mb-2">Our Footprint</h4>
                 <h2 class="text-4xl font-light italic tracking-tight">India & Beyond</h2>
                 <div class="h-px w-24 bg-gray-200 mx-auto mt-6"></div>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-left">
+                <!-- Khajuraho -->
                 <div class="group relative overflow-hidden h-96">
                     <img src="images/destinations/khajuraho/the_kandariya_khajuraho.jpg" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
                     <div class="absolute inset-0 bg-black/40 p-8 flex flex-col justify-end">
                         <span class="text-brand-red text-[10px] font-bold uppercase tracking-widest mb-2">Specialist Hub</span>
-                        <h3 class="text-white text-2xl font-bold tracking-tighter">KHAJURAHO</h3>
-                        <p class="text-gray-300 text-xs mt-2 font-light">UNESCO Heritage & Spiritual Pulse</p>
+                        <h3 class="text-white text-2xl font-bold tracking-tighter uppercase">Khajuraho</h3>
+                        <p class="text-gray-300 text-xs mt-2 font-light italic">Spiritual Heartland</p>
                     </div>
                 </div>
+                <!-- Pan India -->
                 <div class="group relative overflow-hidden h-96 bg-gray-900 border border-gray-800">
-                    <div class="absolute inset-0 bg-black/60 p-8 flex flex-col justify-end">
-                        <span class="text-white/40 text-[10px] font-bold uppercase tracking-widest mb-2">Expanding Network</span>
-                        <h3 class="text-white text-2xl font-bold tracking-tighter uppercase">Golden Triangle</h3>
-                        <p class="text-gray-300 text-xs mt-2 font-light">Delhi, Agra & Jaipur</p>
+                    <div class="absolute inset-0 bg-black/60 p-8 flex flex-col justify-end border-white/10 border">
+                        <span class="text-white/40 text-[10px] font-bold uppercase tracking-widest mb-2">Network Hub</span>
+                        <h3 class="text-white text-2xl font-bold tracking-tighter uppercase">Pan India</h3>
+                        <p class="text-gray-300 text-xs mt-2 font-light italic">The Golden Triangle & Beyond</p>
                     </div>
                 </div>
+                <!-- Global -->
                 <div class="group relative overflow-hidden h-96 bg-gray-800 border border-gray-700">
-                    <div class="absolute inset-0 bg-black/60 p-8 flex flex-col justify-end">
+                    <div class="absolute inset-0 bg-black/60 p-8 flex flex-col justify-end border-white/10 border">
                         <span class="text-white/40 text-[10px] font-bold uppercase tracking-widest mb-2">Future Vision</span>
                         <h3 class="text-white text-2xl font-bold tracking-tighter uppercase">International</h3>
-                        <p class="text-gray-300 text-xs mt-2 font-light">Global Outbound Discovery</p>
+                        <p class="text-gray-300 text-xs mt-2 font-light italic">Connecting Global Heritage</p>
                     </div>
                 </div>
             </div>
@@ -175,7 +179,7 @@
                     <div class="absolute inset-0 shadow-2xl transition-all duration-500 group-hover:-translate-y-6 rounded-sm overflow-hidden border-white border-8 cursor-pointer bg-white">
                         <a href="images/destinations/khajuraho/the_kandariya_khajuraho.jpg" class="gallery-item">
                             <img src="images/destinations/khajuraho/the_kandariya_khajuraho.jpg" class="w-full h-full object-cover">
-                            <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent flex flex-col justify-end p-10"><h3 class="text-white text-3xl font-light">Sacred Spires</h3></div>
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent flex flex-col justify-end p-10"><h3 class="text-white text-3xl font-light tracking-wide">Sacred Spires</h3><p class="text-gray-400 text-[10px] uppercase mt-4 opacity-0 group-hover:opacity-100 transition-opacity tracking-widest">Explore Collection</p></div>
                         </a>
                     </div>
                 </div>
@@ -185,7 +189,7 @@
                     <div class="absolute inset-0 shadow-2xl transition-all duration-500 group-hover:-translate-y-6 rounded-sm overflow-hidden border-white border-8 cursor-pointer bg-white">
                         <a href="images/destinations/khajuraho/nagra_style_erotic_carving_kandariya_khajuraho.jpg" class="gallery-item">
                             <img src="images/destinations/khajuraho/nagra_style_erotic_carving_kandariya_khajuraho.jpg" class="w-full h-full object-cover">
-                            <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent flex flex-col justify-end p-10"><h3 class="text-white text-3xl font-light">Divine Artistry</h3></div>
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent flex flex-col justify-end p-10"><h3 class="text-white text-3xl font-light tracking-wide">Divine Artistry</h3><p class="text-gray-400 text-[10px] uppercase mt-4 opacity-0 group-hover:opacity-100 transition-opacity tracking-widest">Explore Collection</p></div>
                         </a>
                     </div>
                 </div>
@@ -193,25 +197,16 @@
         </div>
     </section>
 
-    <!-- INQUIRY SECTION -->
+    <!-- INQUIRY SECTION (Google Form) -->
     <section id="inquiry" class="py-24 bg-gray-50 border-t border-gray-100">
         <div class="container mx-auto px-6 max-w-4xl text-center">
-            <div class="mb-12 text-center">
+            <div class="mb-12">
                 <h4 class="text-brand-red font-bold tracking-[0.3em] text-[10px] uppercase mb-2">Consultation</h4>
-                <h2 class="text-3xl font-light italic tracking-tight text-center">Plan Your Discovery</h2>
+                <h2 class="text-3xl font-light italic tracking-tight">Plan Your Discovery</h2>
                 <div class="h-px w-12 bg-brand-red mx-auto mt-4"></div>
             </div>
-
             <div class="bg-white p-2 shadow-2xl rounded-sm border border-gray-100 overflow-hidden">
-                <iframe 
-                    src="https://docs.google.com/forms/d/e/1FAIpQLSfD_K0vJ_vOshI9z38H-H-23hC028pGZpW6m0N-gL4R7R7X6Q/viewform?embedded=true" 
-                    width="100%" 
-                    height="800" 
-                    frameborder="0" 
-                    marginheight="0" 
-                    marginwidth="0">
-                    Loading…
-                </iframe>
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfD_K0vJ_vOshI9z38H-H-23hC028pGZpW6m0N-gL4R7R7X6Q/viewform?embedded=true" width="100%" height="800" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
             </div>
         </div>
     </section>
@@ -223,15 +218,15 @@
         <div class="flex justify-center gap-8 mt-8 text-[9px] uppercase tracking-widest text-gray-400 font-bold">
             <a href="#" class="hover:text-brand-red">Global Network</a>
             <a href="#" class="hover:text-brand-red">Sustainability</a>
-            <a href="#" class="hover:text-brand-red">Corporate</a>
+            <a href="#" class="hover:text-brand-red">Privacy</a>
         </div>
-        <p class="text-gray-300 text-[8px] uppercase mt-12">&copy; 2024 Divine Destinations. All Rights Reserved.</p>
+        <p class="text-gray-300 text-[8px] uppercase mt-12 italic">&copy; 2024 Divine Destinations. All Rights Reserved.</p>
     </footer>
 
     <!-- Lightbox Script -->
     <div id="lightbox" class="fixed inset-0 bg-black/95 hidden z-[999] flex items-center justify-center p-4">
         <button id="prevBtn" class="absolute left-6 text-white text-4xl p-4 hover:text-brand-red">&lsaquo;</button>
-        <img id="lightbox-img" src="" class="max-w-full max-h-full transition-transform">
+        <img id="lightbox-img" src="" class="max-w-full max-h-full">
         <button id="nextBtn" class="absolute right-6 text-white text-4xl p-4 hover:text-brand-red">&rsaquo;</button>
         <button id="closeBtn" class="absolute top-10 right-10 text-white text-4xl">&times;</button>
     </div>
