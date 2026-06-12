@@ -1,4 +1,4 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -8,10 +8,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
-        body { font-family: 'Inter', sans-serif; }
+        body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
         .hero-bg { 
             background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
-            url('https://images.unsplash.com/photo-1620215175664-cb9a6f597003?auto=format&fit=crop&w=1920&q=80'); 
+            url('images/destinations/khajuraho/the_kandariya_khajuraho.jpg'); 
             background-size: cover; 
             background-position: center; 
         }
@@ -24,154 +24,119 @@
     <!-- Header / Navigation -->
     <nav class="bg-white/95 backdrop-blur-md sticky top-0 z-50 border-b border-gray-100">
         <div class="container mx-auto px-6 py-3 flex justify-between items-center">
-            
-            <!-- Logo & Tagline -->
+            <!-- Logo & Tagline Area -->
             <div class="flex flex-col">
                 <a href="index.html" class="block">
-                    <!-- Change path here if needed -->
-                    <img src="images/logos/dd.png" alt="Divine Destinations" class="h-10 w-auto">
+                    <img src="images/logos/main-logo.png" alt="Divine Destinations" class="h-10 w-auto">
                 </a>
                 <span class="text-[9px] uppercase tracking-[0.2em] text-gray-400 font-semibold mt-1">
                     Bridging Worlds, Discovering Hearts
                 </span>
             </div>
 
-            <!-- Simple Menu -->
-            <div class="hidden md:flex space-x-10 text-[13px] font-bold uppercase tracking-widest text-gray-600">
-                <a href="#destinations" class="hover:text-brand-red transition-colors">Destinations</a>
-                <a href="#tours" class="hover:text-brand-red transition-colors">Experiences</a>
-                <a href="#about" class="hover:text-brand-red transition-colors">Our Values</a>
+            <!-- Menu Links -->
+            <div class="hidden md:flex space-x-10 text-[11px] font-bold uppercase tracking-widest text-gray-600">
+                <a href="#tours" class="hover:text-brand-red transition-colors">Tours</a>
+                <a href="#about" class="hover:text-brand-red transition-colors">Values</a>
+                <a href="#gallery" class="hover:text-brand-red transition-colors">Visual Story</a>
             </div>
 
-            <!-- Action Button -->
             <a href="#inquiry" class="bg-brand-red text-white px-6 py-2 rounded-sm text-[11px] font-bold uppercase tracking-widest hover:bg-black transition-all">
-                Plan Your Journey
+                Inquiry
             </a>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero-bg h-[80vh] flex items-center text-white">
+    <section class="hero-bg h-[85vh] flex items-center text-white">
         <div class="container mx-auto px-6">
-            <div class="max-w-3xl">
+            <div class="max-w-4xl">
+                <h4 class="text-brand-red font-bold tracking-[0.3em] uppercase mb-4 text-sm">Bringing the World Closer</h4>
                 <h1 class="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-                    Experience the <br><span class="text-brand-red">Heart</span> of India.
+                    Discover the World. <br>
+                    <span class="text-gray-200 font-light italic text-4xl md:text-6xl">Discover Yourself.</span>
                 </h1>
-                <p class="text-lg md:text-xl mb-10 text-gray-200 leading-relaxed font-light">
-                    Divine Destinations Khajuraho is your bridge to ancient wonders and shared stories. 
-                    Discover the world, and discover yourself through our curated heritage journeys.
+                <p class="text-lg md:text-xl mb-10 text-gray-100 leading-relaxed font-light max-w-2xl">
+                    Experience the heart of the world through our bridge to new cultures and shared stories. 
+                    We are committed to inclusive discovery—built on a foundation of trust.
                 </p>
-                <div class="flex space-x-4">
-                    <a href="#tours" class="bg-white text-black px-8 py-4 rounded-sm font-bold uppercase text-xs tracking-widest hover:bg-gray-200 transition-all">View Experiences</a>
-                </div>
+                <a href="#tours" class="bg-brand-red text-white px-10 py-4 rounded-sm font-bold uppercase text-xs tracking-widest hover:bg-white hover:text-black transition-all">Start Your Discovery</a>
             </div>
         </div>
     </section>
 
-    <!-- Core Values Section (The 4 Pillars) -->
-    <section id="about" class="py-20 bg-gray-50">
+    <!-- Core Values Section -->
+    <section id="about" class="py-20 bg-gray-50 border-b">
+        <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-12">
+            <div class="text-center group">
+                <i class="fas fa-network-wired text-3xl mb-4 text-gray-300 group-hover:text-brand-red transition-colors"></i>
+                <h3 class="font-bold uppercase tracking-widest text-sm mb-2">Connectivity</h3>
+                <p class="text-gray-500 text-xs leading-relaxed">Expanding our global network to bring people and cultures closer together.</p>
+            </div>
+            <div class="text-center group">
+                <i class="fas fa-users text-3xl mb-4 text-gray-300 group-hover:text-brand-red transition-colors"></i>
+                <h3 class="font-bold uppercase tracking-widest text-sm mb-2">Inclusivity</h3>
+                <p class="text-gray-500 text-xs leading-relaxed">Travel designed for everyone. We embrace diversity in every journey.</p>
+            </div>
+            <div class="text-center group">
+                <i class="fas fa-compass text-3xl mb-4 text-gray-300 group-hover:text-brand-red transition-colors"></i>
+                <h3 class="font-bold uppercase tracking-widest text-sm mb-2">Discovery</h3>
+                <p class="text-gray-500 text-xs leading-relaxed">Providing the paths to experience the authentic heart of the world.</p>
+            </div>
+            <div class="text-center group">
+                <i class="fas fa-shield-alt text-3xl mb-4 text-gray-300 group-hover:text-brand-red transition-colors"></i>
+                <h3 class="font-bold uppercase tracking-widest text-sm mb-2">Trust</h3>
+                <p class="text-gray-500 text-xs leading-relaxed">A commitment to integrity and reliability in every partnership.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tours Section -->
+    <section id="tours" class="py-24">
         <div class="container mx-auto px-6">
             <div class="text-center mb-16">
-                <h2 class="text-3xl font-bold mb-4">Our Commitment</h2>
-                <div class="h-1 w-20 bg-brand-red mx-auto"></div>
+                <h2 class="text-4xl font-light tracking-tight uppercase">Curated Journeys</h2>
+                <div class="h-px w-24 bg-brand-red mx-auto mt-4"></div>
             </div>
-            
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
-                <!-- Connectivity -->
-                <div class="text-center">
-                    <div class="w-16 h-16 bg-white shadow-sm rounded-full flex items-center justify-center mx-auto mb-6">
-                        <i class="fas fa-link text-brand-red text-xl"></i>
-                    </div>
-                    <h3 class="font-bold uppercase tracking-wider mb-3">Connectivity</h3>
-                    <p class="text-gray-500 text-sm leading-relaxed">Bridging cultures and people through our extensive global and local network.</p>
-                </div>
-
-                <!-- Inclusivity -->
-                <div class="text-center">
-                    <div class="w-16 h-16 bg-white shadow-sm rounded-full flex items-center justify-center mx-auto mb-6">
-                        <i class="fas fa-hand-holding-heart text-brand-red text-xl"></i>
-                    </div>
-                    <h3 class="font-bold uppercase tracking-wider mb-3">Inclusivity</h3>
-                    <p class="text-gray-500 text-sm leading-relaxed">Creating meaningful travel experiences that are accessible and welcoming to everyone.</p>
-                </div>
-
-                <!-- Discovery -->
-                <div class="text-center">
-                    <div class="w-16 h-16 bg-white shadow-sm rounded-full flex items-center justify-center mx-auto mb-6">
-                        <i class="fas fa-compass text-brand-red text-xl"></i>
-                    </div>
-                    <h3 class="font-bold uppercase tracking-wider mb-3">Discovery</h3>
-                    <p class="text-gray-500 text-sm leading-relaxed">Uncovering the authentic heart of every destination beyond the usual sights.</p>
-                </div>
-
-                <!-- Trust -->
-                <div class="text-center">
-                    <div class="w-16 h-16 bg-white shadow-sm rounded-full flex items-center justify-center mx-auto mb-6">
-                        <i class="fas fa-shield-halved text-brand-red text-xl"></i>
-                    </div>
-                    <h3 class="font-bold uppercase tracking-wider mb-3">Trust</h3>
-                    <p class="text-gray-500 text-sm leading-relaxed">Integrity and reliability are the foundations of every journey we plan.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- TOURS SECTION: 1-Day, 2-Day, Half-Day -->
-    <section id="tours" class="py-24 bg-white">
-        <div class="container mx-auto px-6">
-            <div class="flex flex-col md:flex-row justify-between items-end mb-12">
-                <div>
-                    <h2 class="text-4xl font-bold">Curated Journeys</h2>
-                    <p class="text-gray-500 mt-2">Bespoke itineraries designed for every schedule.</p>
-                </div>
-            </div>
-
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                
-                <!-- Tour 1: Half Day -->
-                <div class="group border border-gray-100 p-4 hover:shadow-xl transition-all">
-                    <div class="relative overflow-hidden mb-4 h-64">
-                        <span class="absolute top-4 left-4 z-10 bg-black text-white text-[10px] font-bold px-3 py-1 uppercase tracking-widest">Half-Day Tour</span>
-                        <img src="https://images.unsplash.com/photo-1620215175664-cb9a6f597003?auto=format&fit=crop&w=800" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                        <!-- LOCAL IMAGE PATH: <img src="images/khajuraho/half-day.jpg"> -->
+                <!-- Half Day -->
+                <div class="group border border-gray-100 p-4 hover:shadow-2xl transition-all">
+                    <div class="relative overflow-hidden mb-4 h-64 bg-gray-100">
+                        <span class="absolute top-4 left-4 z-10 bg-black text-white text-[9px] font-bold px-3 py-1 uppercase tracking-widest">Half-Day</span>
+                        <img src="images/destinations/khajuraho/devi_jagdambi_temple_khajuraho.jpg" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
                     </div>
-                    <h3 class="text-lg font-bold mb-1">Western Group Highlights</h3>
-                    <p class="text-xs text-brand-red font-bold mb-3">4 Hours • Guided Walk</p>
-                    <p class="text-gray-500 text-sm mb-4">A concentrated discovery of the most iconic UNESCO temples with expert storytelling.</p>
-                    <button class="w-full border border-gray-200 py-2 text-[10px] font-bold uppercase tracking-widest hover:bg-black hover:text-white transition-colors">Details</button>
+                    <h3 class="font-bold text-lg mb-1 italic">Temple Highlights</h3>
+                    <p class="text-[10px] text-brand-red font-bold mb-3 uppercase tracking-widest">4 Hours • Guided Discovery</p>
+                    <p class="text-gray-500 text-sm mb-6">A concentrated walk through the most iconic UNESCO spires.</p>
+                    <button class="w-full border border-gray-200 py-3 text-[10px] font-bold uppercase tracking-widest hover:bg-black hover:text-white transition-colors">View Itinerary</button>
                 </div>
-
-                <!-- Tour 2: Full Day -->
-                <div class="group border border-gray-100 p-4 hover:shadow-xl transition-all">
-                    <div class="relative overflow-hidden mb-4 h-64">
-                        <span class="absolute top-4 left-4 z-10 bg-brand-red text-white text-[10px] font-bold px-3 py-1 uppercase tracking-widest">Full-Day Tour</span>
-                        <img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=800" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                        <!-- LOCAL IMAGE PATH: <img src="images/destinations/khajuraho/full-day.jpg"> -->
+                <!-- Full Day -->
+                <div class="group border border-gray-100 p-4 shadow-xl transition-all">
+                    <div class="relative overflow-hidden mb-4 h-64 bg-gray-100">
+                        <span class="absolute top-4 left-4 z-10 bg-brand-red text-white text-[9px] font-bold px-3 py-1 uppercase tracking-widest">Full-Day Journey</span>
+                        <img src="images/destinations/khajuraho/kandariya_temple_khajuraho.jpg" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
                     </div>
-                    <h3 class="text-lg font-bold mb-1">The Divine Circuit</h3>
-                    <p class="text-xs text-brand-red font-bold mb-3">9 Hours • All Groups + Village Visit</p>
-                    <p class="text-gray-500 text-sm mb-4">Explore Western, Eastern, and Southern groups, followed by an authentic local craft experience.</p>
-                    <button class="w-full border border-gray-200 py-2 text-[10px] font-bold uppercase tracking-widest hover:bg-black hover:text-white transition-colors">Details</button>
+                    <h3 class="font-bold text-lg mb-1 italic">The Divine Circuit</h3>
+                    <p class="text-[10px] text-brand-red font-bold mb-3 uppercase tracking-widest">9 Hours • Complete Heritage</p>
+                    <p class="text-gray-500 text-sm mb-6">Explore the Western, Eastern, and Southern groups in depth.</p>
+                    <button class="w-full bg-black text-white py-3 text-[10px] font-bold uppercase tracking-widest hover:bg-brand-red transition-colors">Most Popular</button>
                 </div>
-
-                <!-- Tour 3: 2-Day Experience -->
-                <div class="group border border-gray-100 p-4 hover:shadow-xl transition-all">
-                    <div class="relative overflow-hidden mb-4 h-64">
-                        <span class="absolute top-4 left-4 z-10 bg-black text-white text-[10px] font-bold px-3 py-1 uppercase tracking-widest">2-Day Journey</span>
-                        <img src="https://images.unsplash.com/photo-1588127333419-b9d7de223dcf?auto=format&fit=crop&w=800" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                        <!-- LOCAL IMAGE PATH: <img src="images/destinations/khajuraho/two-day.jpg"> -->
+                <!-- 2 Day -->
+                <div class="group border border-gray-100 p-4 hover:shadow-2xl transition-all">
+                    <div class="relative overflow-hidden mb-4 h-64 bg-gray-100">
+                        <span class="absolute top-4 left-4 z-10 bg-black text-white text-[9px] font-bold px-3 py-1 uppercase tracking-widest">2-Day Escape</span>
+                        <img src="images/destinations/khajuraho/lion_sculptures_khajuraho.jpg" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
                     </div>
-                    <h3 class="text-lg font-bold mb-1">Heritage & Wildlife</h3>
-                    <p class="text-xs text-brand-red font-bold mb-3">48 Hours • Temples + Panna Safari</p>
-                    <p class="text-gray-500 text-sm mb-4">The ultimate discovery: spiritual architecture on day one and the tigers of Panna on day two.</p>
-                    <button class="w-full border border-gray-200 py-2 text-[10px] font-bold uppercase tracking-widest hover:bg-black hover:text-white transition-colors">Details</button>
+                    <h3 class="font-bold text-lg mb-1 italic">Heritage & Wild</h3>
+                    <p class="text-[10px] text-brand-red font-bold mb-3 uppercase tracking-widest">48 Hours • Temples + Safari</p>
+                    <p class="text-gray-500 text-sm mb-6">Experience the temples on day one and Panna Tigers on day two.</p>
+                    <button class="w-full border border-gray-200 py-3 text-[10px] font-bold uppercase tracking-widest hover:bg-black hover:text-white transition-colors">Bespoke Detail</button>
                 </div>
-
             </div>
         </div>
     </section>
 
-<!-- CLUBBED VISUAL STORIES: THE SOUL OF KHAJURAHO -->
+    <!-- Visual Story Stacked Gallery -->
     <section id="gallery" class="py-24 bg-gray-50">
         <div class="container mx-auto px-6">
             <div class="text-center mb-16">
@@ -180,92 +145,73 @@
                 <div class="h-px w-24 bg-gray-200 mx-auto mt-6"></div>
             </div>
 
-            <!-- Story Folders Grid -->
             <div class="grid grid-cols-1 md:grid-cols-2 gap-16 max-w-5xl mx-auto">
-                
-                <!-- Collection 01: Sacred Spires (Kandariya Series) -->
+                <!-- Collection 01 -->
                 <div class="group">
                     <div class="relative h-[500px] w-full">
-                        <!-- Bottom Image: Kandariya Temple -->
-                        <div class="absolute top-6 left-6 w-full h-full bg-gray-200 shadow-sm rotate-3 group-hover:rotate-6 transition-transform duration-500 rounded-sm overflow-hidden border-white border-4">
-                             <img src="images/khajuraho/kandariya_temple_khajuraho.jpg" class="w-full h-full object-cover opacity-60 grayscale group-hover:grayscale-0">
+                        <div class="absolute top-6 left-6 w-full h-full bg-white shadow-sm rotate-3 group-hover:rotate-6 transition-transform duration-500 rounded-sm overflow-hidden border border-gray-100">
+                             <img src="images/destinations/khajuraho/kandariya_temple_khajuraho.jpg" class="w-full h-full object-cover opacity-60 grayscale group-hover:grayscale-0">
                         </div>
-                        <!-- Middle Image: Kandariya Mahadev -->
-                        <div class="absolute top-3 left-3 w-full h-full bg-gray-300 shadow-md -rotate-2 group-hover:-rotate-4 transition-transform duration-500 rounded-sm overflow-hidden border-white border-4">
-                             <img src="images/khajuraho/kandariya_mahadev_temple_khajuraho.jpg" class="w-full h-full object-cover opacity-80 grayscale group-hover:grayscale-0">
+                        <div class="absolute top-3 left-3 w-full h-full bg-white shadow-md -rotate-2 group-hover:-rotate-4 transition-transform duration-500 rounded-sm overflow-hidden border border-gray-100">
+                             <img src="images/destinations/khajuraho/kandariya_mahadev_temple_khajuraho.jpg" class="w-full h-full object-cover opacity-80 grayscale group-hover:grayscale-0">
                         </div>
-                        <!-- Top Cover Image -->
                         <div class="absolute inset-0 w-full h-full shadow-2xl transition-all duration-500 group-hover:-translate-y-6 rounded-sm overflow-hidden border-white border-8 cursor-pointer">
-                            <!-- Wrap the image in a link and add 'gallery-item' class -->
-                            <a href="images/khajuraho/the_kandariya_khajuraho.jpg" class="gallery-item">
-                                <img src="images/khajuraho/the_kandariya_khajuraho.jpg" class="w-full h-full object-cover">
+                            <a href="images/destinations/khajuraho/the_kandariya_khajuraho.jpg" class="gallery-item">
+                                <img src="images/destinations/khajuraho/the_kandariya_khajuraho.jpg" class="w-full h-full object-cover">
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent flex flex-col justify-end p-10">
+                                    <h3 class="text-white text-3xl font-light tracking-wide">Sacred Spires</h3>
+                                    <p class="text-gray-400 text-[10px] mt-4 opacity-0 group-hover:opacity-100 transition-opacity uppercase tracking-widest">Click to discover</p>
+                                </div>
                             </a>
-                            <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent flex flex-col justify-end p-10">
-                                <span class="text-white text-[10px] font-bold uppercase tracking-widest mb-2 opacity-60">Collection 01</span>
-                                <h3 class="text-white text-3xl font-light tracking-wide">Sacred Spires</h3>
-                                <div class="h-0.5 w-0 group-hover:w-full bg-brand-red transition-all duration-700 mt-4"></div>
-                                <p class="text-gray-400 text-xs mt-4 opacity-0 group-hover:opacity-100 transition-opacity uppercase tracking-[0.1em]">3 Masterpieces • Kandariya Mahadev</p>
-                            </div>
                         </div>
                     </div>
                 </div>
-
-                <!-- Collection 02: Divine Artistry (Sculptures & Details) -->
+                <!-- Collection 02 -->
                 <div class="group">
                     <div class="relative h-[500px] w-full">
-                        <!-- Bottom Image: Lion Sculptures -->
-                        <div class="absolute top-6 left-6 w-full h-full bg-gray-200 shadow-sm rotate-3 group-hover:rotate-6 transition-transform duration-500 rounded-sm overflow-hidden border-white border-4">
-                             <img src="images/khajuraho/lion_sculptures_khajuraho.jpg" class="w-full h-full object-cover opacity-60 grayscale group-hover:grayscale-0">
+                        <div class="absolute top-6 left-6 w-full h-full bg-white shadow-sm rotate-3 group-hover:rotate-6 transition-transform duration-500 rounded-sm overflow-hidden border border-gray-100">
+                             <img src="images/destinations/khajuraho/lion_sculptures_khajuraho.jpg" class="w-full h-full object-cover opacity-60 grayscale group-hover:grayscale-0">
                         </div>
-                        <!-- Middle Image: Devi Jagdambi -->
-                        <div class="absolute top-3 left-3 w-full h-full bg-gray-300 shadow-md -rotate-2 group-hover:-rotate-4 transition-transform duration-500 rounded-sm overflow-hidden border-white border-4">
-                             <img src="images/khajuraho/devi_jagdambi_temple_khajuraho.jpg" class="w-full h-full object-cover opacity-80 grayscale group-hover:grayscale-0">
+                        <div class="absolute top-3 left-3 w-full h-full bg-white shadow-md -rotate-2 group-hover:-rotate-4 transition-transform duration-500 rounded-sm overflow-hidden border border-gray-100">
+                             <img src="images/destinations/khajuraho/devi_jagdambi_temple_khajuraho.jpg" class="w-full h-full object-cover opacity-80 grayscale group-hover:grayscale-0">
                         </div>
-                        <!-- Top Cover Image: Erotic Carvings -->
-                        <div class="absolute inset-0 w-full h-full shadow-2xl transition-all duration-500 group-hover:-translate-y-6 rounded-sm overflow-hidden border-white border-8">
-                            <img src="images/khajuraho/nagra_style_erotic_carving_kandariya_khajuraho.jpg" class="w-full h-full object-cover">
-                            <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent flex flex-col justify-end p-10">
-                                <span class="text-white text-[10px] font-bold uppercase tracking-widest mb-2 opacity-60">Collection 02</span>
-                                <h3 class="text-white text-3xl font-light tracking-wide">Divine Artistry</h3>
-                                <div class="h-0.5 w-0 group-hover:w-full bg-brand-red transition-all duration-700 mt-4"></div>
-                                <p class="text-gray-400 text-xs mt-4 opacity-0 group-hover:opacity-100 transition-opacity uppercase tracking-[0.1em]">3 Masterpieces • Intricate Carvings</p>
-                            </div>
+                        <div class="absolute inset-0 w-full h-full shadow-2xl transition-all duration-500 group-hover:-translate-y-6 rounded-sm overflow-hidden border-white border-8 cursor-pointer">
+                            <a href="images/destinations/khajuraho/nagra_style_erotic_carving_kandariya_khajuraho.jpg" class="gallery-item">
+                                <img src="images/destinations/khajuraho/nagra_style_erotic_carving_kandariya_khajuraho.jpg" class="w-full h-full object-cover">
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent flex flex-col justify-end p-10">
+                                    <h3 class="text-white text-3xl font-light tracking-wide">Divine Artistry</h3>
+                                    <p class="text-gray-400 text-[10px] mt-4 opacity-0 group-hover:opacity-100 transition-opacity uppercase tracking-widest">Click to discover</p>
+                                </div>
+                            </a>
                         </div>
                     </div>
                 </div>
-
-            </div>
-            
-            <div class="text-center mt-20">
-                <p class="text-gray-400 text-[10px] uppercase tracking-[0.3em]">Hover to unpack the discovery</p>
             </div>
         </div>
     </section>
-    
+
     <!-- Footer -->
-    <footer class="bg-white border-t border-gray-100 py-12">
+    <footer class="bg-white py-16 border-t border-gray-50">
         <div class="container mx-auto px-6 text-center">
-            <div class="flex flex-col items-center mb-8">
-                <img src="images/logos/main-logo.png" alt="Logo" class="h-8 mb-4 opacity-50 grayscale hover:grayscale-0 transition-all">
-                <p class="text-gray-400 text-xs tracking-widest uppercase">Bridging Worlds, Discovering Hearts</p>
+            <div class="mb-8">
+                <img src="images/logos/main-logo.png" alt="Divine Destinations" class="h-8 mx-auto grayscale opacity-40">
+                <p class="text-[10px] uppercase tracking-[0.3em] text-gray-400 mt-4">Bridging Worlds, Discovering Hearts</p>
             </div>
-            <div class="text-gray-400 text-[10px] uppercase tracking-widest">
-                &copy; 2024 Divine Destinations Khajuraho Tour And Travels. All Rights Reserved.
-            </div>
+            <p class="text-gray-300 text-[9px] uppercase tracking-widest">&copy; 2024 Divine Destinations Khajuraho. All Rights Reserved.</p>
         </div>
     </footer>
 
-    <!-- Lightbox Script -->
+    <!-- Lightbox Popup Overlay -->
     <div id="lightbox" class="fixed inset-0 bg-black/95 hidden z-[999] flex items-center justify-center p-4 cursor-zoom-out">
         <img id="lightbox-img" src="" class="max-w-full max-h-full shadow-2xl transition-transform duration-300">
         <button class="absolute top-10 right-10 text-white text-4xl">&times;</button>
     </div>
-    
+
     <script>
         const items = document.querySelectorAll('.gallery-item');
         const lightbox = document.getElementById('lightbox');
         const lightboxImg = document.getElementById('lightbox-img');
-    
+
         items.forEach(item => {
             item.addEventListener('click', (e) => {
                 e.preventDefault();
@@ -274,10 +220,11 @@
                 lightbox.classList.remove('hidden');
             });
         });
-    
+
         lightbox.addEventListener('click', () => {
             lightbox.classList.add('hidden');
         });
     </script>
+
 </body>
 </html>
