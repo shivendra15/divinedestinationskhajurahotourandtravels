@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Buddhist Pilgrimage — 仏教巡礼 | Divine Destinations</title>
+    
+    <meta name="description" content="Sacred Buddhist pilgrimage tours through Bodhgaya, Sarnath, Kushinagar, Rajgir, Nalanda, and Lumbini (Nepal). Designed with Japanese travelers in mind. 日本語対応可。">
+    <meta property="og:title" content="The Buddhist Pilgrimage — 仏教巡礼 | Divine Destinations">
+    <meta property="og:image" content="images/destinations/khajuraho/the_kandariya_khajuraho.jpg">
+    <link rel="icon" type="image/png" href="images/logos/dd.png">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; font-size: 18px; line-height: 1.8; }
+        .text-brand-red { color: #b91c1c; }
+        .bg-brand-red { background-color: #b91c1c; }
+        .hero-buddhist { 
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+            url('images/destinations/khajuraho/devi_jagdambi_temple_khajuraho.jpg'); 
+            background-size: cover; 
+            background-position: center; 
+        }
+        .nav-link { position: relative; transition: color 0.3s ease; }
+        .nav-link::after { content: ''; position: absolute; width: 0; height: 2px; bottom: -6px; left: 0; background-color: #b91c1c; transition: width 0.3s ease; }
+        .nav-link:hover::after { width: 100%; }
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-thumb { background: #b91c1c; }
+    </style>
+</head>
+<body class="bg-white text-gray-900 leading-relaxed">
+
+    <!-- NAVIGATION -->
+    <nav class="bg-white/95 backdrop-blur-md sticky top-0 z-50 border-b border-gray-100 shadow-sm">
+        <div class="container mx-auto px-6 py-5 flex justify-between items-center">
+            <div class="flex flex-col text-left">
+                <a href="index.html" class="block">
+                    <img src="images/logos/dd.png" alt="Divine Destinations" class="h-20 w-auto object-contain transition-transform hover:scale-105">
+                </a>
+            </div>
+            <div class="hidden md:flex space-x-12 text-[16px] font-medium uppercase tracking-widest text-gray-800">
+                <a href="index.html#journeys" class="nav-link hover:text-brand-red">All Journeys</a>
+                <a href="index.html#gallery" class="nav-link hover:text-brand-red">Visual Story</a>
+                <a href="index.html#about" class="nav-link hover:text-brand-red">The Founder</a>
+            </div>
+            <a href="index.html#inquiry" class="hidden md:block bg-brand-red text-white px-8 py-3 rounded-sm text-xs font-bold uppercase tracking-widest hover:bg-black transition-all shadow-md">Inquiry</a>
+            <button id="menuBtn" class="md:hidden text-gray-800 text-3xl p-2"><i class="fas fa-bars"></i></button>
+        </div>
+        <div id="mobileMenu" class="hidden md:hidden bg-white border-t border-gray-100 px-8 py-8">
+            <div class="flex flex-col gap-8 text-[18px] font-bold uppercase tracking-widest text-gray-800">
+                <a href="index.html#journeys" class="hover:text-brand-red">All Journeys</a>
+                <a href="index.html#gallery" class="hover:text-brand-red">Visual Story</a>
+                <a href="index.html#about" class="hover:text-brand-red">The Founder</a>
+                <a href="index.html#inquiry" class="bg-brand-red text-white px-6 py-4 rounded-sm text-center">Inquiry</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO BANNER -->
+    <section class="hero-buddhist h-[50vh] flex items-center text-white relative">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl">
+                <a href="index.html#journeys" class="text-gray-300 text-[11px] uppercase tracking-widest font-bold hover:text-brand-red transition-colors mb-4 inline-block">← Back to All Journeys</a>
+                <h4 class="text-brand-red font-bold tracking-[0.3em] uppercase mb-4 text-sm">仏教巡礼 | The Sacred Circuit</h4>
+                <h1 class="text-5xl md:text-7xl font-bold mb-4 leading-tight">The Buddhist Pilgrimage</h1>
+                <p class="text-xl text-gray-200 font-light italic">Bodhgaya, Sarnath, Kushinagar, Rajgir, Nalanda & Lumbini 🇳🇵</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SPECIAL NOTE FOR JAPANESE TRAVELERS -->
+    <section class="py-12 bg-gray-50 border-b border-gray-100">
+        <div class="container mx-auto px-6 max-w-4xl">
+            <div class="flex items-start gap-6 border-l-4 border-brand-red pl-8">
+                <div>
+                    <p class="text-[10px] uppercase tracking-widest text-brand-red font-bold mb-2">日本からのお客様へ — For Our Japanese Guests</p>
+                    <p class="text-gray-600 text-sm leading-relaxed italic">These pilgrimage journeys are designed with the highest standards of comfort, safety, and spiritual respect. Every route follows the sacred footsteps of the Buddha, guided by certified experts who understand the profound significance of each site for Japanese Buddhist traditions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TOUR CARDS -->
+    <section class="py-24 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+
+                <!-- BP-01: The Enlightenment Trail -->
+                <div id="bp01" class="bg-white border border-gray-100 shadow-sm hover:shadow-xl transition-all">
+                    <div class="relative overflow-hidden h-64">
+                        <img src="images/destinations/khajuraho/the_kandariya_khajuraho.jpg" class="w-full h-full object-cover">
+                        <span class="absolute top-4 left-4 bg-black/70 text-white text-[9px] font-bold uppercase tracking-widest px-3 py-1">BP-01 | 5 Days</span>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-bold mb-2">The Enlightenment Trail</h3>
+                        <p class="text-gray-500 italic text-sm mb-4">悟りへの道 — The Path to Awakening</p>
+                        <p class="text-gray-600 text-sm mb-6 leading-relaxed">"Walk the ground where Prince Siddhartha became the Buddha." A focused pilgrimage through the most sacred sites of Buddhism within India.</p>
+                        
+                        <div class="border-t border-gray-100 pt-4 mb-4">
+                            <p class="text-[10px] uppercase tracking-widest text-gray-400 font-bold mb-2">Sacred Sites</p>
+                            <ul class="text-sm text-gray-600 space-y-1">
+                                <li>• Bodhgaya — The Mahabodhi Temple & Bodhi Tree</li>
+                                <li>• Sarnath — Site of the First Sermon</li>
+                                <li>• Rajgir — Vulture Peak & Bamboo Grove</li>
+                            </ul>
+                        </div>
+
+                        <div class="flex gap-4 text-gray-300 text-sm mb-6">
+                            <i class="fas fa-car" title="Private Transport"></i>
+                            <i class="fas fa-praying-hands" title="Meditation Sessions"></i>
+                            <i class="fas fa-utensils" title="Vegetarian Meals Available"></i>
+                            <i class="fas fa-user-check" title="Licensed Guide"></i>
+                        </div>
+
+                        <div class="bg-gray-50 border-l-2 border-brand-red p-4 mb-6">
+                            <p class="text-[10px] uppercase tracking-widest text-brand-red font-bold mb-1">The Divine Detail</p>
+                            <p class="text-gray-600 text-sm">Private meditation session under the Bodhi Tree at dawn, before the crowds arrive.</p>
+                        </div>
+
+                        <a href="index.html#inquiry" class="block text-center bg-black text-white py-4 text-[11px] font-bold uppercase tracking-widest hover:bg-brand-red transition-colors">Book This Pilgrimage</a>
+                    </div>
+                </div>
+
+                <!-- BP-02: The Complete Buddha Circuit (FEATURED) -->
+                <div id="bp02" class="bg-white border-2 border-brand-red shadow-xl hover:shadow-2xl transition-all">
+                    <div class="relative overflow-hidden h-64">
+                        <img src="images/destinations/khajuraho/kandariya_temple_khajuraho.jpg" class="w-full h-full object-cover">
+                        <span class="absolute top-4 left-4 bg-brand-red text-white text-[9px] font-bold uppercase tracking-widest px-3 py-1">BP-02 | 8 Days | 🇳🇵 Nepal</span>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-bold mb-2 text-brand-red">The Complete Buddha Circuit</h3>
+                        <p class="text-gray-500 italic text-sm mb-4">完全な仏陀巡礼 — The Full Sacred Journey</p>
+                        <p class="text-gray-600 text-sm mb-6 leading-relaxed">"From birth to enlightenment, from first sermon to final nirvana — walk the complete path of the Awakened One." This comprehensive circuit includes Lumbini in Nepal, the sacred birthplace.</p>
+                        
+                        <div class="border-t border-gray-100 pt-4 mb-4">
+                            <p class="text-[10px] uppercase tracking-widest text-gray-400 font-bold mb-2">The Complete Sacred Route</p>
+                            <ul class="text-sm text-gray-600 space-y-1">
+                                <li>• 🇳🇵 Lumbini (Nepal) — The Sacred Birthplace</li>
+                                <li>• Bodhgaya — The Enlightenment</li>
+                                <li>• Sarnath — The First Sermon</li>
+                                <li>• Rajgir — The Meditation Mountain</li>
+                                <li>• Nalanda — The Ancient University</li>
+                                <li>• Kushinagar — The Final Nirvana</li>
+                            </ul>
+                        </div>
+
+                        <div class="flex gap-4 text-gray-300 text-sm mb-6">
+                            <i class="fas fa-car" title="Private Transport"></i>
+                            <i class="fas fa-passport" title="Nepal Border Crossing"></i>
+                            <i class="fas fa-praying-hands" title="Meditation"></i>
+                            <i class="fas fa-utensils" title="All Meals"></i>
+                            <i class="fas fa-hotel" title="Comfortable Stays"></i>
+                            <i class="fas fa-user-check" title="Licensed Guide"></i>
+                        </div>
+
+                        <div class="bg-gray-50 border-l-2 border-brand-red p-4 mb-6">
+                            <p class="text-[10px] uppercase tracking-widest text-brand-red font-bold mb-1">The Divine Detail</p>
+                            <p class="text-gray-600 text-sm">Complete Nepal border crossing assistance, Japanese-friendly accommodation at each sacred site, and a personal "Pilgrimage Completion Certificate" signed by the Founder.</p>
+                        </div>
+
+                        <a href="index.html#inquiry" class="block text-center bg-brand-red text-white py-4 text-[11px] font-bold uppercase tracking-widest hover:bg-black transition-colors">Book Complete Pilgrimage</a>
+                    </div>
+                </div>
+
+                <!-- BP-03: Bodhgaya & Sarnath Express -->
+                <div id="bp03" class="bg-white border border-gray-100 shadow-sm hover:shadow-xl transition-all">
+                    <div class="relative overflow-hidden h-64">
+                        <img src="images/destinations/khajuraho/kandariya_mahadev_temple_khajuraho.jpg" class="w-full h-full object-cover">
+                        <span class="absolute top-4 left-4 bg-black/70 text-white text-[9px] font-bold uppercase tracking-widest px-3 py-1">BP-03 | 3 Days</span>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-bold mb-2">Bodhgaya & Sarnath Express</h3>
+                        <p class="text-gray-500 italic text-sm mb-4">菩提樹と初転法輪 — The Tree & The First Wheel</p>
+                        <p class="text-gray-600 text-sm mb-6 leading-relaxed">"For the devoted traveler with limited time — experience the two most significant moments in Buddhist history." A concentrated journey to the sites of Enlightenment and the First Teaching.</p>
+                        
+                        <div class="border-t border-gray-100 pt-4 mb-4">
+                            <p class="text-[10px] uppercase tracking-widest text-gray-400 font-bold mb-2">Sacred Sites</p>
+                            <ul class="text-sm text-gray-600 space-y-1">
+                                <li>• Bodhgaya — Mahabodhi Temple, Bodhi Tree, Great Buddha Statue</li>
+                                <li>• Sarnath — Dhamek Stupa, Ashoka Pillar, Deer Park</li>
+                                <li>• Japanese Temple visits at both locations</li>
+                            </ul>
+                        </div>
+
+                        <div class="flex gap-4 text-gray-300 text-sm mb-6">
+                            <i class="fas fa-car" title="Private Transport"></i>
+                            <i class="fas fa-bolt" title="Express Tour"></i>
+                            <i class="fas fa-utensils" title="Meals"></i>
+                            <i class="fas fa-user-check" title="Licensed Guide"></i>
+                        </div>
+
+                        <div class="bg-gray-50 border-l-2 border-brand-red p-4 mb-6">
+                            <p class="text-[10px] uppercase tracking-widest text-brand-red font-bold mb-1">The Divine Detail</p>
+                            <p class="text-gray-600 text-sm">Visit to the Japanese Daijokyo Temple in Bodhgaya with a private audience with resident monks (subject to availability).</p>
+                        </div>
+
+                        <a href="index.html#inquiry" class="block text-center bg-black text-white py-4 text-[11px] font-bold uppercase tracking-widest hover:bg-brand-red transition-colors">Book This Pilgrimage</a>
+                    </div>
+                </div>
+
+                <!-- BP-04: The Lotus Path -->
+                <div id="bp04" class="bg-white border border-gray-100 shadow-sm hover:shadow-xl transition-all">
+                    <div class="relative overflow-hidden h-64">
+                        <img src="images/destinations/khajuraho/nagra_style_erotic_carving_kandariya_khajuraho.jpg" class="w-full h-full object-cover">
+                        <span class="absolute top-4 left-4 bg-black/70 text-white text-[9px] font-bold uppercase tracking-widest px-3 py-1">BP-04 | 7 Days</span>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-bold mb-2">The Lotus Path</h3>
+                        <p class="text-gray-500 italic text-sm mb-4">蓮華の道 — Buddhist Circuit & Varanasi</p>
+                        <p class="text-gray-600 text-sm mb-6 leading-relaxed">"Where Buddhist serenity meets Hindu devotion — experience the spiritual duality of ancient India." This journey combines the Buddhist sacred sites with the mystical energy of Varanasi's Ganges.</p>
+                        
+                        <div class="border-t border-gray-100 pt-4 mb-4">
+                            <p class="text-[10px] uppercase tracking-widest text-gray-400 font-bold mb-2">Highlights</p>
+                            <ul class="text-sm text-gray-600 space-y-1">
+                                <li>• Bodhgaya — Enlightenment & Meditation</li>
+                                <li>• Sarnath — The First Sermon</li>
+                                <li>• Varanasi — Ganga Aarti, Sunrise Boat Ride</li>
+                                <li>• Rajgir — Vulture Peak Contemplation</li>
+                            </ul>
+                        </div>
+
+                        <div class="flex gap-4 text-gray-300 text-sm mb-6">
+                            <i class="fas fa-car" title="Private Transport"></i>
+                            <i class="fas fa-ship" title="Boat Ride"></i>
+                            <i class="fas fa-praying-hands" title="Spiritual"></i>
+                            <i class="fas fa-utensils" title="Meals"></i>
+                            <i class="fas fa-user-check" title="Licensed Guide"></i>
+                        </div>
+
+                        <div class="bg-gray-50 border-l-2 border-brand-red p-4 mb-6">
+                            <p class="text-[10px] uppercase tracking-widest text-brand-red font-bold mb-1">The Divine Detail</p>
+                            <p class="text-gray-600 text-sm">Private sunrise boat ride on the Ganges with silent meditation, followed by a visit to the Sarnath Japanese Buddhist monastery.</p>
+                        </div>
+
+                        <a href="index.html#inquiry" class="block text-center bg-black text-white py-4 text-[11px] font-bold uppercase tracking-widest hover:bg-brand-red transition-colors">Book This Pilgrimage</a>
+                    </div>
+                </div>
+
+                <!-- BP-05: The Nalanda Wisdom Journey -->
+                <div id="bp05" class="bg-white border border-gray-100 shadow-sm hover:shadow-xl transition-all md:col-span-2">
+                    <div class="grid grid-cols-1 md:grid-cols-2">
+                        <div class="relative overflow-hidden h-full min-h-[280px]">
+                            <img src="images/destinations/khajuraho/lion_sculptures_khajuraho.jpg" class="w-full h-full object-cover">
+                            <span class="absolute top-4 left-4 bg-black/70 text-white text-[9px] font-bold uppercase tracking-widest px-3 py-1">BP-05 | 4 Days</span>
+                        </div>
+                        <div class="p-10">
+                            <h3 class="text-2xl font-bold mb-2">The Nalanda Wisdom Journey</h3>
+                            <p class="text-gray-500 italic text-sm mb-4">智慧の旅 — In Search of Ancient Knowledge</p>
+                            <p class="text-gray-600 text-sm mb-6 leading-relaxed">"Walk the corridors where scholars from across Asia gathered for a thousand years." A focused journey exploring the intellectual heritage of Buddhism — the world's first residential university and its surrounding monastic landscape.</p>
+                            
+                            <div class="border-t border-gray-100 pt-4 mb-4">
+                                <p class="text-[10px] uppercase tracking-widest text-gray-400 font-bold mb-2">Academic & Spiritual Sites</p>
+                                <ul class="text-sm text-gray-600 space-y-1">
+                                    <li>• Nalanda — UNESCO Ruins of the Ancient University</li>
+                                    <li>• Rajgir — Vulture Peak & Hot Springs</li>
+                                    <li>• Nalanda Museum — Rare Buddhist Artifacts</li>
+                                    <li>• Xuanzang Memorial — Honoring the Chinese Pilgrim</li>
+                                </ul>
+                            </div>
+
+                            <div class="flex gap-4 text-gray-300 text-sm mb-6">
+                                <i class="fas fa-car" title="Private Transport"></i>
+                                <i class="fas fa-book" title="Academic Focus"></i>
+                                <i class="fas fa-utensils" title="Meals"></i>
+                                <i class="fas fa-user-check" title="Licensed Guide"></i>
+                            </div>
+
+                            <div class="bg-gray-50 border-l-2 border-brand-red p-4 mb-6">
+                                <p class="text-[10px] uppercase tracking-widest text-brand-red font-bold mb-1">The Divine Detail</p>
+                                <p class="text-gray-600 text-sm">Private guided meditation at Vulture Peak at sunrise, the exact location where the Buddha delivered the Heart Sutra (般若心経).</p>
+                            </div>
+
+                            <a href="index.html#inquiry" class="block text-center bg-black text-white py-4 text-[11px] font-bold uppercase tracking-widest hover:bg-brand-red transition-colors">Book This Pilgrimage</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- PILGRIMAGE ROUTE MAP (Text-based) -->
+    <section class="py-16 bg-white border-t border-gray-100">
+        <div class="container mx-auto px-6 max-w-4xl text-center">
+            <h4 class="text-brand-red font-bold tracking-widest text-[10px] uppercase mb-8">The Sacred Route</h4>
+            <div class="flex flex-wrap justify-center items-center gap-4 text-sm text-gray-500">
+                <span class="font-bold text-gray-800">🇳🇵 Lumbini</span>
+                <span>→</span>
+                <span class="font-bold text-gray-800">Bodhgaya</span>
+                <span>→</span>
+                <span class="font-bold text-gray-800">Rajgir</span>
+                <span>→</span>
+                <span class="font-bold text-gray-800">Nalanda</span>
+                <span>→</span>
+                <span class="font-bold text-gray-800">Sarnath</span>
+                <span>→</span>
+                <span class="font-bold text-gray-800">Kushinagar</span>
+            </div>
+            <p class="text-gray-400 text-[10px] uppercase tracking-widest mt-6">Birth → Enlightenment → Meditation → Learning → First Sermon → Final Nirvana</p>
+        </div>
+    </section>
+
+    <!-- BACK TO HOME CTA -->
+    <section class="py-16 bg-gray-50 text-center border-t border-gray-100">
+        <div class="container mx-auto px-6">
+            <p class="text-gray-500 text-sm mb-6">Explore our other heritage collections</p>
+            <div class="flex justify-center gap-6 flex-wrap">
+                <a href="golden-triangle.html" class="border border-gray-200 px-8 py-3 text-[11px] font-bold uppercase tracking-widest hover:bg-black hover:text-white transition-colors">Imperial Classics</a>
+                <a href="spiritual.html" class="border border-gray-200 px-8 py-3 text-[11px] font-bold uppercase tracking-widest hover:bg-black hover:text-white transition-colors">Spiritual Path</a>
+                <a href="bundelkhand.html" class="border border-gray-200 px-8 py-3 text-[11px] font-bold uppercase tracking-widest hover:bg-black hover:text-white transition-colors">Sacred Bundelkhand</a>
+                <a href="index.html#journeys" class="border border-brand-red text-brand-red px-8 py-3 text-[11px] font-bold uppercase tracking-widest hover:bg-brand-red hover:text-white transition-colors">← All Journeys</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-white py-16 border-t border-gray-100 text-center">
+        <img src="images/logos/dd.png" class="h-10 mx-auto grayscale opacity-40 mb-6">
+        <p class="text-gray-400 text-[10px] uppercase tracking-[0.3em] mb-4">Bridging Worlds, Discovering Hearts</p>
+        <p class="text-gray-300 text-[10px] uppercase tracking-widest italic">&copy; 2024 Divine Destinations. All Rights Reserved.</p>
+    </footer>
+
+    <!-- MOBILE MENU SCRIPT -->
+    <script>
+        const menuBtn = document.getElementById('menuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        menuBtn.addEventListener('click', () => { mobileMenu.classList.toggle('hidden'); });
+        mobileMenu.querySelectorAll('a').forEach(link => { link.addEventListener('click', () => { mobileMenu.classList.add('hidden'); }); });
+    </script>
+</body>
+</html>
