@@ -81,22 +81,27 @@
     <!-- ═══════════════════════════════════════════════════════ -->
 
     <!-- OPTION A: VIDEO HERO (Currently Active) -->
-    <section class="relative h-[85vh] flex items-center text-white text-left overflow-hidden">
         <!-- <video autoplay muted loop playsinline class="absolute inset-0 w-full h-full object-cover"> -->
         <!-- <video autoplay muted loop playsinline class="absolute inset-0 w-full h-full object-contain bg-black"> -->
         <!-- <video autoplay muted loop playsinline class="absolute inset-0 w-full h-full object-cover" style="object-position: center 30%;"> -->
             <!-- <source src="images/videos/khajuraho_wg.mp4" type="video/mp4"> -->
         <!-- </video> -->
         <!-- Blurred background version of same video -->
-        <video autoplay muted loop playsinline class="absolute inset-0 w-full h-full object-cover blur-xl scale-110 opacity-50">
+    
+    <!-- OPTION A: VIDEO HERO (Seamless Loop with Blurred Extension) -->
+    <section class="relative h-[85vh] flex items-center text-white text-left overflow-hidden">
+        <!-- Layer 1: Blurred Background (fills entire hero, creates seamless edge) -->
+        <video autoplay muted loop playsinline class="absolute inset-0 w-full h-full object-cover scale-125 blur-2xl opacity-60">
             <source src="images/videos/khajuraho_wg.mp4" type="video/mp4">
         </video>
-        <!-- Main video on top (full, no crop) -->
+        <!-- Layer 2: Main Video (crisp, full view, no cropping) -->
         <video autoplay muted loop playsinline class="absolute inset-0 w-full h-full object-contain z-[1]">
             <source src="images/videos/khajuraho_wg.mp4" type="video/mp4">
         </video>
-        <div class="absolute inset-0 bg-black/50"></div>
-        <div class="container mx-auto px-6 relative z-10">
+        <!-- Layer 3: Dark Overlay (unifies both layers) -->
+        <div class="absolute inset-0 bg-black/40 z-[2]"></div>
+        <!-- Layer 4: Content -->
+        <div class="container mx-auto px-6 relative z-[3]">
             <div class="max-w-5xl">
                 <h4 class="text-brand-red font-bold tracking-[0.4em] uppercase mb-6 text-sm">Bringing the World Closer</h4>
                 <h1 class="text-6xl md:text-8xl font-bold mb-8 leading-tight">Discover the World. <br><span class="text-gray-200 font-light italic text-5xl md:text-7xl">Discover Yourself.</span></h1>
@@ -107,7 +112,8 @@
                 </div>
             </div>
         </div>
-        <div class="absolute bottom-0 left-0 w-full glass-effect py-8 border-t border-white/10 hidden md:block text-white uppercase tracking-widest text-[11px] z-10">
+        <!-- Layer 5: Stats Bar -->
+        <div class="absolute bottom-0 left-0 w-full glass-effect py-8 border-t border-white/10 hidden md:block text-white uppercase tracking-widest text-[11px] z-[3]">
             <div class="container mx-auto px-6 grid grid-cols-4 gap-4 text-center">
                 <div><p class="text-2xl font-bold mb-1">Curated</p> Heritage Journeys</div>
                 <div><p class="text-2xl font-bold mb-1">10+</p> Years Expertise</div>
