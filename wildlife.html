@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wildlife & Nature — 野生と自然 | Divine Destinations</title>
+    
+    <meta name="description" content="Tiger safaris and nature experiences in Panna National Park and Ranthambore. Private wildlife expeditions with expert naturalists. All-India Licensed Guide.">
+    <meta property="og:title" content="Wildlife & Nature — Tigers & Forest | Divine Destinations">
+    <meta property="og:image" content="images/destinations/khajuraho/lion_sculptures_khajuraho.jpg">
+    <link rel="icon" type="image/png" href="images/logos/dd.png">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; font-size: 18px; line-height: 1.8; }
+        .text-brand-red { color: #b91c1c; }
+        .bg-brand-red { background-color: #b91c1c; }
+        .hero-wildlife { 
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+            url('images/destinations/khajuraho/lion_sculptures_khajuraho.jpg'); 
+            background-size: cover; 
+            background-position: center; 
+        }
+        .nav-link { position: relative; transition: color 0.3s ease; }
+        .nav-link::after { content: ''; position: absolute; width: 0; height: 2px; bottom: -6px; left: 0; background-color: #b91c1c; transition: width 0.3s ease; }
+        .nav-link:hover::after { width: 100%; }
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-thumb { background: #b91c1c; }
+    </style>
+</head>
+<body class="bg-white text-gray-900 leading-relaxed">
+
+    <!-- NAVIGATION -->
+    <nav class="bg-white/95 backdrop-blur-md sticky top-0 z-50 border-b border-gray-100 shadow-sm">
+        <div class="container mx-auto px-6 py-5 flex justify-between items-center">
+            <div class="flex flex-col text-left">
+                <a href="index.html" class="block">
+                    <img src="images/logos/dd.png" alt="Divine Destinations" class="h-20 w-auto object-contain transition-transform hover:scale-105">
+                </a>
+            </div>
+            <div class="hidden md:flex space-x-12 text-[16px] font-medium uppercase tracking-widest text-gray-800">
+                <a href="index.html#journeys" class="nav-link hover:text-brand-red">All Journeys</a>
+                <a href="index.html#gallery" class="nav-link hover:text-brand-red">Visual Story</a>
+                <a href="index.html#about" class="nav-link hover:text-brand-red">The Founder</a>
+            </div>
+            <a href="index.html#inquiry" class="hidden md:block bg-brand-red text-white px-8 py-3 rounded-sm text-xs font-bold uppercase tracking-widest hover:bg-black transition-all shadow-md">Inquiry</a>
+            <button id="menuBtn" class="md:hidden text-gray-800 text-3xl p-2"><i class="fas fa-bars"></i></button>
+        </div>
+        <div id="mobileMenu" class="hidden md:hidden bg-white border-t border-gray-100 px-8 py-8">
+            <div class="flex flex-col gap-8 text-[18px] font-bold uppercase tracking-widest text-gray-800">
+                <a href="index.html#journeys" class="hover:text-brand-red">All Journeys</a>
+                <a href="index.html#gallery" class="hover:text-brand-red">Visual Story</a>
+                <a href="index.html#about" class="hover:text-brand-red">The Founder</a>
+                <a href="index.html#inquiry" class="bg-brand-red text-white px-6 py-4 rounded-sm text-center">Inquiry</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO BANNER -->
+    <section class="hero-wildlife h-[50vh] flex items-center text-white relative">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl">
+                <a href="index.html#journeys" class="text-gray-300 text-[11px] uppercase tracking-widest font-bold hover:text-brand-red transition-colors mb-4 inline-block">← Back to All Journeys</a>
+                <h4 class="text-brand-red font-bold tracking-[0.3em] uppercase mb-4 text-sm">野生と自然 | Tigers & Forest</h4>
+                <h1 class="text-5xl md:text-7xl font-bold mb-4 leading-tight">Wildlife & Nature</h1>
+                <p class="text-xl text-gray-200 font-light italic">Panna & Ranthambore — Where Ancient Stone Meets the Emerald Forest</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- WILDLIFE CONTEXT -->
+    <section class="py-12 bg-gray-50 border-b border-gray-100">
+        <div class="container mx-auto px-6 max-w-4xl">
+            <div class="flex items-start gap-6 border-l-4 border-brand-red pl-8">
+                <div>
+                    <p class="text-[10px] uppercase tracking-widest text-brand-red font-bold mb-2">The Wild Heart of Central India</p>
+                    <p class="text-gray-600 text-sm leading-relaxed italic">"India's forests hold a silence older than its temples. In Panna and Ranthambore, the Royal Bengal Tiger moves through landscapes where ancient forts crumble into the canopy and rivers carve through diamond-bearing rock. These are not just safaris — they are encounters with the untamed soul of the subcontinent."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TOUR CARDS -->
+    <section class="py-24 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+
+                <!-- WN-01: The Emerald Forest -->
+                <div id="wn01" class="bg-white border border-gray-100 shadow-sm hover:shadow-xl transition-all">
+                    <div class="relative overflow-hidden h-64">
+                        <img src="images/destinations/khajuraho/lion_sculptures_khajuraho.jpg" class="w-full h-full object-cover">
+                        <span class="absolute top-4 left-4 bg-black/70 text-white text-[9px] font-bold uppercase tracking-widest px-3 py-1">WN-01 | 2 Days</span>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-bold mb-2">The Emerald Forest</h3>
+                        <p class="text-gray-500 italic text-sm mb-4">エメラルドの森 — Panna Tiger Safari</p>
+                        <p class="text-gray-600 text-sm mb-6 leading-relaxed">"Enter the diamond forest where tigers walk among ancient gorges." Panna National Park — just 30km from Khajuraho — is one of India's most successful tiger conservation stories. This intimate 2-day experience takes you deep into the Vindhya wilderness.</p>
+                        
+                        <div class="border-t border-gray-100 pt-4 mb-4">
+                            <p class="text-[10px] uppercase tracking-widest text-gray-400 font-bold mb-2">Expedition Details</p>
+                            <ul class="text-sm text-gray-600 space-y-1">
+                                <li>• Dawn safari — best chance for tiger sighting</li>
+                                <li>• Ken River gorge — crocodiles, vultures, and rare birds</li>
+                                <li>• Afternoon safari — leopards, sloth bears, deer</li>
+                                <li>• Night sounds session — identifying jungle calls</li>
+                            </ul>
+                        </div>
+
+                        <div class="flex gap-4 text-gray-300 text-sm mb-6">
+                            <i class="fas fa-paw" title="Tiger Safari"></i>
+                            <i class="fas fa-binoculars" title="Birdwatching"></i>
+                            <i class="fas fa-camera" title="Photography"></i>
+                            <i class="fas fa-hotel" title="Jungle Lodge"></i>
+                            <i class="fas fa-user-check" title="Expert Naturalist"></i>
+                        </div>
+
+                        <div class="bg-gray-50 border-l-2 border-brand-red p-4 mb-6">
+                            <p class="text-[10px] uppercase tracking-widest text-brand-red font-bold mb-1">The Divine Detail</p>
+                            <p class="text-gray-600 text-sm">Sunrise safari followed by breakfast overlooking the Ken River gorge — a 100-meter deep canyon with vultures circling below you.</p>
+                        </div>
+
+                        <a href="index.html#inquiry" class="block text-center bg-black text-white py-4 text-[11px] font-bold uppercase tracking-widest hover:bg-brand-red transition-colors">Book This Safari</a>
+                    </div>
+                </div>
+
+                <!-- WN-02: The Tiger's Realm (FEATURED) -->
+                <div id="wn02" class="bg-white border-2 border-brand-red shadow-xl hover:shadow-2xl transition-all">
+                    <div class="relative overflow-hidden h-64">
+                        <img src="images/destinations/khajuraho/the_kandariya_khajuraho.jpg" class="w-full h-full object-cover">
+                        <span class="absolute top-4 left-4 bg-brand-red text-white text-[9px] font-bold uppercase tracking-widest px-3 py-1">WN-02 | 3 Days | Most Popular</span>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-bold mb-2 text-brand-red">The Tiger's Realm</h3>
+                        <p class="text-gray-500 italic text-sm mb-4">虎の王国 — Ranthambore Deep Safari</p>
+                        <p class="text-gray-600 text-sm mb-6 leading-relaxed">"Where Rajput forts rise above the jungle canopy and tigers walk through 1,000-year-old ruins." Ranthambore is India's most dramatic wildlife destination — a place where history and wilderness merge into one unforgettable landscape.</p>
+                        
+                        <div class="border-t border-gray-100 pt-4 mb-4">
+                            <p class="text-[10px] uppercase tracking-widest text-gray-400 font-bold mb-2">Expedition Details</p>
+                            <ul class="text-sm text-gray-600 space-y-1">
+                                <li>• 4 safari drives across 3 days (2 dawn, 2 afternoon)</li>
+                                <li>• Ranthambore Fort — UNESCO World Heritage within the park</li>
+                                <li>• Lake Padam Talao — where tigers drink at sunset</li>
+                                <li>• Expert tracker with 15+ years local knowledge</li>
+                            </ul>
+                        </div>
+
+                        <div class="flex gap-4 text-gray-300 text-sm mb-6">
+                            <i class="fas fa-paw" title="Tiger Safari"></i>
+                            <i class="fas fa-binoculars" title="Expert Tracker"></i>
+                            <i class="fas fa-camera" title="Photography"></i>
+                            <i class="fas fa-hotel" title="Premium Lodge"></i>
+                            <i class="fas fa-utensils" title="All Meals"></i>
+                            <i class="fas fa-user-check" title="Licensed Guide"></i>
+                        </div>
+
+                        <div class="bg-gray-50 border-l-2 border-brand-red p-4 mb-6">
+                            <p class="text-[10px] uppercase tracking-widest text-brand-red font-bold mb-1">The Divine Detail</p>
+                            <p class="text-gray-600 text-sm">Post-safari "Jungle Tea" at sunset overlooking Ranthambore Fort, with a wildlife photography review session with your naturalist.</p>
+                        </div>
+
+                        <a href="index.html#inquiry" class="block text-center bg-brand-red text-white py-4 text-[11px] font-bold uppercase tracking-widest hover:bg-black transition-colors">Book This Safari</a>
+                    </div>
+                </div>
+
+                <!-- WN-03: Twin Tigers -->
+                <div id="wn03" class="bg-white border border-gray-100 shadow-sm hover:shadow-xl transition-all md:col-span-2">
+                    <div class="grid grid-cols-1 md:grid-cols-2">
+                        <div class="relative overflow-hidden h-full min-h-[300px]">
+                            <img src="images/destinations/khajuraho/kandariya_mahadev_temple_khajuraho.jpg" class="w-full h-full object-cover">
+                            <span class="absolute top-4 left-4 bg-black/70 text-white text-[9px] font-bold uppercase tracking-widest px-3 py-1">WN-03 | 5 Days | The Ultimate</span>
+                        </div>
+                        <div class="p-10">
+                            <h3 class="text-2xl font-bold mb-2">Twin Tigers</h3>
+                            <p class="text-gray-500 italic text-sm mb-4">二つの虎 — Panna & Ranthambore Combined</p>
+                            <p class="text-gray-600 text-sm mb-6 leading-relaxed">"Experience India's two most contrasting tiger territories in one epic journey." Panna offers intimate, gorge-lined wilderness just minutes from Khajuraho. Ranthambore offers dramatic fort-and-jungle landscapes of Rajasthan. Together, they represent the full spectrum of India's tiger heritage.</p>
+                            
+                            <div class="border-t border-gray-100 pt-4 mb-4">
+                                <p class="text-[10px] uppercase tracking-widest text-gray-400 font-bold mb-2">The Complete Route</p>
+                                <ul class="text-sm text-gray-600 space-y-1">
+                                    <li>• Days 1-2: Panna National Park — Vindhya wilderness</li>
+                                    <li>• Day 3: Scenic transfer via Khajuraho temples</li>
+                                    <li>• Days 4-5: Ranthambore — Fort & jungle landscapes</li>
+                                    <li>• 6 total safari drives across both parks</li>
+                                </ul>
+                            </div>
+
+                            <div class="flex gap-4 text-gray-300 text-sm mb-6">
+                                <i class="fas fa-paw" title="Tiger Safari"></i>
+                                <i class="fas fa-binoculars" title="Expert Trackers"></i>
+                                <i class="fas fa-car" title="Scenic Transfer"></i>
+                                <i class="fas fa-hotel" title="Premium Lodges"></i>
+                                <i class="fas fa-utensils" title="All Meals"></i>
+                                <i class="fas fa-user-check" title="Licensed Guide"></i>
+                            </div>
+
+                            <div class="bg-gray-50 border-l-2 border-brand-red p-4 mb-6">
+                                <p class="text-[10px] uppercase tracking-widest text-brand-red font-bold mb-1">The Divine Detail</p>
+                                <p class="text-gray-600 text-sm">A mid-journey heritage stop at Khajuraho temples (guided by our Founder), creating a unique "Tigers & Temples" experience that no other operator offers.</p>
+                            </div>
+
+                            <a href="index.html#inquiry" class="block text-center bg-black text-white py-4 text-[11px] font-bold uppercase tracking-widest hover:bg-brand-red transition-colors">Book This Safari</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- WN-04: Silent Tracks -->
+                <div id="wn04" class="bg-white border border-gray-100 shadow-sm hover:shadow-xl transition-all md:col-span-2">
+                    <div class="grid grid-cols-1 md:grid-cols-2">
+                        <div class="p-10 order-2 md:order-1">
+                            <h3 class="text-2xl font-bold mb-2">Silent Tracks</h3>
+                            <p class="text-gray-500 italic text-sm mb-4">静かなる足跡 — Birdwatching & Nature Walk</p>
+                            <p class="text-gray-600 text-sm mb-6 leading-relaxed">"For those who seek the forest's quieter residents." Not every wildlife experience requires a jeep. This gentle, meditative 1-day nature experience focuses on birdwatching, butterfly identification, and understanding the forest ecosystem through walking and silence.</p>
+                            
+                            <div class="border-t border-gray-100 pt-4 mb-4">
+                                <p class="text-[10px] uppercase tracking-widest text-gray-400 font-bold mb-2">Nature Experiences</p>
+                                <ul class="text-sm text-gray-600 space-y-1">
+                                    <li>• Early morning birdwatching walk (50+ species possible)</li>
+                                    <li>• Butterfly garden visit — seasonal varieties</li>
+                                    <li>• Ken River bank walk — kingfishers, egrets, river terns</li>
+                                    <li>• Tree identification — medicinal and sacred species</li>
+                                    <li>• Sunset point — panoramic Vindhya views</li>
+                                </ul>
+                            </div>
+
+                            <div class="flex gap-4 text-gray-300 text-sm mb-6">
+                                <i class="fas fa-dove" title="Birdwatching"></i>
+                                <i class="fas fa-leaf" title="Nature Walk"></i>
+                                <i class="fas fa-camera" title="Photography"></i>
+                                <i class="fas fa-binoculars" title="Binoculars Provided"></i>
+                                <i class="fas fa-user-check" title="Expert Naturalist"></i>
+                            </div>
+
+                            <div class="bg-gray-50 border-l-2 border-brand-red p-4 mb-6">
+                                <p class="text-[10px] uppercase tracking-widest text-brand-red font-bold mb-1">The Divine Detail</p>
+                                <p class="text-gray-600 text-sm">A personal "Nature Journal" provided with illustration pages for sketching birds and plants. Includes professional binoculars for the day and a curated forest picnic.</p>
+                            </div>
+
+                            <a href="index.html#inquiry" class="block text-center bg-black text-white py-4 text-[11px] font-bold uppercase tracking-widest hover:bg-brand-red transition-colors">Book This Experience</a>
+                        </div>
+                        <div class="relative overflow-hidden h-full min-h-[300px] order-1 md:order-2">
+                            <img src="images/destinations/khajuraho/devi_jagdambi_temple_khajuraho.jpg" class="w-full h-full object-cover">
+                            <span class="absolute top-4 left-4 bg-black/70 text-white text-[9px] font-bold uppercase tracking-widest px-3 py-1">WN-04 | 1 Day | Gentle & Meditative</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- WILDLIFE CONSERVATION NOTE -->
+    <section class="py-16 bg-white border-t border-gray-100">
+        <div class="container mx-auto px-6 max-w-4xl text-center">
+            <h4 class="text-brand-red font-bold tracking-widest text-[10px] uppercase mb-6">Our Commitment to Conservation</h4>
+            <p class="text-gray-500 text-sm leading-relaxed max-w-2xl mx-auto">Every wildlife journey with Divine Destinations supports local conservation efforts. We follow strict ethical guidelines: maintaining safe distances, minimizing noise, and contributing a portion of every booking to Panna Tiger Reserve's community-based conservation programs.</p>
+            <div class="flex justify-center gap-8 mt-8 text-gray-300 text-2xl">
+                <i class="fas fa-paw" title="Tiger Conservation"></i>
+                <i class="fas fa-leaf" title="Eco-Friendly"></i>
+                <i class="fas fa-hand-holding-heart" title="Community Support"></i>
+                <i class="fas fa-tree" title="Forest Preservation"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- WILDLIFE QUOTE -->
+    <section class="py-20 bg-gray-50 border-t border-gray-100 text-center">
+        <div class="container mx-auto px-6 max-w-3xl">
+            <p class="text-gray-400 text-3xl font-light italic leading-relaxed">"In the forest, there is no past and no future. There is only the present — the crack of a twig, the flash of stripes, the silence between heartbeats."</p>
+            <div class="flex items-center justify-center gap-4 mt-8">
+                <div class="h-px w-12 bg-brand-red"></div>
+                <span class="text-[10px] uppercase tracking-widest text-gray-400 font-bold">Divine Destinations</span>
+                <div class="h-px w-12 bg-brand-red"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BACK TO HOME CTA -->
+    <section class="py-16 bg-white text-center border-t border-gray-100">
+        <div class="container mx-auto px-6">
+            <p class="text-gray-500 text-sm mb-6">Explore our other heritage collections</p>
+            <div class="flex justify-center gap-6 flex-wrap">
+                <a href="golden-triangle.html" class="border border-gray-200 px-8 py-3 text-[11px] font-bold uppercase tracking-widest hover:bg-black hover:text-white transition-colors">Imperial Classics</a>
+                <a href="buddhist.html" class="border border-gray-200 px-8 py-3 text-[11px] font-bold uppercase tracking-widest hover:bg-black hover:text-white transition-colors">Buddhist Pilgrimage</a>
+                <a href="spiritual.html" class="border border-gray-200 px-8 py-3 text-[11px] font-bold uppercase tracking-widest hover:bg-black hover:text-white transition-colors">Spiritual Path</a>
+                <a href="bundelkhand.html" class="border border-gray-200 px-8 py-3 text-[11px] font-bold uppercase tracking-widest hover:bg-black hover:text-white transition-colors">Sacred Bundelkhand</a>
+                <a href="index.html#journeys" class="border border-brand-red text-brand-red px-8 py-3 text-[11px] font-bold uppercase tracking-widest hover:bg-brand-red hover:text-white transition-colors">← All Journeys</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-white py-16 border-t border-gray-100 text-center">
+        <img src="images/logos/dd.png" class="h-10 mx-auto grayscale opacity-40 mb-6">
+        <p class="text-gray-400 text-[10px] uppercase tracking-[0.3em] mb-4">Bridging Worlds, Discovering Hearts</p>
+        <p class="text-gray-300 text-[10px] uppercase tracking-widest italic">&copy; 2024 Divine Destinations. All Rights Reserved.</p>
+    </footer>
+
+    <!-- MOBILE MENU SCRIPT -->
+    <script>
+        const menuBtn = document.getElementById('menuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        menuBtn.addEventListener('click', () => { mobileMenu.classList.toggle('hidden'); });
+        mobileMenu.querySelectorAll('a').forEach(link => { link.addEventListener('click', () => { mobileMenu.classList.add('hidden'); }); });
+    </script>
+</body>
+</html>
