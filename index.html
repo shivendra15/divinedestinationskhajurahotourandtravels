@@ -84,7 +84,15 @@
     <section class="relative h-[85vh] flex items-center text-white text-left overflow-hidden">
         <!-- <video autoplay muted loop playsinline class="absolute inset-0 w-full h-full object-cover"> -->
         <!-- <video autoplay muted loop playsinline class="absolute inset-0 w-full h-full object-contain bg-black"> -->
-        <video autoplay muted loop playsinline class="absolute inset-0 w-full h-full object-cover" style="object-position: center 30%;">
+        <!-- <video autoplay muted loop playsinline class="absolute inset-0 w-full h-full object-cover" style="object-position: center 30%;"> -->
+            <!-- <source src="images/videos/khajuraho_wg.mp4" type="video/mp4"> -->
+        <!-- </video> -->
+        <!-- Blurred background version of same video -->
+        <video autoplay muted loop playsinline class="absolute inset-0 w-full h-full object-cover blur-xl scale-110 opacity-50">
+            <source src="images/videos/khajuraho_wg.mp4" type="video/mp4">
+        </video>
+        <!-- Main video on top (full, no crop) -->
+        <video autoplay muted loop playsinline class="absolute inset-0 w-full h-full object-contain z-[1]">
             <source src="images/videos/khajuraho_wg.mp4" type="video/mp4">
         </video>
         <div class="absolute inset-0 bg-black/50"></div>
