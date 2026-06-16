@@ -76,7 +76,11 @@
         </div>
     </nav>
 
-    <!-- HERO WITH VIDEO -->
+    <!-- ═══════════════════════════════════════════════════════ -->
+    <!-- HERO SECTION: Uncomment ONE option below               -->
+    <!-- ═══════════════════════════════════════════════════════ -->
+
+    <!-- OPTION A: VIDEO HERO (Currently Active) -->
     <section class="relative h-[85vh] flex items-center text-white text-left overflow-hidden">
         <video autoplay muted loop playsinline class="absolute inset-0 w-full h-full object-cover">
             <source src="images/videos/khajuraho-wg.mp4" type="video/mp4">
@@ -102,7 +106,35 @@
             </div>
         </div>
     </section>
+    <!-- END OPTION A -->
 
+    <!-- OPTION B: IMAGE HERO (Currently Inactive — Uncomment to use) -->
+    <!--
+    <section class="relative h-[85vh] flex items-center text-white text-left overflow-hidden">
+        <img src="images/destinations/khajuraho/the_kandariya_khajuraho.jpg" class="absolute inset-0 w-full h-full object-cover">
+        <div class="absolute inset-0 bg-black/50"></div>
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="max-w-5xl">
+                <h4 class="text-brand-red font-bold tracking-[0.4em] uppercase mb-6 text-sm">Bringing the World Closer</h4>
+                <h1 class="text-6xl md:text-8xl font-bold mb-8 leading-tight">Discover the World. <br><span class="text-gray-200 font-light italic text-5xl md:text-7xl">Discover Yourself.</span></h1>
+                <p class="text-xl md:text-2xl mb-12 text-gray-100 leading-relaxed font-light max-w-3xl">Experience the heart of India through our bridge to ancient wonders and shared stories. Built on a foundation of absolute trust and local expertise.</p>
+                <div class="flex gap-6">
+                    <a href="#journeys" class="bg-brand-red text-white px-12 py-5 rounded-sm font-bold uppercase text-xs tracking-widest hover:bg-white hover:text-black transition-all shadow-xl">Start Discovery</a>
+                    <a href="#inquiry" class="bg-white/10 backdrop-blur-md border border-white/30 text-white px-12 py-5 rounded-sm font-bold uppercase text-xs tracking-widest hover:bg-white hover:text-black transition-all">Japan Desk</a>
+                </div>
+            </div>
+        </div>
+        <div class="absolute bottom-0 left-0 w-full glass-effect py-8 border-t border-white/10 hidden md:block text-white uppercase tracking-widest text-[11px] z-10">
+            <div class="container mx-auto px-6 grid grid-cols-4 gap-4 text-center">
+                <div><p class="text-2xl font-bold mb-1">Curated</p> Heritage Journeys</div>
+                <div><p class="text-2xl font-bold mb-1">10+</p> Years Expertise</div>
+                <div><p class="text-2xl font-bold mb-1">All-India</p> Licensed Guide</div>
+                <div><p class="text-2xl font-bold mb-1">24/7</p> Dedicated Care</div>
+            </div>
+        </div>
+    </section>
+    -->
+    <!-- END OPTION B -->
     <!-- WELCOME SECTION -->
     <section class="py-32 bg-white border-b border-gray-100">
         <div class="container mx-auto px-6 max-w-6xl">
@@ -127,73 +159,6 @@
         </div>
     </section>
     
-    <!-- <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
-        
-        body { 
-            font-family: 'Inter', sans-serif; 
-            scroll-behavior: smooth; 
-            font-size: 18px;
-            line-height: 1.8;
-        }
-        
-        .hero-bg { 
-            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
-            url('images/destinations/khajuraho/the_kandariya_khajuraho.jpg'); 
-            background-size: cover; 
-            background-position: center; 
-        }
-        
-        .text-brand-red { color: #b91c1c; }
-        .bg-brand-red { background-color: #b91c1c; }
-        .glass-effect { background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(10px); }
-        .text-justify-jp { text-align: justify; text-justify: inter-character; }
-        
-        .nav-link { position: relative; transition: color 0.3s ease; }
-        .nav-link::after {
-            content: '';
-            position: absolute;
-            width: 0;
-            height: 2px;
-            bottom: -6px;
-            left: 0;
-            background-color: #b91c1c;
-            transition: width 0.3s ease;
-        }
-        .nav-link:hover::after { width: 100%; }
-
-        ::-webkit-scrollbar { width: 8px; }
-        ::-webkit-scrollbar-track { background: #f1f1f1; }
-        ::-webkit-scrollbar-thumb { background: #b91c1c; }
-
-        /* Tile image rotation */
-        .tile-img { position: absolute; inset: 0; transition: opacity 1.5s ease; }
-        .tile-img.hidden-img { opacity: 0; }
-    </style> -->
-    <!-- HERO SECTION -->
-    <!-- <section class="hero-bg h-[85vh] flex items-center text-white relative text-left">
-        <div class="container mx-auto px-6">
-            <div class="max-w-5xl">
-                <h4 class="text-brand-red font-bold tracking-[0.4em] uppercase mb-6 text-sm">Bringing the World Closer</h4>
-                <h1 class="text-6xl md:text-8xl font-bold mb-8 leading-tight">Discover the World. <br><span class="text-gray-200 font-light italic text-5xl md:text-7xl">Discover Yourself.</span></h1>
-                <p class="text-xl md:text-2xl mb-12 text-gray-100 leading-relaxed font-light max-w-3xl">Experience the heart of India through our bridge to ancient wonders and shared stories. Built on a foundation of absolute trust and local expertise.</p>
-                <div class="flex gap-6">
-                    <a href="#journeys" class="bg-brand-red text-white px-12 py-5 rounded-sm font-bold uppercase text-xs tracking-widest hover:bg-white hover:text-black transition-all shadow-xl">Start Discovery</a>
-                    <a href="#inquiry" class="bg-white/10 backdrop-blur-md border border-white/30 text-white px-12 py-5 rounded-sm font-bold uppercase text-xs tracking-widest hover:bg-white hover:text-black transition-all">Japan Desk</a>
-                </div>
-            </div>
-        </div>
-        <div class="absolute bottom-0 left-0 w-full glass-effect py-8 border-t border-white/10 hidden md:block text-white uppercase tracking-widest text-[11px]">
-            <div class="container mx-auto px-6 grid grid-cols-4 gap-4 text-center">
-                <div><p class="text-2xl font-bold mb-1">Curated</p> Heritage Journeys</div>
-                <div><p class="text-2xl font-bold mb-1">10+</p> Years Expertise</div>
-                <div><p class="text-2xl font-bold mb-1">All-India</p> Licensed Guide</div>
-                <div><p class="text-2xl font-bold mb-1">24/7</p> Dedicated Care</div>
-            </div>
-        </div>
-    </section> -->
-
-
     <!-- ═══════════════════════════════════════════════════════ -->
     <!-- CURATED JOURNEYS — INDIA INBOUND (6 Pillar Tiles)     -->
     <!-- ═══════════════════════════════════════════════════════ -->
