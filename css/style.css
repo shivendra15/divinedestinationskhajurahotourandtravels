@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+body { 
+    font-family: 'Inter', sans-serif; 
+    scroll-behavior: smooth; 
+    font-size: 18px; 
+    line-height: 1.8; 
+}
+
+.text-brand-red { color: #b91c1c; }
+.bg-brand-red { background-color: #b91c1c; }
+.glass-effect { background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(10px); }
+.text-justify-jp { text-align: justify; text-justify: inter-character; }
+
+.nav-link { position: relative; transition: color 0.3s ease; }
+.nav-link::after { 
+    content: ''; 
+    position: absolute; 
+    width: 0; 
+    height: 2px; 
+    bottom: -6px; 
+    left: 0; 
+    background-color: #b91c1c; 
+    transition: width 0.3s ease; 
+}
+.nav-link:hover::after { width: 100%; }
+
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: #f1f1f1; }
+::-webkit-scrollbar-thumb { background: #b91c1c; }
+
+.tile-img { position: absolute; inset: 0; transition: opacity 1.5s ease; }
+.tile-img.hidden-img { opacity: 0; }
