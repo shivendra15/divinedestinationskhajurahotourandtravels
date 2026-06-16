@@ -13,23 +13,8 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
-        body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; font-size: 18px; line-height: 1.8; }
-        .text-brand-red { color: #b91c1c; }
-        .bg-brand-red { background-color: #b91c1c; }
-        .hero-wildlife { 
-            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
-            url('images/destinations/khajuraho/lion_sculptures_khajuraho.jpg'); 
-            background-size: cover; 
-            background-position: center; 
-        }
-        .nav-link { position: relative; transition: color 0.3s ease; }
-        .nav-link::after { content: ''; position: absolute; width: 0; height: 2px; bottom: -6px; left: 0; background-color: #b91c1c; transition: width 0.3s ease; }
-        .nav-link:hover::after { width: 100%; }
-        ::-webkit-scrollbar { width: 8px; }
-        ::-webkit-scrollbar-thumb { background: #b91c1c; }
-    </style>
+    <!-- STYLES -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="bg-white text-gray-900 leading-relaxed">
 
@@ -299,11 +284,7 @@
     </footer>
 
     <!-- MOBILE MENU SCRIPT -->
-    <script>
-        const menuBtn = document.getElementById('menuBtn');
-        const mobileMenu = document.getElementById('mobileMenu');
-        menuBtn.addEventListener('click', () => { mobileMenu.classList.toggle('hidden'); });
-        mobileMenu.querySelectorAll('a').forEach(link => { link.addEventListener('click', () => { mobileMenu.classList.add('hidden'); }); });
-    </script>
+    <!-- SCRIPTS -->
+    <script src="js/main.js"></script>
 </body>
 </html>
