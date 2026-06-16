@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Spiritual Path — 精神の道 | Divine Destinations</title>
+    
+    <meta name="description" content="Spiritual journeys through Varanasi, Rishikesh, Sarnath, and Haridwar. Experience the Ganges, yoga, and ancient wisdom. Curated for Japanese and global travelers.">
+    <meta property="og:title" content="The Spiritual Path — 精神の道 | Divine Destinations">
+    <meta property="og:image" content="images/destinations/khajuraho/the_kandariya_khajuraho.jpg">
+    <link rel="icon" type="image/png" href="images/logos/dd.png">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; font-size: 18px; line-height: 1.8; }
+        .text-brand-red { color: #b91c1c; }
+        .bg-brand-red { background-color: #b91c1c; }
+        .hero-spiritual { 
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+            url('images/destinations/khajuraho/kandariya_mahadev_temple_khajuraho.jpg'); 
+            background-size: cover; 
+            background-position: center; 
+        }
+        .nav-link { position: relative; transition: color 0.3s ease; }
+        .nav-link::after { content: ''; position: absolute; width: 0; height: 2px; bottom: -6px; left: 0; background-color: #b91c1c; transition: width 0.3s ease; }
+        .nav-link:hover::after { width: 100%; }
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-thumb { background: #b91c1c; }
+    </style>
+</head>
+<body class="bg-white text-gray-900 leading-relaxed">
+
+    <!-- NAVIGATION -->
+    <nav class="bg-white/95 backdrop-blur-md sticky top-0 z-50 border-b border-gray-100 shadow-sm">
+        <div class="container mx-auto px-6 py-5 flex justify-between items-center">
+            <div class="flex flex-col text-left">
+                <a href="index.html" class="block">
+                    <img src="images/logos/dd.png" alt="Divine Destinations" class="h-20 w-auto object-contain transition-transform hover:scale-105">
+                </a>
+            </div>
+            <div class="hidden md:flex space-x-12 text-[16px] font-medium uppercase tracking-widest text-gray-800">
+                <a href="index.html#journeys" class="nav-link hover:text-brand-red">All Journeys</a>
+                <a href="index.html#gallery" class="nav-link hover:text-brand-red">Visual Story</a>
+                <a href="index.html#about" class="nav-link hover:text-brand-red">The Founder</a>
+            </div>
+            <a href="index.html#inquiry" class="hidden md:block bg-brand-red text-white px-8 py-3 rounded-sm text-xs font-bold uppercase tracking-widest hover:bg-black transition-all shadow-md">Inquiry</a>
+            <button id="menuBtn" class="md:hidden text-gray-800 text-3xl p-2"><i class="fas fa-bars"></i></button>
+        </div>
+        <div id="mobileMenu" class="hidden md:hidden bg-white border-t border-gray-100 px-8 py-8">
+            <div class="flex flex-col gap-8 text-[18px] font-bold uppercase tracking-widest text-gray-800">
+                <a href="index.html#journeys" class="hover:text-brand-red">All Journeys</a>
+                <a href="index.html#gallery" class="hover:text-brand-red">Visual Story</a>
+                <a href="index.html#about" class="hover:text-brand-red">The Founder</a>
+                <a href="index.html#inquiry" class="bg-brand-red text-white px-6 py-4 rounded-sm text-center">Inquiry</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO BANNER -->
+    <section class="hero-spiritual h-[50vh] flex items-center text-white relative">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl">
+                <a href="index.html#journeys" class="text-gray-300 text-[11px] uppercase tracking-widest font-bold hover:text-brand-red transition-colors mb-4 inline-block">← Back to All Journeys</a>
+                <h4 class="text-brand-red font-bold tracking-[0.3em] uppercase mb-4 text-sm">精神の道 | Inner Journey</h4>
+                <h1 class="text-5xl md:text-7xl font-bold mb-4 leading-tight">The Spiritual Path</h1>
+                <p class="text-xl text-gray-200 font-light italic">Varanasi, Rishikesh, Sarnath & Haridwar — Where the Soul Finds Silence</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SPIRITUAL CONTEXT -->
+    <section class="py-12 bg-gray-50 border-b border-gray-100">
+        <div class="container mx-auto px-6 max-w-4xl">
+            <div class="flex items-start gap-6 border-l-4 border-brand-red pl-8">
+                <div>
+                    <p class="text-[10px] uppercase tracking-widest text-brand-red font-bold mb-2">The Eternal Flow</p>
+                    <p class="text-gray-600 text-sm leading-relaxed italic">"India's spiritual heart beats along the banks of the Ganges. These journeys take you beyond tourism into the realm of personal transformation — where ancient rituals, sacred waters, and Himalayan silence offer a mirror to the soul."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TOUR CARDS -->
+    <section class="py-24 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+
+                <!-- SP-01: The Dawn of Salvation (FEATURED) -->
+                <div id="sp01" class="bg-white border-2 border-brand-red shadow-xl hover:shadow-2xl transition-all">
+                    <div class="relative overflow-hidden h-64">
+                        <img src="images/destinations/khajuraho/the_kandariya_khajuraho.jpg" class="w-full h-full object-cover">
+                        <span class="absolute top-4 left-4 bg-brand-red text-white text-[9px] font-bold uppercase tracking-widest px-3 py-1">SP-01 | 4 Days | Most Popular</span>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-bold mb-2 text-brand-red">The Dawn of Salvation</h3>
+                        <p class="text-gray-500 italic text-sm mb-4">救済の夜明け — Varanasi Immersive</p>
+                        <p class="text-gray-600 text-sm mb-6 leading-relaxed">"Experience the city that is older than history, older than tradition, older than legend — and looks twice as old as all of them put together." A deep, unhurried immersion into the world's most ancient living city.</p>
+                        
+                        <div class="border-t border-gray-100 pt-4 mb-4">
+                            <p class="text-[10px] uppercase tracking-widest text-gray-400 font-bold mb-2">Experiences</p>
+                            <ul class="text-sm text-gray-600 space-y-1">
+                                <li>• Sunrise boat ride on the Ganges — the golden hour of salvation</li>
+                                <li>• Evening Ganga Aarti — fire ceremony on the sacred ghats</li>
+                                <li>• Sarnath — where the Buddha first taught</li>
+                                <li>• The silk weavers' quarter — centuries-old Banarasi craft</li>
+                                <li>• Morning walk through the ancient alleyways</li>
+                            </ul>
+                        </div>
+
+                        <div class="flex gap-4 text-gray-300 text-sm mb-6">
+                            <i class="fas fa-ship" title="Boat Ride"></i>
+                            <i class="fas fa-fire" title="Aarti Ceremony"></i>
+                            <i class="fas fa-car" title="Private Transport"></i>
+                            <i class="fas fa-utensils" title="Meals"></i>
+                            <i class="fas fa-user-check" title="Licensed Guide"></i>
+                        </div>
+
+                        <div class="bg-gray-50 border-l-2 border-brand-red p-4 mb-6">
+                            <p class="text-[10px] uppercase tracking-widest text-brand-red font-bold mb-1">The Divine Detail</p>
+                            <p class="text-gray-600 text-sm">Private sunrise boat with a local musician playing the Sitar on the water, as the ghats come alive with prayers and offerings.</p>
+                        </div>
+
+                        <a href="index.html#inquiry" class="block text-center bg-brand-red text-white py-4 text-[11px] font-bold uppercase tracking-widest hover:bg-black transition-colors">Book This Journey</a>
+                    </div>
+                </div>
+
+                <!-- SP-02: The Himalayan Retreat -->
+                <div id="sp02" class="bg-white border border-gray-100 shadow-sm hover:shadow-xl transition-all">
+                    <div class="relative overflow-hidden h-64">
+                        <img src="images/destinations/khajuraho/kandariya_temple_khajuraho.jpg" class="w-full h-full object-cover">
+                        <span class="absolute top-4 left-4 bg-black/70 text-white text-[9px] font-bold uppercase tracking-widest px-3 py-1">SP-02 | 5 Days</span>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-bold mb-2">The Himalayan Retreat</h3>
+                        <p class="text-gray-500 italic text-sm mb-4">ヒマラヤの隠れ家 — Rishikesh & Haridwar</p>
+                        <p class="text-gray-600 text-sm mb-6 leading-relaxed">"Settle your soul where the holy Ganges leaves the mountains to meet the plains." A journey into the yoga capital of the world, where Himalayan air meets sacred water and ancient ashrams stand in peaceful silence.</p>
+                        
+                        <div class="border-t border-gray-100 pt-4 mb-4">
+                            <p class="text-[10px] uppercase tracking-widest text-gray-400 font-bold mb-2">Experiences</p>
+                            <ul class="text-sm text-gray-600 space-y-1">
+                                <li>• Traditional Hatha Yoga with a Himalayan Master</li>
+                                <li>• The Beatles Ashram — roots of global spirituality</li>
+                                <li>• Haridwar Ganga Aarti — evening fire on the river</li>
+                                <li>• Laxman Jhula — the sacred suspension bridge</li>
+                                <li>• Meditation by the Ganges at dawn</li>
+                            </ul>
+                        </div>
+
+                        <div class="flex gap-4 text-gray-300 text-sm mb-6">
+                            <i class="fas fa-om" title="Yoga"></i>
+                            <i class="fas fa-mountain" title="Himalayan"></i>
+                            <i class="fas fa-car" title="Private Transport"></i>
+                            <i class="fas fa-utensils" title="Meals"></i>
+                            <i class="fas fa-user-check" title="Licensed Guide"></i>
+                        </div>
+
+                        <div class="bg-gray-50 border-l-2 border-brand-red p-4 mb-6">
+                            <p class="text-[10px] uppercase tracking-widest text-brand-red font-bold mb-1">The Divine Detail</p>
+                            <p class="text-gray-600 text-sm">Private Ganga Aarti participation at Haridwar's Har Ki Pauri — away from the heavy crowds, in a reserved sacred space.</p>
+                        </div>
+
+                        <a href="index.html#inquiry" class="block text-center bg-black text-white py-4 text-[11px] font-bold uppercase tracking-widest hover:bg-brand-red transition-colors">Book This Journey</a>
+                    </div>
+                </div>
+
+                <!-- SP-03: Sacred Ganges: Source to Sea -->
+                <div id="sp03" class="bg-white border border-gray-100 shadow-sm hover:shadow-xl transition-all md:col-span-2">
+                    <div class="grid grid-cols-1 md:grid-cols-2">
+                        <div class="relative overflow-hidden h-full min-h-[300px]">
+                            <img src="images/destinations/khajuraho/nagra_style_erotic_carving_kandariya_khajuraho.jpg" class="w-full h-full object-cover">
+                            <span class="absolute top-4 left-4 bg-black/70 text-white text-[9px] font-bold uppercase tracking-widest px-3 py-1">SP-03 | 7 Days | The Grand Spiritual</span>
+                        </div>
+                        <div class="p-10">
+                            <h3 class="text-2xl font-bold mb-2">Sacred Ganges: Source to Sea</h3>
+                            <p class="text-gray-500 italic text-sm mb-4">聖なるガンジス — The Complete River Journey</p>
+                            <p class="text-gray-600 text-sm mb-6 leading-relaxed">"Follow the sacred river from the Himalayan foothills to the burning ghats of Varanasi." This is the definitive spiritual journey — experiencing the Ganges as India's lifeblood, from its pure mountain source to its ancient civilizational heart.</p>
+                            
+                            <div class="border-t border-gray-100 pt-4 mb-4">
+                                <p class="text-[10px] uppercase tracking-widest text-gray-400 font-bold mb-2">The Complete Route</p>
+                                <ul class="text-sm text-gray-600 space-y-1">
+                                    <li>• Rishikesh — Yoga, meditation, Himalayan peace</li>
+                                    <li>• Haridwar — Gateway to the Gods</li>
+                                    <li>• Allahabad (Prayagraj) — The Sacred Confluence</li>
+                                    <li>• Varanasi — The Eternal City on the Ganges</li>
+                                    <li>• Sarnath — Buddhist serenity</li>
+                                </ul>
+                            </div>
+
+                            <div class="flex gap-4 text-gray-300 text-sm mb-6">
+                                <i class="fas fa-car" title="Private Transport"></i>
+                                <i class="fas fa-train" title="Scenic Train"></i>
+                                <i class="fas fa-ship" title="Boat Rides"></i>
+                                <i class="fas fa-om" title="Yoga"></i>
+                                <i class="fas fa-utensils" title="All Meals"></i>
+                                <i class="fas fa-user-check" title="Licensed Guide"></i>
+                            </div>
+
+                            <div class="bg-gray-50 border-l-2 border-brand-red p-4 mb-6">
+                                <p class="text-[10px] uppercase tracking-widest text-brand-red font-bold mb-1">The Divine Detail</p>
+                                <p class="text-gray-600 text-sm">A personal "Ganges Journal" provided at the start — recording reflections at each sacred point along the river. Concludes with a private blessing ceremony at Varanasi.</p>
+                            </div>
+
+                            <a href="index.html#inquiry" class="block text-center bg-black text-white py-4 text-[11px] font-bold uppercase tracking-widest hover:bg-brand-red transition-colors">Book This Journey</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SP-04: The Vedic Wellness Journey -->
+                <div id="sp04" class="bg-white border border-gray-100 shadow-sm hover:shadow-xl transition-all md:col-span-2">
+                    <div class="grid grid-cols-1 md:grid-cols-2">
+                        <div class="p-10 order-2 md:order-1">
+                            <h3 class="text-2xl font-bold mb-2">The Vedic Wellness Journey</h3>
+                            <p class="text-gray-500 italic text-sm mb-4">ヴェーダの癒し — Ancient Healing Traditions</p>
+                            <p class="text-gray-600 text-sm mb-6 leading-relaxed">"Restore body and mind through the 5,000-year-old science of Ayurveda and the discipline of classical Yoga." This journey is designed for travelers seeking physical renewal alongside spiritual depth — a complete reset in India's most sacred healing environments.</p>
+                            
+                            <div class="border-t border-gray-100 pt-4 mb-4">
+                                <p class="text-[10px] uppercase tracking-widest text-gray-400 font-bold mb-2">Wellness Experiences</p>
+                                <ul class="text-sm text-gray-600 space-y-1">
+                                    <li>• Daily morning yoga with certified instructors</li>
+                                    <li>• Ayurvedic consultation and personalized treatment</li>
+                                    <li>• Meditation techniques — Vipassana & Pranayama</li>
+                                    <li>• Organic sattvic cuisine (pure vegetarian)</li>
+                                    <li>• Silent morning walks by the Ganges</li>
+                                    <li>• Sound healing session with Tibetan singing bowls</li>
+                                </ul>
+                            </div>
+
+                            <div class="flex gap-4 text-gray-300 text-sm mb-6">
+                                <i class="fas fa-om" title="Yoga"></i>
+                                <i class="fas fa-spa" title="Ayurveda"></i>
+                                <i class="fas fa-leaf" title="Organic Meals"></i>
+                                <i class="fas fa-car" title="Transport"></i>
+                                <i class="fas fa-user-check" title="Certified Instructors"></i>
+                            </div>
+
+                            <div class="bg-gray-50 border-l-2 border-brand-red p-4 mb-6">
+                                <p class="text-[10px] uppercase tracking-widest text-brand-red font-bold mb-1">The Divine Detail</p>
+                                <p class="text-gray-600 text-sm">A personalized Ayurvedic "Dosha Assessment" at the start, with a custom wellness plan and herbal kit to take home. Includes a private sound healing session overlooking the river.</p>
+                            </div>
+
+                            <a href="index.html#inquiry" class="block text-center bg-black text-white py-4 text-[11px] font-bold uppercase tracking-widest hover:bg-brand-red transition-colors">Book This Journey</a>
+                        </div>
+                        <div class="relative overflow-hidden h-full min-h-[300px] order-1 md:order-2">
+                            <img src="images/destinations/khajuraho/devi_jagdambi_temple_khajuraho.jpg" class="w-full h-full object-cover">
+                            <span class="absolute top-4 left-4 bg-black/70 text-white text-[9px] font-bold uppercase tracking-widest px-3 py-1">SP-04 | 6 Days | Wellness Focus</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SPIRITUAL QUOTE -->
+    <section class="py-20 bg-white border-t border-gray-100 text-center">
+        <div class="container mx-auto px-6 max-w-3xl">
+            <p class="text-gray-400 text-3xl font-light italic leading-relaxed">"The Ganges is not just a river. It is the thread that connects every generation of seekers who have walked these banks in search of truth."</p>
+            <div class="flex items-center justify-center gap-4 mt-8">
+                <div class="h-px w-12 bg-brand-red"></div>
+                <span class="text-[10px] uppercase tracking-widest text-gray-400 font-bold">Divine Destinations</span>
+                <div class="h-px w-12 bg-brand-red"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BACK TO HOME CTA -->
+    <section class="py-16 bg-gray-50 text-center border-t border-gray-100">
+        <div class="container mx-auto px-6">
+            <p class="text-gray-500 text-sm mb-6">Explore our other heritage collections</p>
+            <div class="flex justify-center gap-6 flex-wrap">
+                <a href="golden-triangle.html" class="border border-gray-200 px-8 py-3 text-[11px] font-bold uppercase tracking-widest hover:bg-black hover:text-white transition-colors">Imperial Classics</a>
+                <a href="buddhist.html" class="border border-gray-200 px-8 py-3 text-[11px] font-bold uppercase tracking-widest hover:bg-black hover:text-white transition-colors">Buddhist Pilgrimage</a>
+                <a href="bundelkhand.html" class="border border-gray-200 px-8 py-3 text-[11px] font-bold uppercase tracking-widest hover:bg-black hover:text-white transition-colors">Sacred Bundelkhand</a>
+                <a href="index.html#journeys" class="border border-brand-red text-brand-red px-8 py-3 text-[11px] font-bold uppercase tracking-widest hover:bg-brand-red hover:text-white transition-colors">← All Journeys</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-white py-16 border-t border-gray-100 text-center">
+        <img src="images/logos/dd.png" class="h-10 mx-auto grayscale opacity-40 mb-6">
+        <p class="text-gray-400 text-[10px] uppercase tracking-[0.3em] mb-4">Bridging Worlds, Discovering Hearts</p>
+        <p class="text-gray-300 text-[10px] uppercase tracking-widest italic">&copy; 2024 Divine Destinations. All Rights Reserved.</p>
+    </footer>
+
+    <!-- MOBILE MENU SCRIPT -->
+    <script>
+        const menuBtn = document.getElementById('menuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        menuBtn.addEventListener('click', () => { mobileMenu.classList.toggle('hidden'); });
+        mobileMenu.querySelectorAll('a').forEach(link => { link.addEventListener('click', () => { mobileMenu.classList.add('hidden'); }); });
+    </script>
+</body>
+</html>
