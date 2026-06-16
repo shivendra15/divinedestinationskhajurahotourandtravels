@@ -5,23 +5,127 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Divine Destinations | Global Heritage Travel & Tours</title>
     
-    <!-- SEO Meta Tags -->
     <meta name="description" content="Divine Destinations Khajuraho — Your trusted bridge to India's spiritual heritage. Curated journeys through UNESCO temples, wildlife safaris, and bespoke cultural experiences. Japan Desk available. 日本語対応可。">
     <meta name="keywords" content="Khajuraho tours, India heritage travel, spiritual tourism, UNESCO temples India, おもてなし, cultural tours India, Panna safari, Golden Triangle, Buddhist pilgrimage India">
     <meta name="author" content="Divine Destinations">
 
-    <!-- Open Graph (Facebook, LINE, WhatsApp Preview) -->
     <meta property="og:title" content="Divine Destinations | Bridging Worlds, Discovering Hearts">
     <meta property="og:description" content="Experience the spiritual heart of India through curated heritage journeys. Trusted by travelers from Japan and across the globe. 日本語専用デスク対応。">
     <meta property="og:image" content="images/destinations/khajuraho/the_kandariya_khajuraho.jpg">
     <meta property="og:url" content="https://shivendra15.github.io/divinedestinationskhajurahotourandtravels/">
     <meta property="og:type" content="website">
 
-    <!-- Favicon -->
     <link rel="icon" type="image/png" href="images/logos/dd.png">
-    
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; font-size: 18px; line-height: 1.8; }
+        .text-brand-red { color: #b91c1c; }
+        .bg-brand-red { background-color: #b91c1c; }
+        .glass-effect { background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(10px); }
+        .text-justify-jp { text-align: justify; text-justify: inter-character; }
+        .nav-link { position: relative; transition: color 0.3s ease; }
+        .nav-link::after { content: ''; position: absolute; width: 0; height: 2px; bottom: -6px; left: 0; background-color: #b91c1c; transition: width 0.3s ease; }
+        .nav-link:hover::after { width: 100%; }
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #f1f1f1; }
+        ::-webkit-scrollbar-thumb { background: #b91c1c; }
+        .tile-img { position: absolute; inset: 0; transition: opacity 1.5s ease; }
+        .tile-img.hidden-img { opacity: 0; }
+    </style>
+</head>
+<body class="bg-white text-gray-900 leading-relaxed">
+
+    <!-- UTILITY BAR -->
+    <div class="bg-gray-100 py-1 border-b border-gray-200">
+        <div class="container mx-auto px-6 flex justify-between items-center text-[11px] uppercase tracking-[0.2em] font-bold text-gray-500">
+            <div class="flex gap-6">
+                <span><i class="fas fa-globe-asia mr-1 text-brand-red"></i> Global Network</span>
+                <span class="text-gray-500 italic">日本語デスク：現在ご利用いただけません (Japan Desk Unavailable)</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- NAVIGATION -->
+    <nav class="bg-white/95 backdrop-blur-md sticky top-0 z-50 border-b border-gray-100 shadow-sm">
+        <div class="container mx-auto px-6 py-5 flex justify-between items-center">
+            <div class="flex flex-col text-left">
+                <a href="index.html" class="block">
+                    <img src="images/logos/dd.png" alt="Divine Destinations" class="h-20 w-auto object-contain transition-transform hover:scale-105">
+                </a>
+            </div>
+            <div class="hidden md:flex space-x-12 text-[16px] font-medium uppercase tracking-widest text-gray-800">
+                <a href="#journeys" class="nav-link hover:text-brand-red">Curated Journeys</a>
+                <a href="#beyond" class="nav-link hover:text-brand-red">Beyond Borders</a>
+                <a href="#gallery" class="nav-link hover:text-brand-red">Visual Story</a>
+                <a href="#about" class="nav-link hover:text-brand-red">The Founder</a>
+            </div>
+            <a href="#inquiry" class="hidden md:block bg-brand-red text-white px-8 py-3 rounded-sm text-xs font-bold uppercase tracking-widest hover:bg-black transition-all shadow-md">Inquiry</a>
+            <button id="menuBtn" class="md:hidden text-gray-800 text-3xl p-2"><i class="fas fa-bars"></i></button>
+        </div>
+        <div id="mobileMenu" class="hidden md:hidden bg-white border-t border-gray-100 px-8 py-8">
+            <div class="flex flex-col gap-8 text-[18px] font-bold uppercase tracking-widest text-gray-800">
+                <a href="#journeys" class="hover:text-brand-red">Curated Journeys</a>
+                <a href="#beyond" class="hover:text-brand-red">Beyond Borders</a>
+                <a href="#gallery" class="hover:text-brand-red">Visual Story</a>
+                <a href="#about" class="hover:text-brand-red">The Founder</a>
+                <a href="#inquiry" class="bg-brand-red text-white px-6 py-4 rounded-sm text-center">Inquiry</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO WITH VIDEO -->
+    <section class="relative h-[85vh] flex items-center text-white text-left overflow-hidden">
+        <video autoplay muted loop playsinline class="absolute inset-0 w-full h-full object-cover">
+            <source src="images/videos/khajuraho-wg.mp4" type="video/mp4">
+        </video>
+        <div class="absolute inset-0 bg-black/50"></div>
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="max-w-5xl">
+                <h4 class="text-brand-red font-bold tracking-[0.4em] uppercase mb-6 text-sm">Bringing the World Closer</h4>
+                <h1 class="text-6xl md:text-8xl font-bold mb-8 leading-tight">Discover the World. <br><span class="text-gray-200 font-light italic text-5xl md:text-7xl">Discover Yourself.</span></h1>
+                <p class="text-xl md:text-2xl mb-12 text-gray-100 leading-relaxed font-light max-w-3xl">Experience the heart of India through our bridge to ancient wonders and shared stories. Built on a foundation of absolute trust and local expertise.</p>
+                <div class="flex gap-6">
+                    <a href="#journeys" class="bg-brand-red text-white px-12 py-5 rounded-sm font-bold uppercase text-xs tracking-widest hover:bg-white hover:text-black transition-all shadow-xl">Start Discovery</a>
+                    <a href="#inquiry" class="bg-white/10 backdrop-blur-md border border-white/30 text-white px-12 py-5 rounded-sm font-bold uppercase text-xs tracking-widest hover:bg-white hover:text-black transition-all">Japan Desk</a>
+                </div>
+            </div>
+        </div>
+        <div class="absolute bottom-0 left-0 w-full glass-effect py-8 border-t border-white/10 hidden md:block text-white uppercase tracking-widest text-[11px] z-10">
+            <div class="container mx-auto px-6 grid grid-cols-4 gap-4 text-center">
+                <div><p class="text-2xl font-bold mb-1">Curated</p> Heritage Journeys</div>
+                <div><p class="text-2xl font-bold mb-1">10+</p> Years Expertise</div>
+                <div><p class="text-2xl font-bold mb-1">All-India</p> Licensed Guide</div>
+                <div><p class="text-2xl font-bold mb-1">24/7</p> Dedicated Care</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WELCOME SECTION -->
+    <section class="py-32 bg-white border-b border-gray-100">
+        <div class="container mx-auto px-6 max-w-6xl">
+            <div class="flex justify-center mb-12">
+                <img src="images/logos/namaste-icon.png" alt="Namaste" class="h-16 w-auto opacity-80">
+            </div>
+            <div class="grid grid-cols-[1fr_auto_1fr] items-center mb-24 text-center">
+                <div class="text-right pr-12"><h2 class="text-4xl font-bold text-gray-900">ようこそ</h2></div>
+                <div class="h-16 w-px bg-gray-200"></div>
+                <div class="text-left pl-12"><h2 class="text-4xl font-bold text-gray-900 uppercase">Welcome</h2></div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-24 items-start text-left">
+                <div class="border-l-4 border-brand-red pl-10">
+                    <p class="text-gray-800 font-medium text-lg italic text-justify-jp">日本からお越しのお客様へ。私たちは、インドの精神的な鼓動を、最高の安心と「おもてなし」の心で体感していただける旅をご提供します。カジュラホの聖なる地への架け橋として、皆様をお迎えできることを光栄に存じます。</p>
+                    <div class="flex items-center gap-4 text-gray-400 text-[10px] uppercase font-bold mt-12 tracking-widest"><span>真の発見</span> <span>|</span> <span>おもてなし</span> <span>|</span> <span>確かな信頼</span></div>
+                </div>
+                <div>
+                    <p class="text-gray-600 font-light text-lg text-justify">We invite you on unforgettable journeys to experience the beauty, spirituality, cultural treasures, and diversity of India in comfort and safety. We are honored to welcome you and to accompany you as you explore one of the world's oldest living civilizations.</p>
+                    <div class="flex items-center gap-4 text-gray-400 text-[10px] uppercase font-bold mt-12 tracking-widest"><span>Discovery</span> <span>|</span> <span>Hospitality</span> <span>|</span> <span>Trust</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
     
     <!-- <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
@@ -66,90 +170,6 @@
         .tile-img { position: absolute; inset: 0; transition: opacity 1.5s ease; }
         .tile-img.hidden-img { opacity: 0; }
     </style> -->
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
-        
-        body { 
-            font-family: 'Inter', sans-serif; 
-            scroll-behavior: smooth; 
-            font-size: 18px;
-            line-height: 1.8;
-        }
-        
-        .text-brand-red { color: #b91c1c; }
-        .bg-brand-red { background-color: #b91c1c; }
-        .glass-effect { background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(10px); }
-        .text-justify-jp { text-align: justify; text-justify: inter-character; }
-        
-        .nav-link { position: relative; transition: color 0.3s ease; }
-        .nav-link::after {
-            content: '';
-            position: absolute;
-            width: 0;
-            height: 2px;
-            bottom: -6px;
-            left: 0;
-            background-color: #b91c1c;
-            transition: width 0.3s ease;
-        }
-        .nav-link:hover::after { width: 100%; }
-    
-        ::-webkit-scrollbar { width: 8px; }
-        ::-webkit-scrollbar-track { background: #f1f1f1; }
-        ::-webkit-scrollbar-thumb { background: #b91c1c; }
-    
-        .tile-img { position: absolute; inset: 0; transition: opacity 1.5s ease; }
-        .tile-img.hidden-img { opacity: 0; }
-    </style>
-</head>
-<body class="bg-white text-gray-900 leading-relaxed">
-
-    <!-- UTILITY BAR -->
-    <div class="bg-gray-100 py-1 border-b border-gray-200">
-        <div class="container mx-auto px-6 flex justify-between items-center text-[11px] uppercase tracking-[0.2em] font-bold text-gray-500">
-            <div class="flex gap-6">
-                <span><i class="fas fa-globe-asia mr-1 text-brand-red"></i> Global Network</span>
-                <span class="text-gray-500 italic">日本語デスク：現在ご利用いただけません (Japan Desk Unavailable)</span>
-            </div>
-        </div>
-    </div>
-
-    <!-- NAVIGATION -->
-    <nav class="bg-white/95 backdrop-blur-md sticky top-0 z-50 border-b border-gray-100 shadow-sm">
-        <div class="container mx-auto px-6 py-5 flex justify-between items-center">
-            <div class="flex flex-col text-left">
-                <a href="index.html" class="block">
-                    <img src="images/logos/dd.png" alt="Divine Destinations" class="h-20 w-auto object-contain transition-transform hover:scale-105">
-                </a>
-            </div>
-
-            <!-- Desktop Menu -->
-            <div class="hidden md:flex space-x-12 text-[16px] font-medium uppercase tracking-widest text-gray-800">
-                <a href="#journeys" class="nav-link hover:text-brand-red">Curated Journeys</a>
-                <a href="#beyond" class="nav-link hover:text-brand-red">Beyond Borders</a>
-                <a href="#gallery" class="nav-link hover:text-brand-red">Visual Story</a>
-                <a href="#about" class="nav-link hover:text-brand-red">The Founder</a>
-            </div>
-
-            <a href="#inquiry" class="hidden md:block bg-brand-red text-white px-8 py-3 rounded-sm text-xs font-bold uppercase tracking-widest hover:bg-black transition-all shadow-md">Inquiry</a>
-
-            <button id="menuBtn" class="md:hidden text-gray-800 text-3xl p-2">
-                <i class="fas fa-bars"></i>
-            </button>
-        </div>
-
-        <!-- Mobile Menu -->
-        <div id="mobileMenu" class="hidden md:hidden bg-white border-t border-gray-100 px-8 py-8">
-            <div class="flex flex-col gap-8 text-[18px] font-bold uppercase tracking-widest text-gray-800">
-                <a href="#journeys" class="hover:text-brand-red">Curated Journeys</a>
-                <a href="#beyond" class="hover:text-brand-red">Beyond Borders</a>
-                <a href="#gallery" class="hover:text-brand-red">Visual Story</a>
-                <a href="#about" class="hover:text-brand-red">The Founder</a>
-                <a href="#inquiry" class="bg-brand-red text-white px-6 py-4 rounded-sm text-center">Inquiry</a>
-            </div>
-        </div>
-    </nav>
-
     <!-- HERO SECTION -->
     <!-- <section class="hero-bg h-[85vh] flex items-center text-white relative text-left">
         <div class="container mx-auto px-6">
@@ -173,60 +193,6 @@
         </div>
     </section> -->
 
-    <!-- HERO WITH VIDEO -->
-    <section class="relative h-[85vh] flex items-center text-white text-left overflow-hidden">
-        <!-- Background Video -->
-        <video autoplay muted loop playsinline class="absolute inset-0 w-full h-full object-cover">
-            <source src="images/videos/khajuraho-wg.mp4" type="video/mp4">
-        </video>
-        <!-- Dark Overlay -->
-        <div class="absolute inset-0 bg-black/50"></div>
-        <!-- Content -->
-        <div class="container mx-auto px-6 relative z-10">
-            <div class="max-w-5xl">
-                <h4 class="text-brand-red font-bold tracking-[0.4em] uppercase mb-6 text-sm">Bringing the World Closer</h4>
-                <h1 class="text-6xl md:text-8xl font-bold mb-8 leading-tight">Discover the World. <br><span class="text-gray-200 font-light italic text-5xl md:text-7xl">Discover Yourself.</span></h1>
-                <p class="text-xl md:text-2xl mb-12 text-gray-100 leading-relaxed font-light max-w-3xl">Experience the heart of India through our bridge to ancient wonders and shared stories. Built on a foundation of absolute trust and local expertise.</p>
-                <div class="flex gap-6">
-                    <a href="#journeys" class="bg-brand-red text-white px-12 py-5 rounded-sm font-bold uppercase text-xs tracking-widest hover:bg-white hover:text-black transition-all shadow-xl">Start Discovery</a>
-                    <a href="#inquiry" class="bg-white/10 backdrop-blur-md border border-white/30 text-white px-12 py-5 rounded-sm font-bold uppercase text-xs tracking-widest hover:bg-white hover:text-black transition-all">Japan Desk</a>
-                </div>
-            </div>
-        </div>
-        <!-- Stats Bar -->
-        <div class="absolute bottom-0 left-0 w-full glass-effect py-8 border-t border-white/10 hidden md:block text-white uppercase tracking-widest text-[11px] z-10">
-            <div class="container mx-auto px-6 grid grid-cols-4 gap-4 text-center">
-                <div><p class="text-2xl font-bold mb-1">Curated</p> Heritage Journeys</div>
-                <div><p class="text-2xl font-bold mb-1">10+</p> Years Expertise</div>
-                <div><p class="text-2xl font-bold mb-1">All-India</p> Licensed Guide</div>
-                <div><p class="text-2xl font-bold mb-1">24/7</p> Dedicated Care</div>
-            </div>
-        </div>
-    </section>
-
-    <!-- WELCOME SECTION -->
-    <section class="py-32 bg-white border-b border-gray-100">
-        <div class="container mx-auto px-6 max-w-6xl">
-            <div class="flex justify-center mb-12">
-                <img src="images/logos/namaste-icon.png" alt="Namaste" class="h-16 w-auto opacity-80">
-            </div>
-            <div class="grid grid-cols-[1fr_auto_1fr] items-center mb-24 text-center">
-                <div class="text-right pr-12"><h2 class="text-4xl font-bold text-gray-900">ようこそ</h2></div>
-                <div class="h-16 w-px bg-gray-200"></div>
-                <div class="text-left pl-12"><h2 class="text-4xl font-bold text-gray-900 uppercase">Welcome</h2></div>
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-24 items-start text-left">
-                <div class="border-l-4 border-brand-red pl-10">
-                    <p class="text-gray-800 font-medium text-lg italic text-justify-jp">日本からお越しのお客様へ。私たちは、インドの精神的な鼓動を、最高の安心と「おもてなし」の心で体感していただける旅をご提供します。カジュラホの聖なる地への架け橋として、皆様をお迎えできることを光栄に存じます。</p>
-                    <div class="flex items-center gap-4 text-gray-400 text-[10px] uppercase font-bold mt-12 tracking-widest"><span>真の発見</span> <span>|</span> <span>おもてなし</span> <span>|</span> <span>確かな信頼</span></div>
-                </div>
-                <div>
-                    <p class="text-gray-600 font-light text-lg text-justify">We invite you on unforgettable journeys to experience the beauty, spirituality, cultural treasures, and diversity of India in comfort and safety. We are honored to welcome you and to accompany you as you explore one of the world's oldest living civilizations.</p>
-                    <div class="flex items-center gap-4 text-gray-400 text-[10px] uppercase font-bold mt-12 tracking-widest"><span>Discovery</span> <span>|</span> <span>Hospitality</span> <span>|</span> <span>Trust</span></div>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <!-- ═══════════════════════════════════════════════════════ -->
     <!-- CURATED JOURNEYS — INDIA INBOUND (6 Pillar Tiles)     -->
