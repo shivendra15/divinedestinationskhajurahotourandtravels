@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Golden Escape — 黄金の逃避行 | Divine Destinations</title>
+    
+    <meta name="description" content="Coming Soon: Luxury leisure journeys to Dubai, Bali, and Maldives. Premium escapes curated with the Divine Destinations standard. Register your interest.">
+    <meta property="og:title" content="The Golden Escape — Luxury & Leisure | Divine Destinations">
+    <meta property="og:image" content="images/destinations/khajuraho/kandariya_mahadev_temple_khajuraho.jpg">
+    <link rel="icon" type="image/png" href="images/logos/dd.png">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; font-size: 18px; line-height: 1.8; }
+        .text-brand-red { color: #b91c1c; }
+        .bg-brand-red { background-color: #b91c1c; }
+        .hero-escape { 
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+            url('images/destinations/khajuraho/kandariya_mahadev_temple_khajuraho.jpg'); 
+            background-size: cover; 
+            background-position: center; 
+        }
+        .nav-link { position: relative; transition: color 0.3s ease; }
+        .nav-link::after { content: ''; position: absolute; width: 0; height: 2px; bottom: -6px; left: 0; background-color: #b91c1c; transition: width 0.3s ease; }
+        .nav-link:hover::after { width: 100%; }
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-thumb { background: #b91c1c; }
+    </style>
+</head>
+<body class="bg-white text-gray-900 leading-relaxed">
+
+    <!-- NAVIGATION -->
+    <nav class="bg-white/95 backdrop-blur-md sticky top-0 z-50 border-b border-gray-100 shadow-sm">
+        <div class="container mx-auto px-6 py-5 flex justify-between items-center">
+            <div class="flex flex-col text-left">
+                <a href="index.html" class="block">
+                    <img src="images/logos/dd.png" alt="Divine Destinations" class="h-20 w-auto object-contain transition-transform hover:scale-105">
+                </a>
+            </div>
+            <div class="hidden md:flex space-x-12 text-[16px] font-medium uppercase tracking-widest text-gray-800">
+                <a href="index.html#journeys" class="nav-link hover:text-brand-red">All Journeys</a>
+                <a href="index.html#beyond" class="nav-link hover:text-brand-red">Beyond Borders</a>
+                <a href="index.html#about" class="nav-link hover:text-brand-red">The Founder</a>
+            </div>
+            <a href="index.html#inquiry" class="hidden md:block bg-brand-red text-white px-8 py-3 rounded-sm text-xs font-bold uppercase tracking-widest hover:bg-black transition-all shadow-md">Inquiry</a>
+            <button id="menuBtn" class="md:hidden text-gray-800 text-3xl p-2"><i class="fas fa-bars"></i></button>
+        </div>
+        <div id="mobileMenu" class="hidden md:hidden bg-white border-t border-gray-100 px-8 py-8">
+            <div class="flex flex-col gap-8 text-[18px] font-bold uppercase tracking-widest text-gray-800">
+                <a href="index.html#journeys" class="hover:text-brand-red">All Journeys</a>
+                <a href="index.html#beyond" class="hover:text-brand-red">Beyond Borders</a>
+                <a href="index.html#about" class="hover:text-brand-red">The Founder</a>
+                <a href="index.html#inquiry" class="bg-brand-red text-white px-6 py-4 rounded-sm text-center">Inquiry</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO BANNER -->
+    <section class="hero-escape h-[60vh] flex items-center text-white relative">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl text-center mx-auto">
+                <a href="index.html#beyond" class="text-gray-300 text-[11px] uppercase tracking-widest font-bold hover:text-brand-red transition-colors mb-6 inline-block">← Back to Discoveries Beyond Borders</a>
+                <h4 class="text-brand-red font-bold tracking-[0.3em] uppercase mb-4 text-sm">黄金の逃避行 | Luxury & Leisure</h4>
+                <h1 class="text-5xl md:text-7xl font-bold mb-6 leading-tight">The Golden Escape</h1>
+                <p class="text-xl text-gray-200 font-light italic max-w-2xl mx-auto">Dubai, Bali & Maldives — Where Luxury Meets the Extraordinary</p>
+                <div class="mt-10">
+                    <a href="#register" class="bg-brand-red text-white px-12 py-5 rounded-sm font-bold uppercase text-xs tracking-widest hover:bg-white hover:text-black transition-all shadow-xl inline-block">Register Your Interest</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- VISION STATEMENT -->
+    <section class="py-16 bg-white border-b border-gray-100">
+        <div class="container mx-auto px-6 max-w-3xl text-center">
+            <div class="inline-block border border-brand-red text-brand-red px-6 py-2 text-[10px] font-bold uppercase tracking-widest mb-8">Coming Soon</div>
+            <h2 class="text-3xl font-light italic text-gray-800 mb-6">Luxury, Curated with Soul</h2>
+            <p class="text-gray-600 text-sm leading-relaxed">Not every journey needs to be a pilgrimage. Sometimes the soul seeks beauty, comfort, and the golden light of a perfect sunset. The Golden Escape brings our "Divine Detail" standard to the world's most spectacular leisure destinations — where every moment is designed for wonder, relaxation, and celebration.</p>
+        </div>
+    </section>
+
+    <!-- WHO IS THIS FOR -->
+    <section class="py-16 bg-gray-50 border-b border-gray-100">
+        <div class="container mx-auto px-6 max-w-4xl">
+            <div class="text-center mb-12">
+                <h4 class="text-brand-red font-bold tracking-widest text-[10px] uppercase mb-4">Designed For</h4>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                <div class="p-6">
+                    <i class="fas fa-heart text-brand-red text-2xl mb-4"></i>
+                    <h4 class="font-bold text-sm uppercase tracking-widest mb-2">Honeymoons</h4>
+                    <p class="text-gray-500 text-xs">Celebrate love in the world's most romantic settings.</p>
+                </div>
+                <div class="p-6">
+                    <i class="fas fa-glass-cheers text-brand-red text-2xl mb-4"></i>
+                    <h4 class="font-bold text-sm uppercase tracking-widest mb-2">Celebrations</h4>
+                    <p class="text-gray-500 text-xs">Milestone birthdays, anniversaries, and group getaways.</p>
+                </div>
+                <div class="p-6">
+                    <i class="fas fa-sun text-brand-red text-2xl mb-4"></i>
+                    <h4 class="font-bold text-sm uppercase tracking-widest mb-2">Rejuvenation</h4>
+                    <p class="text-gray-500 text-xs">Escape the routine and return renewed.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PLANNED TOURS PREVIEW -->
+    <section class="py-24 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h4 class="text-brand-red font-bold tracking-widest text-[10px] uppercase mb-4">What is Coming</h4>
+                <h2 class="text-4xl font-light italic tracking-tight">Planned Escapes</h2>
+                <div class="h-px w-24 bg-gray-200 mx-auto mt-6"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10 max-w-6xl mx-auto">
+
+                <!-- GE-01: Dubai — City of Gold & Wonder -->
+                <div class="bg-white border border-gray-100 p-8 hover:shadow-lg transition-all">
+                    <div class="flex items-center gap-3 mb-4">
+                        <span class="text-brand-red text-[9px] font-bold uppercase tracking-widest border border-brand-red px-2 py-1">GE-01</span>
+                        <span class="text-gray-400 text-[10px] uppercase tracking-widest font-bold">5 Days</span>
+                    </div>
+                    <div class="text-4xl mb-4">🇦🇪</div>
+                    <h3 class="text-xl font-bold mb-2">City of Gold & Wonder</h3>
+                    <p class="text-gray-500 italic text-sm mb-4">黄金の都市 — Dubai</p>
+                    <p class="text-gray-600 text-sm leading-relaxed mb-6">"Where the desert meets the future." Experience Dubai's impossible skyline, ancient souks, and luxury hospitality — a city that turned sand into the world's most ambitious playground.</p>
+                    <div class="border-t border-gray-100 pt-4">
+                        <p class="text-[10px] uppercase tracking-widest text-gray-400 font-bold mb-2">Experiences</p>
+                        <ul class="text-sm text-gray-500 space-y-1">
+                            <li>• Burj Khalifa — sunset from the 148th floor</li>
+                            <li>• Desert safari — dunes, camels, and starlit dinner</li>
+                            <li>• Gold & Spice Souks — traditional Arabian trading</li>
+                            <li>• Dubai Frame — past meets future</li>
+                            <li>• Luxury dhow cruise on Dubai Creek</li>
+                        </ul>
+                    </div>
+                    <div class="mt-6 bg-gray-50 border-l-2 border-brand-red p-3">
+                        <p class="text-[9px] uppercase tracking-widest text-brand-red font-bold mb-1">The Divine Detail</p>
+                        <p class="text-gray-600 text-xs">Private sunset dinner in the desert with a personal chef, traditional Arabic music, and falcon display.</p>
+                    </div>
+                </div>
+
+                <!-- GE-02: Bali — Island of Gods -->
+                <div class="bg-white border border-gray-100 p-8 hover:shadow-lg transition-all">
+                    <div class="flex items-center gap-3 mb-4">
+                        <span class="text-brand-red text-[9px] font-bold uppercase tracking-widest border border-brand-red px-2 py-1">GE-02</span>
+                        <span class="text-gray-400 text-[10px] uppercase tracking-widest font-bold">6 Days</span>
+                    </div>
+                    <div class="text-4xl mb-4">🇮🇩</div>
+                    <h3 class="text-xl font-bold mb-2">Island of Gods</h3>
+                    <p class="text-gray-500 italic text-sm mb-4">神々の島 — Bali</p>
+                    <p class="text-gray-600 text-sm leading-relaxed mb-6">"Where every sunrise is a ceremony and every sunset is a painting." Bali's unique blend of Hindu spirituality, rice terrace beauty, and world-class hospitality creates the perfect escape for body and soul.</p>
+                    <div class="border-t border-gray-100 pt-4">
+                        <p class="text-[10px] uppercase tracking-widest text-gray-400 font-bold mb-2">Experiences</p>
+                        <ul class="text-sm text-gray-500 space-y-1">
+                            <li>• Ubud — Rice terraces and artisan villages</li>
+                            <li>• Tanah Lot — Temple on the sea at sunset</li>
+                            <li>• Seminyak — Beach clubs and fine dining</li>
+                            <li>• Tirta Empul — Sacred water purification</li>
+                            <li>• Private villa with infinity pool</li>
+                        </ul>
+                    </div>
+                    <div class="mt-6 bg-gray-50 border-l-2 border-brand-red p-3">
+                        <p class="text-[9px] uppercase tracking-widest text-brand-red font-bold mb-1">The Divine Detail</p>
+                        <p class="text-gray-600 text-xs">Private Balinese blessing ceremony at a hidden water temple, followed by a flower-petal bath at your villa.</p>
+                    </div>
+                </div>
+
+                <!-- GE-03: Maldives — Ocean Serenity -->
+                <div class="bg-white border border-gray-100 p-8 hover:shadow-lg transition-all">
+                    <div class="flex items-center gap-3 mb-4">
+                        <span class="text-brand-red text-[9px] font-bold uppercase tracking-widest border border-brand-red px-2 py-1">GE-03</span>
+                        <span class="text-gray-400 text-[10px] uppercase tracking-widest font-bold">4 Days</span>
+                    </div>
+                    <div class="text-4xl mb-4">🇲🇻</div>
+                    <h3 class="text-xl font-bold mb-2">Ocean Serenity</h3>
+                    <p class="text-gray-500 italic text-sm mb-4">海の静寂 — Maldives</p>
+                    <p class="text-gray-600 text-sm leading-relaxed mb-6">"Where the sky dissolves into the ocean and time ceases to exist." The Maldives offers the purest form of escape — overwater villas, coral gardens, and a silence broken only by the sound of waves.</p>
+                    <div class="border-t border-gray-100 pt-4">
+                        <p class="text-[10px] uppercase tracking-widest text-gray-400 font-bold mb-2">Experiences</p>
+                        <ul class="text-sm text-gray-500 space-y-1">
+                            <li>• Overwater villa with glass floor</li>
+                            <li>• Snorkeling with manta rays and sea turtles</li>
+                            <li>• Underwater restaurant dining</li>
+                            <li>• Sunset dolphin cruise</li>
+                            <li>• Private sandbank picnic</li>
+                        </ul>
+                    </div>
+                    <div class="mt-6 bg-gray-50 border-l-2 border-brand-red p-3">
+                        <p class="text-[9px] uppercase tracking-widest text-brand-red font-bold mb-1">The Divine Detail</p>
+                        <p class="text-gray-600 text-xs">Private sunrise yoga on a deserted sandbank, followed by floating breakfast delivered to your overwater villa.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- WHY DIVINE DESTINATIONS FOR LUXURY -->
+    <section class="py-20 bg-white border-t border-gray-100">
+        <div class="container mx-auto px-6 max-w-4xl text-center">
+            <h4 class="text-brand-red font-bold tracking-widest text-[10px] uppercase mb-6">Why Choose Us for Luxury Travel</h4>
+            <h3 class="text-2xl font-light italic text-gray-800 mb-8">The "Divine" Difference in Leisure</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-left">
+                <div class="border-l-2 border-gray-200 pl-6">
+                    <h4 class="font-bold text-sm mb-2">Personal Curation</h4>
+                    <p class="text-gray-500 text-xs leading-relaxed">Every escape is designed around your preferences — your pace, your taste, your definition of perfection.</p>
+                </div>
+                <div class="border-l-2 border-gray-200 pl-6">
+                    <h4 class="font-bold text-sm mb-2">Seamless Logistics</h4>
+                    <p class="text-gray-500 text-xs leading-relaxed">From airport to villa, every transfer, booking, and reservation is handled with precision. You simply arrive and enjoy.</p>
+                </div>
+                <div class="border-l-2 border-gray-200 pl-6">
+                    <h4 class="font-bold text-sm mb-2">The Unexpected Touch</h4>
+                    <p class="text-gray-500 text-xs leading-relaxed">Our "Divine Detail" philosophy means every journey includes one surprise moment designed to create a lasting memory.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- REGISTER INTEREST SECTION -->
+    <section id="register" class="py-24 bg-gray-50 border-t border-gray-100">
+        <div class="container mx-auto px-6 max-w-3xl text-center">
+            <h4 class="text-brand-red font-bold tracking-widest text-[10px] uppercase mb-4">Be the First to Escape</h4>
+            <h2 class="text-3xl font-light italic tracking-tight mb-6">Register Your Interest</h2>
+            <p class="text-gray-500 text-sm mb-12 leading-relaxed">When these luxury escapes launch, registered travelers receive priority access, exclusive resort partnerships, and early-bird pricing. Tell us which escape calls to your soul.</p>
+            
+            <div class="bg-white p-3 shadow-xl border border-gray-100 rounded-sm">
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfD_K0vJ_vOshI9z38H-H-23hC028pGZpW6m0N-gL4R7R7X6Q/viewform?embedded=true&entry.0=The+Golden+Escape" width="100%" height="700" frameborder="0">Loading…</iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- INSPIRATION QUOTE -->
+    <section class="py-20 bg-white border-t border-gray-100 text-center">
+        <div class="container mx-auto px-6 max-w-3xl">
+            <p class="text-gray-400 text-3xl font-light italic leading-relaxed">"Sometimes the most profound discovery is simply allowing yourself to pause, breathe, and let beauty surround you."</p>
+            <div class="flex items-center justify-center gap-4 mt-8">
+                <div class="h-px w-12 bg-brand-red"></div>
+                <span class="text-[10px] uppercase tracking-widest text-gray-400 font-bold">Divine Destinations</span>
+                <div class="h-px w-12 bg-brand-red"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BACK TO HOME CTA -->
+    <section class="py-16 bg-gray-50 text-center border-t border-gray-100">
+        <div class="container mx-auto px-6">
+            <p class="text-gray-500 text-sm mb-6">Explore our other collections</p>
+            <div class="flex justify-center gap-6 flex-wrap">
+                <a href="heritage-abroad.html" class="border border-gray-200 px-8 py-3 text-[11px] font-bold uppercase tracking-widest hover:bg-black hover:text-white transition-colors">Heritage Beyond Borders</a>
+                <a href="zen-path.html" class="border border-gray-200 px-8 py-3 text-[11px] font-bold uppercase tracking-widest hover:bg-black hover:text-white transition-colors">The Zen Path</a>
+                <a href="index.html#journeys" class="border border-brand-red text-brand-red px-8 py-3 text-[11px] font-bold uppercase tracking-widest hover:bg-brand-red hover:text-white transition-colors">← All Journeys</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-white py-16 border-t border-gray-100 text-center">
+        <img src="images/logos/dd.png" class="h-10 mx-auto grayscale opacity-40 mb-6">
+        <p class="text-gray-400 text-[10px] uppercase tracking-[0.3em] mb-4">Bridging Worlds, Discovering Hearts</p>
+        <p class="text-gray-300 text-[10px] uppercase tracking-widest italic">&copy; 2024 Divine Destinations. All Rights Reserved.</p>
+    </footer>
+
+    <!-- MOBILE MENU SCRIPT -->
+    <script>
+        const menuBtn = document.getElementById('menuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        menuBtn.addEventListener('click', () => { mobileMenu.classList.toggle('hidden'); });
+        mobileMenu.querySelectorAll('a').forEach(link => { link.addEventListener('click', () => { mobileMenu.classList.add('hidden'); }); });
+    </script>
+</body>
+</html>
