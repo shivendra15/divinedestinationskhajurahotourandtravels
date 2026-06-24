@@ -31,3 +31,28 @@ body {
 
 .tile-img { position: absolute; inset: 0; transition: opacity 1.5s ease; }
 .tile-img.hidden-img { opacity: 0; }
+
+/* Hero backgrounds for tour pages */
+.hero-gt,
+.hero-buddhist,
+.hero-spiritual,
+.hero-bundelkhand,
+.hero-wildlife,
+.hero-ancient,
+.hero-heritage,
+.hero-escape,
+.hero-zen {
+    background-color: #1a1a1a;
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-gt { background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../images/destinations/khajuraho/the_kandariya_khajuraho.jpg'); }
+.hero-buddhist { background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../images/destinations/khajuraho/devi_jagdambi_temple_khajuraho.jpg'); }
+.hero-spiritual { background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../images/destinations/khajuraho/kandariya_mahadev_temple_khajuraho.jpg'); }
+.hero-bundelkhand { background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../images/destinations/khajuraho/the_kandariya_khajuraho.jpg'); }
+.hero-wildlife { background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../images/destinations/khajuraho/lion_sculptures_khajuraho.jpg'); }
+.hero-ancient { background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../images/destinations/khajuraho/nagra_style_erotic_carving_kandariya_khajuraho.jpg'); }
+.hero-heritage { background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../images/destinations/khajuraho/the_kandariya_khajuraho.jpg'); }
+.hero-escape { background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../images/destinations/khajuraho/kandariya_mahadev_temple_khajuraho.jpg'); }
+.hero-zen { background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../images/destinations/khajuraho/devi_jagdambi_temple_khajuraho.jpg'); }
