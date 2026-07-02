@@ -22,6 +22,7 @@ function rotateTile(prefix, count) {
     }, 4000);
 }
 
+//homepage Pillar Tiles
 // Row 1: Primary (India)
 rotateTile('t1', 3);
 rotateTile('t2', 3);
@@ -36,3 +37,12 @@ rotateTile('t6', 3);
 rotateTile('t7', 3);
 rotateTile('t8', 3);
 rotateTile('t9', 3);
+
+// Tour card image rotation
+rotateTile('gt01', 6);
+rotateTile('gt02', 6);
+rotateTile('gt03', 6);
+rotateTile('gt04', 6);
+rotateTile('gt05', 6);
+rotateTile('gt06', 6);
+// ... etc for each tour
