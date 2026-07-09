@@ -33,10 +33,17 @@ function prevImage() {
     updateGalleryImage();
 }
 
+// function updateGalleryImage() {
+//     const img = document.getElementById('galleryImage');
+//     const counter = document.getElementById('galleryCounter');
+//     img.src = currentGallery[currentIndex];
+//     counter.textContent = (currentIndex + 1) + ' / ' + currentGallery.length;
+// }
 function updateGalleryImage() {
     const img = document.getElementById('galleryImage');
     const counter = document.getElementById('galleryCounter');
-    img.src = currentGallery[currentIndex];
+    const basePath = document.documentElement.lang === 'ja' ? '../' : '';
+    img.src = basePath + currentGallery[currentIndex];
     counter.textContent = (currentIndex + 1) + ' / ' + currentGallery.length;
 }
 
