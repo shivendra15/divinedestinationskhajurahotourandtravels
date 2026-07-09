@@ -1,589 +1,641 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>カジュラホ公認日本語ガイド — Divine Destinations Japan Desk</title>
-    <meta name="description" content="インド政府公認ガイドによるカジュラホ日本語ツアー。安心の専用車手配、明朗会計、LINEで簡単予約。">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, "Noto Sans JP", sans-serif;
-            color: #333;
-            line-height: 1.8;
-            background: #ffffff;
-        }
-
-        /* === HERO BANNER === */
-        .hero {
-            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
-            color: #ffffff;
-            padding: 60px 20px;
-            text-align: center;
-        }
-
-        .hero h1 {
-            font-size: 24px;
-            line-height: 1.5;
-            margin-bottom: 15px;
-            font-weight: 700;
-        }
-
-        .hero .subtitle {
-            font-size: 15px;
-            color: #cccccc;
-            max-width: 600px;
-            margin: 0 auto 30px;
-        }
-
-        .hero .founder-photo {
-            width: 200px;
-            height: 200px;
-            border-radius: 50%;
-            background: #444;
-            margin: 0 auto;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #999;
-            font-size: 12px;
-            border: 4px solid #ffffff;
-        }
-
-        .hero .credential-badge {
-            display: inline-block;
-            background: rgba(255, 255, 255, 0.15);
-            border: 1px solid rgba(255, 255, 255, 0.3);
-            padding: 8px 20px;
-            border-radius: 30px;
-            font-size: 13px;
-            margin-top: 20px;
-        }
-
-        /* === SECTIONS === */
-        .section {
-            padding: 50px 20px;
-            max-width: 800px;
-            margin: 0 auto;
-        }
-
-        .section-title {
-            font-size: 22px;
-            font-weight: 700;
-            margin-bottom: 30px;
-            text-align: center;
-            color: #1a1a2e;
-        }
-
-        /* === GUARANTEES === */
-        .guarantee-list {
-            list-style: none;
-        }
-
-        .guarantee-list li {
-            background: #f8f9fa;
-            border-left: 4px solid #bf0000;
-            padding: 20px 25px;
-            margin-bottom: 15px;
-            border-radius: 0 8px 8px 0;
-        }
-
-        .guarantee-list li strong {
-            display: block;
-            font-size: 16px;
-            margin-bottom: 8px;
-            color: #1a1a2e;
-        }
-
-        .guarantee-list li p {
-            font-size: 14px;
-            color: #555;
-        }
-
-        /* === PLANS === */
-        .plan-cards {
-            display: grid;
-            gap: 20px;
-        }
-
-        .plan-card {
-            background: #f8f9fa;
-            border: 1px solid #e0e0e0;
-            border-radius: 10px;
-            padding: 25px;
-        }
-
-        .plan-card h3 {
-            font-size: 16px;
-            color: #1a1a2e;
-            margin-bottom: 10px;
-        }
-
-        .plan-card p {
-            font-size: 14px;
-            color: #555;
-        }
-
-        .bridge-statement {
-            background: #fff9f0;
-            border: 1px solid #f0d9a0;
-            border-radius: 8px;
-            padding: 25px;
-            margin-top: 30px;
-            font-size: 14px;
-            line-height: 2;
-        }
-
-        .bridge-statement a {
-            color: #bf0000;
-            font-weight: bold;
-        }
-
-        /* === CONTACT === */
-        .contact-section {
-            text-align: center;
-            background: #f0f8f0;
-            padding: 50px 20px;
-        }
-
-        .line-button {
-            display: inline-block;
-            background: #06C755;
-            color: #ffffff;
-            padding: 18px 40px;
-            font-size: 18px;
-            font-weight: 700;
-            text-decoration: none;
-            border-radius: 8px;
-            margin: 20px 0;
-            transition: background 0.3s;
-        }
-
-        .line-button:hover {
-            background: #05a847;
-        }
-
-        .whatsapp-link {
-            display: inline-block;
-            color: #25D366;
-            font-size: 14px;
-            margin-top: 10px;
-            text-decoration: none;
-        }
-
-        /* === INQUIRY FORM === */
-        .inquiry-form {
-            max-width: 500px;
-            margin: 30px auto 0;
-            text-align: left;
-        }
-
-        .inquiry-form label {
-            display: block;
-            font-size: 14px;
-            font-weight: 600;
-            margin-bottom: 5px;
-            margin-top: 15px;
-            color: #333;
-        }
-
-        .inquiry-form input,
-        .inquiry-form textarea {
-            width: 100%;
-            padding: 12px;
-            border: 1px solid #ddd;
-            border-radius: 6px;
-            font-size: 14px;
-            font-family: inherit;
-        }
-
-        .inquiry-form textarea {
-            height: 100px;
-            resize: vertical;
-        }
-
-        .inquiry-form button {
-            width: 100%;
-            padding: 15px;
-            background: #1a1a2e;
-            color: #fff;
-            border: none;
-            border-radius: 6px;
-            font-size: 16px;
-            font-weight: 700;
-            margin-top: 20px;
-            cursor: pointer;
-            transition: background 0.3s;
-        }
-
-        .inquiry-form button:hover {
-            background: #2d2d4e;
-        }
-
-        /* === REVIEWS === */
-        .review-card {
-            background: #f8f9fa;
-            border-radius: 10px;
-            padding: 25px;
-            margin-bottom: 20px;
-        }
-
-        .review-card .stars {
-            color: #f5a623;
-            font-size: 18px;
-            margin-bottom: 10px;
-        }
-
-        .review-card .review-text {
-            font-size: 15px;
-            font-style: italic;
-            color: #444;
-            margin-bottom: 10px;
-        }
-
-        .review-card .reviewer {
-            font-size: 13px;
-            color: #777;
-        }
-
-        .verified-badge {
-            color: #06C755;
-            font-size: 12px;
-        }
-
-        /* === REVIEW SUBMISSION FORM === */
-        .review-form-section {
-            background: #fafafa;
-            padding: 50px 20px;
-        }
-
-        .review-form {
-            max-width: 500px;
-            margin: 0 auto;
-        }
-
-        .star-rating {
-            display: flex;
-            gap: 5px;
-            margin-bottom: 15px;
-            flex-direction: row-reverse;
-            justify-content: flex-end;
-        }
-
-        .star-rating input {
-            display: none;
-        }
-
-        .star-rating label {
-            font-size: 30px;
-            color: #ddd;
-            cursor: pointer;
-            transition: color 0.2s;
-        }
-
-        .star-rating input:checked ~ label,
-        .star-rating label:hover,
-        .star-rating label:hover ~ label {
-            color: #f5a623;
-        }
-
-        .checkbox-field {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            margin: 15px 0;
-            font-size: 14px;
-        }
-
-        .checkbox-field input[type="checkbox"] {
-            width: 18px;
-            height: 18px;
-        }
-
-        .file-upload-note {
-            font-size: 12px;
-            color: #888;
-            margin-top: 5px;
-        }
-
-        /* === FOOTER === */
-        .footer {
-            background: #1a1a2e;
-            color: #aaa;
-            text-align: center;
-            padding: 30px 20px;
-            font-size: 13px;
-        }
-
-        .footer a {
-            color: #ccc;
-            text-decoration: none;
-        }
-
-        .footer a:hover {
-            color: #fff;
-        }
-
-        /* === RESPONSIVE === */
-        @media (max-width: 600px) {
-            .hero h1 {
-                font-size: 20px;
-            }
-
-            .line-button {
-                padding: 15px 30px;
-                font-size: 16px;
-            }
-        }
-    </style>
-</head>
-<body>
-
-    <!-- ===== SECTION 1: HERO BANNER ===== -->
-    <section class="hero">
-        <div class="founder-photo">
-            [FounderName の写真]
-        </div>
-        <h1>カジュラホ公認日本語ガイド ＆ 専用車手配<br>— 安心の現地オプショナルツアー</h1>
-        <p class="subtitle">インド政府公認ガイド（キャリア10年以上）が、世界遺産カジュラホの神秘と奥深い歴史をご案内いたします。</p>
-        <div class="credential-badge">🏛️ インド政府公認ガイド — FounderName</div>
-    </section>
-
-    <!-- ===== SECTION 2: 5つの安心宣言 ===== -->
-    <section class="section">
-        <h2 class="section-title">🛡️ 5つの安心宣言</h2>
-        <ul class="guarantee-list">
-            <li>
-                <strong>1. 万全の日本語サポートで安心の旅</strong>
-                <p>お問い合わせから、ツアー当日のご案内、そしてお見送りまで、すべて日本語で丁寧に対応いたします。LINEやWhatsAppでの事前の打ち合わせもすべて日本語でスムーズに行えますので、言葉の心配は一切ありません。</p>
-            </li>
-            <li>
-                <strong>2. 清潔で快適な完全プライベート専用車</strong>
-                <p>移動はすべて、清掃が行き届いたエアコン完備の綺麗な専用車をご用意いたします。経験豊富で安全運転を徹底する専属ドライバーが、皆様の快適な移動をサポートいたします。</p>
-            </li>
-            <li>
-                <strong>3. お土産店への強制立ち寄りは一切なし</strong>
-                <p>旅行会社にありがちな、高額なお土産店への強制的な立ち寄りや、強引な勧誘は一切行いません。お客様の大切な時間を守り、世界遺産カジュラホの観光を純粋にお楽しみいただくことを最優先にしています。</p>
-            </li>
-            <li>
-                <strong>4. 明朗会計・隠れた追加料金なし</strong>
-                <p>ツアー料金や車両手配の費用は、事前のお見積もりで明確にご提示いたします。現地で不透明な追加料金やチップを一方的に請求することはございませんので、安心してご予算を計画いただけます。</p>
-            </li>
-            <li>
-                <strong>5. 一人旅や女性のお客様も安心・安全</strong>
-                <p>インド政府公認ガイドとして10年以上の実績があり、地域の治安や安全管理を熟知しています。初めてのインド旅、一人旅、または女性のみのグループでも、常に安全を第一に考えた細やかな配慮でおもてなしいたします。</p>
-            </li>
-        </ul>
-    </section>
-
-    <!-- ===== SECTION 3: おすすめプラン ===== -->
-    <section class="section">
-        <h2 class="section-title">📋 おすすめプラン</h2>
-        <div class="plan-cards">
-            <div class="plan-card">
-                <h3>プランA：世界遺産カジュラホ 終日観光プラン</h3>
-                <p>午前：西群寺院群 → 午後：東群・南群寺院群 → 夕方：ライト＆サウンドショー</p>
-            </div>
-            <div class="plan-card">
-                <h3>プランB：カジュラホ遺跡 ＆ パナ国立公園サファリ 1泊2日プラン</h3>
-                <p>1日目：カジュラホ寺院群観光 → 2日目：早朝タイガーサファリ＋ラネー滝キャニオン</p>
-            </div>
-            <div class="plan-card">
-                <h3>プランC：北インド周遊アレンジ</h3>
-                <p>カジュラホを拠点に、バラナシ・オルチャ・デリーへの専用車移動＋ガイド同行</p>
-            </div>
-        </div>
-
-        <div class="bridge-statement">
-            各ツアーの詳しいスケジュールや移動ルートは<a href="../index.html">こちら（英語ページ）</a>でご確認いただけます。<br><br>
-            （※記載されている英語のプランをベースに、日本語でのアレンジが可能です。）<br><br>
-            ご興味のあるプラン名や、行ってみたい場所をこのままLINEでお送りいただければ、料金や詳細をすべて日本語で丁寧にご説明いたします。
-        </div>
-    </section>
-
-    <!-- ===== SECTION 4: お問い合わせ ===== -->
-    <section class="contact-section">
-        <h2 class="section-title">💬 お問い合わせ・ご予約</h2>
-        <p>ご希望の日程、人数、行きたい場所を日本語でお送りください。</p>
-
-        <a href="https://line.me/ti/p/PLACEHOLDER" class="line-button" target="_blank">LINEで友達追加・相談する</a>
-
-        <br>
-        <a href="https://wa.me/PLACEHOLDER" class="whatsapp-link" target="_blank">📱 WhatsAppでのお問い合わせはこちら</a>
-
-        <form class="inquiry-form" id="inquiryForm">
-            <label for="name">お名前</label>
-            <input type="text" id="name" name="name" required>
-
-            <label for="date">ご希望の日程</label>
-            <input type="date" id="date" name="date">
-
-            <label for="travelers">参加人数</label>
-            <input type="number" id="travelers" name="travelers" min="1" value="1">
-
-            <label for="hotel">宿泊ホテル名（決まっている場合）</label>
-            <input type="text" id="hotel" name="hotel">
-
-            <label for="message">ご要望・メッセージ</label>
-            <textarea id="message" name="message" placeholder="例：プランBに興味があります。2名で参加希望です。"></textarea>
-
-            <button type="submit">送信する</button>
-        </form>
-        <p style="font-size: 12px; color: #666; margin-top: 10px; text-align: center;">※24時間以内に日本語で回答いたします</p>
-    </section>
-
-    <!-- ===== SECTION 5: お客様の声 ===== -->
-    <section class="section">
-        <h2 class="section-title">🗣️ お客様の声</h2>
-
-        <div class="review-card">
-            <div class="stars">★★★★★</div>
-            <p class="review-text">「初めてのインド一人旅でしたが、日本語が本当に堪能で、歴史の解説も深く大変勉強になりました。車も綺麗で安心して観光できました。」</p>
-            <p class="reviewer">— プレースホルダー様 <span class="verified-badge">✅ 認証済みゲスト</span></p>
-        </div>
-
-        <div class="review-card">
-            <div class="stars">★★★★★</div>
-            <p class="review-text">「カジュラホの彫刻の素晴らしさは、日本語の解説があってこそ深く理解できました。無理な勧誘も一切なく、自分のペースで観光を楽しめたのが一番良かったです。」</p>
-            <p class="reviewer">— 匿名 <span class="verified-badge">✅ 認証済みゲスト</span></p>
-        </div>
-
-        <div class="review-card">
-            <div class="stars">★★★★★</div>
-            <p class="review-text">「パナ国立公園のサファリとカジュラホ寺院の組み合わせは最高でした。ドライバーさんも穏やかで、車内も清潔。次回インドに来るときも必ずお願いします。」</p>
-            <p class="reviewer">— プレースホルダー様 <span class="verified-badge">✅ 認証済みゲスト</span></p>
-        </div>
-    </section>
-
-    <!-- ===== SECTION 6: レビュー投稿フォーム ===== -->
-    <section class="review-form-section">
-        <h2 class="section-title">✍️ レビューを投稿する</h2>
-        <p style="text-align: center; margin-bottom: 30px; font-size: 14px; color: #666;">ツアーのご感想をお聞かせください。写真や動画も添付いただけます。</p>
-
-        <form class="review-form" id="reviewForm">
-            <!-- Star Rating -->
-            <label style="font-weight: 600; margin-bottom: 5px; display: block;">評価</label>
-            <div class="star-rating">
-                <input type="radio" id="star5" name="rating" value="5">
-                <label for="star5">★</label>
-                <input type="radio" id="star4" name="rating" value="4">
-                <label for="star4">★</label>
-                <input type="radio" id="star3" name="rating" value="3">
-                <label for="star3">★</label>
-                <input type="radio" id="star2" name="rating" value="2">
-                <label for="star2">★</label>
-                <input type="radio" id="star1" name="rating" value="1">
-                <label for="star1">★</label>
-            </div>
-
-            <!-- Review Text -->
-            <label for="reviewText" style="font-weight: 600;">レビュー</label>
-            <textarea id="reviewText" name="reviewText" placeholder="ご自由にお書きください..." style="width:100%; padding:12px; border:1px solid #ddd; border-radius:6px; height:120px; font-family:inherit; font-size:14px; margin-top:5px;" required></textarea>
-
-            <!-- File Upload -->
-            <label for="fileUpload" style="font-weight: 600; margin-top: 15px; display: block;">写真・動画（任意）</label>
-            <input type="file" id="fileUpload" name="fileUpload" multiple accept="image/*,video/*" style="margin-top:5px;">
-            <p class="file-upload-note">※写真は5枚まで、動画は1分以内でお願いいたします。</p>
-
-            <!-- Name Display Preference -->
-            <div class="checkbox-field">
-                <input type="checkbox" id="displayName" name="displayName" checked>
-                <label for="displayName">お名前をウェブサイトに掲載してもよい</label>
-            </div>
-            <p class="file-upload-note">（チェックを外すと匿名で掲載されます）</p>
-
-            <!-- Name -->
-            <label for="reviewerName" style="font-weight: 600; margin-top: 15px; display: block;">お名前</label>
-            <input type="text" id="reviewerName" name="reviewerName" required style="width:100%; padding:12px; border:1px solid #ddd; border-radius:6px; font-size:14px;">
-
-            <!-- Submit -->
-            <button type="submit" style="width:100%; padding:15px; background:#1a1a2e; color:#fff; border:none; border-radius:6px; font-size:16px; font-weight:700; margin-top:20px; cursor:pointer;">送信する</button>
-        </form>
-        <p style="font-size: 12px; color: #888; text-align: center; margin-top: 10px;">※投稿いただいたレビューは、確認後にウェブサイトに掲載させていただきます。</p>
-    </section>
-
-    <!-- ===== FOOTER ===== -->
-    <footer class="footer">
-        <p>Divine Destinations Khajuraho Tour And Travels</p>
-        <p>インド政府公認ガイド — License No: [PLACEHOLDER]</p>
-        <p>📍 Dulhadev Temple Road, Khajuraho, Madhya Pradesh, India</p>
-        <br>
-        <a href="../index.html">← English Homepage に戻る</a>
-    </footer>
-
-    <!-- ===== GOOGLE APPS SCRIPT INTEGRATION ===== -->
-    <script>
-        // === INQUIRY FORM SUBMISSION ===
-        document.getElementById('inquiryForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-
-            const formData = {
-                name: document.getElementById('name').value,
-                date: document.getElementById('date').value,
-                travelers: document.getElementById('travelers').value,
-                hotel: document.getElementById('hotel').value,
-                message: document.getElementById('message').value,
-                type: 'inquiry'
-            };
-
-            // Replace with your Google Apps Script Web App URL
-            const SCRIPT_URL = 'YOUR_GOOGLE_APPS_SCRIPT_URL_HERE';
-
-            fetch(SCRIPT_URL, {
-                method: 'POST',
-                body: JSON.stringify(formData)
-            })
-            .then(response => response.json())
-            .then(data => {
-                alert('お問い合わせを受け付けました。24時間以内にご連絡いたします。');
-                document.getElementById('inquiryForm').reset();
-            })
-            .catch(error => {
-                alert('送信に失敗しました。LINEまたはWhatsAppで直接ご連絡ください。');
-            });
-        });
-
-        // === REVIEW FORM SUBMISSION ===
-        document.getElementById('reviewForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-
-            const form = document.getElementById('reviewForm');
-            const fileInput = document.getElementById('fileUpload');
-            const formData = new FormData();
-
-            formData.append('rating', document.querySelector('input[name="rating"]:checked')?.value || '');
-            formData.append('reviewText', document.getElementById('reviewText').value);
-            formData.append('reviewerName', document.getElementById('reviewerName').value);
-            formData.append('displayName', document.getElementById('displayName').checked);
-            formData.append('type', 'review');
-
-            // Append files
-            for (let i = 0; i < fileInput.files.length; i++) {
-                formData.append('files', fileInput.files[i]);
-            }
-
-            // Replace with your Google Apps Script Web App URL
-            const SCRIPT_URL = 'YOUR_GOOGLE_APPS_SCRIPT_URL_HERE';
-
-            fetch(SCRIPT_URL, {
-                method: 'POST',
-                body: formData
-            })
-            .then(response => response.json())
-            .then(data => {
-                alert('レビューをご投稿いただきありがとうございます。確認後、掲載させていただきます。');
-                form.reset();
-            })
-            .catch(error => {
-                alert('送信に失敗しました。お手数ですがLINEでレビューをお送りください。');
-            });
-        });
-    </script>
-
-</body>
-</html>
+1.  <!DOCTYPE html>
+2.  <html lang="ja">
+3.  <head>
+4.      <meta charset="UTF-8">
+5.      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+6.      <title>カジュラホ公認日本語ガイド — Divine Destinations Japan Desk</title>
+7.      <meta name="description" content="インド政府公認ガイドによるカジュラホ日本語ツアー。安心の専用車手配、明朗会計、LINEで簡単予約。">
+8.      <style>
+9.          * {
+10.             margin: 0;
+11.             padding: 0;
+12.             box-sizing: border-box;
+13.         }
+14.
+15.         body {
+16.             font-family: "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, "Noto Sans JP", sans-serif;
+17.             color: #333;
+18.             line-height: 1.8;
+19.             background: #ffffff;
+20.         }
+21.
+22.         /* === HERO BANNER === */
+23.         .hero {
+24.             background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+25.             color: #ffffff;
+26.             padding: 60px 20px;
+27.             text-align: center;
+28.         }
+29.
+30.         .hero h1 {
+31.             font-size: 24px;
+32.             line-height: 1.5;
+33.             margin-bottom: 15px;
+34.             font-weight: 700;
+35.         }
+36.
+37.         .hero .subtitle {
+38.             font-size: 15px;
+39.             color: #cccccc;
+40.             max-width: 600px;
+41.             margin: 0 auto 30px;
+42.         }
+43.
+44.         .hero .founder-photo {
+45.             width: 200px;
+46.             height: 200px;
+47.             border-radius: 50%;
+48.             background: #444;
+49.             margin: 0 auto;
+50.             display: flex;
+51.             align-items: center;
+52.             justify-content: center;
+53.             color: #999;
+54.             font-size: 12px;
+55.             border: 4px solid #ffffff;
+56.         }
+57.
+58.         .hero .credential-badge {
+59.             display: inline-block;
+60.             background: rgba(255, 255, 255, 0.15);
+61.             border: 1px solid rgba(255, 255, 255, 0.3);
+62.             padding: 8px 20px;
+63.             border-radius: 30px;
+64.             font-size: 13px;
+65.             margin-top: 20px;
+66.         }
+67.
+68.         /* === SECTIONS === */
+69.         .section {
+70.             padding: 50px 20px;
+71.             max-width: 800px;
+72.             margin: 0 auto;
+73.         }
+74.
+75.         .section-title {
+76.             font-size: 22px;
+77.             font-weight: 700;
+78.             margin-bottom: 30px;
+79.             text-align: center;
+80.             color: #1a1a2e;
+81.         }
+82.
+83.         /* === GUARANTEES === */
+84.         .guarantee-list {
+85.             list-style: none;
+86.         }
+87.
+88.         .guarantee-list li {
+89.             background: #f8f9fa;
+90.             border-left: 4px solid #bf0000;
+91.             padding: 20px 25px;
+92.             margin-bottom: 15px;
+93.             border-radius: 0 8px 8px 0;
+94.         }
+95.
+96.         .guarantee-list li strong {
+97.             display: block;
+98.             font-size: 16px;
+99.             margin-bottom: 8px;
+100.            color: #1a1a2e;
+101.        }
+102.
+103.        .guarantee-list li p {
+104.            font-size: 14px;
+105.            color: #555;
+106.        }
+107.
+108.        /* === PLANS === */
+109.        .plan-cards {
+110.            display: grid;
+111.            gap: 20px;
+112.        }
+113.
+114.        .plan-card {
+115.            background: #f8f9fa;
+116.            border: 1px solid #e0e0e0;
+117.            border-radius: 10px;
+118.            padding: 25px;
+119.        }
+120.
+121.        .plan-card h3 {
+122.            font-size: 16px;
+123.            color: #1a1a2e;
+124.            margin-bottom: 10px;
+125.        }
+126.
+127.        .plan-card p {
+128.            font-size: 14px;
+129.            color: #555;
+130.        }
+131.
+132.        .bridge-statement {
+133.            background: #fff9f0;
+134.            border: 1px solid #f0d9a0;
+135.            border-radius: 8px;
+136.            padding: 25px;
+137.            margin-top: 30px;
+138.            font-size: 14px;
+139.            line-height: 2;
+140.        }
+141.
+142.        .bridge-statement a {
+143.            color: #bf0000;
+144.            font-weight: bold;
+145.        }
+146.
+147.        /* === CONTACT === */
+148.        .contact-section {
+149.            text-align: center;
+150.            background: #f0f8f0;
+151.            padding: 50px 20px;
+152.        }
+153.
+154.        .line-button {
+155.            display: inline-block;
+156.            background: #06C755;
+157.            color: #ffffff;
+158.            padding: 18px 40px;
+159.            font-size: 18px;
+160.            font-weight: 700;
+161.            text-decoration: none;
+162.            border-radius: 8px;
+163.            margin: 20px 0;
+164.            transition: background 0.3s;
+165.        }
+166.
+167.        .line-button:hover {
+168.            background: #05a847;
+169.        }
+170.
+171.        .whatsapp-link {
+172.            display: inline-block;
+173.            color: #25D366;
+174.            font-size: 14px;
+175.            margin-top: 10px;
+176.            text-decoration: none;
+177.        }
+178.
+179.        /* === INQUIRY FORM === */
+180.        .inquiry-form {
+181.            max-width: 500px;
+182.            margin: 30px auto 0;
+183.            text-align: left;
+184.        }
+185.
+186.        .inquiry-form label {
+187.            display: block;
+188.            font-size: 14px;
+189.            font-weight: 600;
+190.            margin-bottom: 5px;
+191.            margin-top: 15px;
+192.            color: #333;
+193.        }
+194.
+195.        .inquiry-form input,
+196.        .inquiry-form textarea {
+197.            width: 100%;
+198.            padding: 12px;
+199.            border: 1px solid #ddd;
+200.            border-radius: 6px;
+201.            font-size: 14px;
+202.            font-family: inherit;
+203.        }
+204.
+205.        .inquiry-form textarea {
+206.            height: 100px;
+207.            resize: vertical;
+208.        }
+209.
+210.        .inquiry-form button {
+211.            width: 100%;
+212.            padding: 15px;
+213.            background: #1a1a2e;
+214.            color: #fff;
+215.            border: none;
+216.            border-radius: 6px;
+217.            font-size: 16px;
+218.            font-weight: 700;
+219.            margin-top: 20px;
+220.            cursor: pointer;
+221.            transition: background 0.3s;
+222.        }
+223.
+224.        .inquiry-form button:hover {
+225.            background: #2d2d4e;
+226.        }
+227.
+228.        /* === REVIEWS === */
+229.        .review-card {
+230.            background: #f8f9fa;
+231.            border-radius: 10px;
+232.            padding: 25px;
+233.            margin-bottom: 20px;
+234.        }
+235.
+236.        .review-card .stars {
+237.            color: #f5a623;
+238.            font-size: 18px;
+239.            margin-bottom: 10px;
+240.        }
+241.
+242.        .review-card .review-text {
+243.            font-size: 15px;
+244.            font-style: italic;
+245.            color: #444;
+246.            margin-bottom: 10px;
+247.        }
+248.
+249.        .review-card .reviewer {
+250.            font-size: 13px;
+251.            color: #777;
+252.        }
+253.
+254.        .verified-badge {
+255.            color: #06C755;
+256.            font-size: 12px;
+257.        }
+258.
+259.        /* === REVIEW SUBMISSION FORM === */
+260.        .review-form-section {
+261.            background: #fafafa;
+262.            padding: 50px 20px;
+263.        }
+264.
+265.        .review-form {
+266.            max-width: 500px;
+267.            margin: 0 auto;
+268.        }
+269.
+270.        .star-rating {
+271.            display: flex;
+272.            gap: 5px;
+273.            margin-bottom: 15px;
+274.            flex-direction: row-reverse;
+275.            justify-content: flex-end;
+276.        }
+277.
+278.        .star-rating input {
+279.            display: none;
+280.        }
+281.
+282.        .star-rating label {
+283.            font-size: 30px;
+284.            color: #ddd;
+285.            cursor: pointer;
+286.            transition: color 0.2s;
+287.        }
+288.
+289.        .star-rating input:checked ~ label,
+290.        .star-rating label:hover,
+291.        .star-rating label:hover ~ label {
+292.            color: #f5a623;
+293.        }
+294.
+295.        .checkbox-field {
+296.            display: flex;
+297.            align-items: center;
+298.            gap: 10px;
+299.            margin: 15px 0;
+300.            font-size: 14px;
+301.        }
+302.
+303.        .checkbox-field input[type="checkbox"] {
+304.            width: 18px;
+305.            height: 18px;
+306.        }
+307.
+308.        .file-upload-note {
+309.            font-size: 12px;
+310.            color: #888;
+311.            margin-top: 5px;
+312.        }
+313.
+314.        /* === FOOTER === */
+315.        .footer {
+316.            background: #1a1a2e;
+317.            color: #aaa;
+318.            text-align: center;
+319.            padding: 30px 20px;
+320.            font-size: 13px;
+321.        }
+322.
+323.        .footer a {
+324.            color: #ccc;
+325.            text-decoration: none;
+326.        }
+327.
+328.        .footer a:hover {
+329.            color: #fff;
+330.        }
+331.
+332.        /* === RESPONSIVE === */
+333.        @media (max-width: 600px) {
+334.            .hero h1 {
+335.                font-size: 20px;
+336.            }
+337.
+338.            .line-button {
+339.                padding: 15px 30px;
+340.                font-size: 16px;
+341.            }
+342.        }
+343.    </style>
+344.</head>
+345.<body>
+346.
+347.    <!-- ===== SECTION 1: HERO BANNER ===== -->
+348.    <section class="hero">
+349.        <div class="founder-photo">
+350.            [FounderName の写真]
+351.        </div>
+352.        <h1>カジュラホ公認日本語ガイド ＆ 専用車手配<br>— 安心の現地オプショナルツアー</h1>
+353.        <p class="subtitle">インド政府公認ガイド（キャリア10年以上）が、世界遺産カジュラホの神秘と奥深い歴史をご案内いたします。</p>
+354.        <div class="credential-badge">🏛️ インド政府公認ガイド — FounderName</div>
+355.    </section>
+356.
+357.    <!-- ===== SECTION 2: 5つの安心宣言 ===== -->
+358.    <section class="section">
+359.        <h2 class="section-title">🛡️ 5つの安心宣言</h2>
+360.        <ul class="guarantee-list">
+361.            <li>
+362.                <strong>1. 万全の日本語サポートで安心の旅</strong>
+363.                <p>お問い合わせから、ツアー当日のご案内、そしてお見送りまで、すべて日本語で丁寧に対応いたします。LINEやWhatsAppでの事前の打ち合わせもすべて日本語でスムーズに行えますので、言葉の心配は一切ありません。</p>
+364.            </li>
+365.            <li>
+366.                <strong>2. 清潔で快適な完全プライベート専用車</strong>
+367.                <p>移動はすべて、清掃が行き届いたエアコン完備の綺麗な専用車をご用意いたします。経験豊富で安全運転を徹底する専属ドライバーが、皆様の快適な移動をサポートいたします。</p>
+368.            </li>
+369.            <li>
+370.                <strong>3. お土産店への強制立ち寄りは一切なし</strong>
+371.                <p>旅行会社にありがちな、高額なお土産店への強制的な立ち寄りや、強引な勧誘は一切行いません。お客様の大切な時間を守り、世界遺産カジュラホの観光を純粋にお楽しみいただくことを最優先にしています。</p>
+372.            </li>
+373.            <li>
+374.                <strong>4. 明朗会計・隠れた追加料金なし</strong>
+375.                <p>ツアー料金や車両手配の費用は、事前のお見積もりで明確にご提示いたします。現地で不透明な追加料金やチップを一方的に請求することはございませんので、安心してご予算を計画いただけます。</p>
+376.            </li>
+377.            <li>
+378.                <strong>5. 一人旅や女性のお客様も安心・安全</strong>
+379.                <p>インド政府公認ガイドとして10年以上の実績があり、地域の治安や安全管理を熟知しています。初めてのインド旅、一人旅、または女性のみのグループでも、常に安全を第一に考えた細やかな配慮でおもてなしいたします。</p>
+380.            </li>
+381.        </ul>
+382.    </section>
+383.
+384.    <!-- ===== SECTION 3: おすすめプラン ===== -->
+385.    <section class="section">
+386.        <h2 class="section-title">📋 おすすめプラン</h2>
+387.        <div class="plan-cards">
+388.            <div class="plan-card">
+389.                <h3>プランA：世界遺産カジュラホ 終日観光プラン</h3>
+390.                <p>午前：西群寺院群 → 午後：東群・南群寺院群 → 夕方：ライト＆サウンドショー</p>
+391.            </div>
+392.            <div class="plan-card">
+393.                <h3>プランB：カジュラホ遺跡 ＆ パナ国立公園サファリ 1泊2日プラン</h3>
+394.                <p>1日目：カジュラホ寺院群観光 → 2日目：早朝タイガーサファリ＋ラネー滝キャニオン</p>
+395.            </div>
+396.            <div class="plan-card">
+397.                <h3>プランC：北インド周遊アレンジ</h3>
+398.                <p>カジュラホを拠点に、バラナシ・オルチャ・デリーへの専用車移動＋ガイド同行</p>
+399.            </div>
+400.        </div>
+401.
+402.        <div class="bridge-statement">
+403.            各ツアーの詳しいスケジュールや移動ルートは<a href="../index.html">こちら（英語ページ）</a>でご確認いただけます。<br><br>
+404.            （※記載されている英語のプランをベースに、日本語でのアレンジが可能です。）<br><br>
+405.            ご興味のあるプラン名や、行ってみたい場所をこのままLINEでお送りいただければ、料金や詳細をすべて日本語で丁寧にご説明いたします。
+406.        </div>
+407.    </section>
+408.
+409.    <!-- ===== SECTION 4: お問い合わせ ===== -->
+410.    <section class="contact-section">
+411.        <h2 class="section-title">💬 お問い合わせ・ご予約</h2>
+412.        <p>ご希望の日程、人数、行きたい場所を日本語でお送りください。</p>
+413.
+414.        <a href="https://line.me/ti/p/PLACEHOLDER" class="line-button" target="_blank">LINEで友達追加・相談する</a>
+415.
+416.        <br>
+417.        <a href="https://wa.me/PLACEHOLDER" class="whatsapp-link" target="_blank">📱 WhatsAppでのお問い合わせはこちら</a>
+418.
+419.        <form class="inquiry-form" id="inquiryForm">
+420.            <label for="name">お名前</label>
+421.            <input type="text" id="name" name="name" required>
+422.
+423.            <label for="date">ご希望の日程</label>
+424.            <input type="date" id="date" name="date">
+425.
+426.            <label for="travelers">参加人数</label>
+427.            <input type="number" id="travelers" name="travelers" min="1" value="1">
+428.
+429.            <label for="hotel">宿泊ホテル名（決まっている場合）</label>
+430.            <input type="text" id="hotel" name="hotel">
+431.
+432.            <label for="message">ご要望・メッセージ</label>
+433.            <textarea id="message" name="message" placeholder="例：プランBに興味があります。2名で参加希望です。"></textarea>
+434.
+435.            <!-- Trap field - invisible to humans -->
+436.            <div style="position: absolute; left: -9999px;">
+437.                <input type="text" name="company" id="companyName" tabindex="-1" autocomplete="off">
+438.            </div>
+439.
+440.            <button type="submit">送信する</button>
+441.        </form>
+442.        <p style="font-size: 12px; color: #666; margin-top: 10px; text-align: center;">※24時間以内に日本語で回答いたします</p>
+443.    </section>
+444.
+445.    <!-- ===== SECTION 5: お客様の声 ===== -->
+446.    <section class="section">
+447.        <h2 class="section-title">🗣️ お客様の声</h2>
+448.
+449.        <div class="review-card">
+450.            <div class="stars">★★★★★</div>
+451.            <p class="review-text">「初めてのインド一人旅でしたが、日本語が本当に堪能で、歴史の解説も深く大変勉強になりました。車も綺麗で安心して観光できました。」</p>
+452.            <p class="reviewer">— プレースホルダー様 <span class="verified-badge">✅ 認証済みゲスト</span></p>
+453.        </div>
+454.
+455.        <div class="review-card">
+456.            <div class="stars">★★★★★</div>
+457.            <p class="review-text">「カジュラホの彫刻の素晴らしさは、日本語の解説があってこそ深く理解できました。無理な勧誘も一切なく、自分のペースで観光を楽しめたのが一番良かったです。」</p>
+458.            <p class="reviewer">— 匿名 <span class="verified-badge">✅ 認証済みゲスト</span></p>
+459.        </div>
+460.
+461.        <div class="review-card">
+462.            <div class="stars">★★★★★</div>
+463.            <p class="review-text">「パナ国立公園のサファリとカジュラホ寺院の組み合わせは最高でした。ドライバーさんも穏やかで、車内も清潔。次回インドに来るときも必ずお願いします。」</p>
+464.            <p class="reviewer">— プレースホルダー様 <span class="verified-badge">✅ 認証済みゲスト</span></p>
+465.        </div>
+466.    </section>
+467.
+468.    <!-- ===== SECTION 6: レビュー投稿フォーム ===== -->
+469.    <section class="review-form-section">
+470.        <h2 class="section-title">✍️ レビューを投稿する</h2>
+471.        <p style="text-align: center; margin-bottom: 30px; font-size: 14px; color: #666;">ツアーのご感想をお聞かせください。写真や動画も添付いただけます。</p>
+472.
+473.        <form class="review-form" id="reviewForm">
+474.            <!-- Star Rating -->
+475.            <label style="font-weight: 600; margin-bottom: 5px; display: block;">評価</label>
+476.            <div class="star-rating">
+477.                <input type="radio" id="star5" name="rating" value="5">
+478.                <label for="star5">★</label>
+479.                <input type="radio" id="star4" name="rating" value="4">
+480.                <label for="star4">★</label>
+481.                <input type="radio" id="star3" name="rating" value="3">
+482.                <label for="star3">★</label>
+483.                <input type="radio" id="star2" name="rating" value="2">
+484.                <label for="star2">★</label>
+485.                <input type="radio" id="star1" name="rating" value="1">
+486.                <label for="star1">★</label>
+487.            </div>
+488.
+489.            <!-- Review Text -->
+490.            <label for="reviewText" style="font-weight: 600;">レビュー</label>
+491.            <textarea id="reviewText" name="reviewText" placeholder="ご自由にお書きください..." style="width:100%; padding:12px; border:1px solid #ddd; border-radius:6px; height:120px; font-family:inherit; font-size:14px; margin-top:5px;" required></textarea>
+492.
+493.            <!-- File Upload -->
+494.            <label for="fileUpload" style="font-weight: 600; margin-top: 15px; display: block;">写真・動画（任意）</label>
+495.            <input type="file" id="fileUpload" name="fileUpload" multiple accept="image/jpeg,image/png,image/webp,video/mp4,video/quicktime" style="margin-top:5px;">
+496.            <p class="file-upload-note">※写真は5枚まで、動画は1分以内でお願いいたします。</p>
+497.
+498.            <!-- Name Display Preference -->
+499.            <div class="checkbox-field">
+500.                <input type="checkbox" id="displayName" name="displayName" checked>
+501.                <label for="displayName">お名前をウェブサイトに掲載してもよい</label>
+502.            </div>
+503.            <p class="file-upload-note">（チェックを外すと匿名で掲載されます）</p>
+504.
+505.            <!-- Name -->
+506.            <label for="reviewerName" style="font-weight: 600; margin-top: 15px; display: block;">お名前</label>
+507.            <input type="text" id="reviewerName" name="reviewerName" required style="width:100%; padding:12px; border:1px solid #ddd; border-radius:6px; font-size:14px;">
+508.
+509.            <!-- Trap field - invisible to humans -->
+510.            <div style="position: absolute; left: -9999px;">
+511.                <input type="text" name="address2" id="secondaryAddress" tabindex="-1" autocomplete="off">
+512.            </div>
+513.
+514.            <!-- Submit -->
+515.            <button type="submit" style="width:100%; padding:15px; background:#1a1a2e; color:#fff; border:none; border-radius:6px; font-size:16px; font-weight:700; margin-top:20px; cursor:pointer;">送信する</button>
+516.        </form>
+517.        <p style="font-size: 12px; color: #888; text-align: center; margin-top: 10px;">※投稿いただいたレビューは、確認後にウェブサイトに掲載させていただきます。</p>
+518.    </section>
+519.
+520.    <!-- ===== FOOTER ===== -->
+521.    <footer class="footer">
+522.        <p>Divine Destinations Khajuraho Tour And Travels</p>
+523.        <p>インド政府公認ガイド — License No: [PLACEHOLDER]</p>
+524.        <p>📍 Dulhadev Temple Road, Khajuraho, Madhya Pradesh, India</p>
+525.        <br>
+526.        <a href="../index.html">← English Homepage に戻る</a>
+527.    </footer>
+528.
+529.    <!-- ===== JAVASCRIPT WITH PROTECTIONS ===== -->
+530.    <script>
+531.        // === FILE VALIDATION ===
+532.        function validateFiles(fileInput) {
+533.            const allowedTypes = ['image/jpeg', 'image/png', 'image/webp', 'video/mp4', 'video/quicktime'];
+534.            const maxFileSize = 50 * 1024 * 1024; // 50MB
+535.            const maxFiles = 5;
+536.
+537.            if (fileInput.files.length > maxFiles) {
+538.                alert('ファイルは5つまでです。');
+539.                return false;
+540.            }
+541.
+542.            for (let file of fileInput.files) {
+543.                if (!allowedTypes.includes(file.type)) {
+544.                    alert('許可されていないファイル形式です: ' + file.name);
+545.                    return false;
+546.                }
+547.                if (file.size > maxFileSize) {
+548.                    alert('ファイルサイズが大きすぎます: ' + file.name);
+549.                    return false;
+550.                }
+551.            }
+552.            return true;
+553.        }
+554.
+555.        // === INQUIRY FORM SUBMISSION ===
+556.        document.getElementById('inquiryForm').addEventListener('submit', function(e) {
+557.            e.preventDefault();
+558.
+559.            // Trap field check
+560.            if (document.getElementById('companyName').value !== '') {
+561.                return;
+562.            }
+563.
+564.            const formData = {
+565.                name: document.getElementById('name').value,
+566.                date: document.getElementById('date').value,
+567.                travelers: document.getElementById('travelers').value,
+568.                hotel: document.getElementById('hotel').value,
+569.                message: document.getElementById('message').value,
+570.                type: 'inquiry'
+571.            };
+572.
+573.            const SCRIPT_URL = 'YOUR_GOOGLE_APPS_SCRIPT_URL_HERE';
+574.
+575.            fetch(SCRIPT_URL, {
+576.                method: 'POST',
+577.                body: JSON.stringify(formData)
+578.            })
+579.            .then(response => response.json())
+580.            .then(data => {
+581.                alert('お問い合わせを受け付けました。24時間以内にご連絡いたします。');
+582.                document.getElementById('inquiryForm').reset();
+583.            })
+584.            .catch(error => {
+585.                alert('送信に失敗しました。LINEまたはWhatsAppで直接ご連絡ください。');
+586.            });
+587.        });
+588.
+589.        // === REVIEW FORM SUBMISSION ===
+590.        document.getElementById('reviewForm').addEventListener('submit', function(e) {
+591.            e.preventDefault();
+592.
+593.            // Trap field check
+594.            if (document.getElementById('secondaryAddress').value !== '') {
+595.                return;
+596.            }
+597.
+598.            // Rating check
+599.            const ratingElement = document.querySelector('input[name="rating"]:checked');
+600.            if (!ratingElement) {
+601.                alert('評価を選択してください。');
+602.                return;
+603.            }
+604.
+605.            // File validation
+606.            const fileInput = document.getElementById('fileUpload');
+607.            if (fileInput.files.length > 0 && !validateFiles(fileInput)) {
+608.                return;
+609.            }
+610.
+611.            const formData = new FormData();
+612.            formData.append('rating', ratingElement.value);
+613.            formData.append('reviewText', document.getElementById('reviewText').value);
+614.            formData.append('reviewerName', document.getElementById('reviewerName').value);
+615.            formData.append('displayName', document.getElementById('displayName').checked);
+616.            formData.append('type', 'review');
+617.
+618.            // Append files
+619.            for (let i = 0; i < fileInput.files.length; i++) {
+620.                formData.append('files', fileInput.files[i]);
+621.            }
+622.
+623.            const SCRIPT_URL = 'YOUR_GOOGLE_APPS_SCRIPT_URL_HERE';
+624.
+625.            fetch(SCRIPT_URL, {
+626.                method: 'POST',
+627.                body: formData
+628.            })
+629.            .then(response => response.json())
+630.            .then(data => {
+631.                alert('レビューをご投稿いただきありがとうございます。確認後、掲載させていただきます。');
+632.                document.getElementById('reviewForm').reset();
+633.            })
+634.            .catch(error => {
+635.                alert('送信に失敗しました。お手数ですがLINEでレビューをお送りください。');
+636.            });
+637.        });
+638.    </script>
+639.
+640.</body>
+641.</html>
